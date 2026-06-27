@@ -1,0 +1,13 @@
+{
+  "name": "Walailak Law Firm",
+  "short_name": "Walailak Law",
+  "description": "English-speaking lawyers in Rayong, Pattaya, Chonburi and Bangkok",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0C0E13",
+  "theme_color": "#C9A84C",
+  "icons": [
+    {"src": "/images/walailak-logo-icon-120.png", "sizes": "120x120", "type": "image/png"},
+    {"src": "/images/walailak-logo-icon-180.png", "sizes": "180x180", "type": "image/png"}
+  ]
+}

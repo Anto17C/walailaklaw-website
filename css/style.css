@@ -320,7 +320,6 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 }
 .contact-icons .icon-circle:hover { transform: translateY(-2px); opacity: 0.85; }
 .ic-whatsapp { color: var(--whatsapp); }
-.ic-line { color: #06c755; }
 .ic-phone { color: var(--gold); }
 
 /* ---------- Cards / credentials ---------- */

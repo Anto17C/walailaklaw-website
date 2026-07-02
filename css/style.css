@@ -310,10 +310,12 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .cred-card p { font-size: 14px; font-weight: 600; margin: 0; }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--ink); color: var(--text-on-dark-secondary); padding: 64px 0 24px; margin-top: 40px; }
-.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 40px; }
-.footer-grid h5 { color: #fff; font-size: 14px; font-weight: 600; margin: 0 0 16px; }
-.footer-grid p, .footer-grid a { font-size: 13px; line-height: 1.8; color: var(--text-on-dark-secondary); }
+.site-footer { background: var(--ink); color: var(--text-on-dark-secondary); padding: 48px 0 20px; margin-top: 40px; }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 28px; }
+.footer-grid h5 { color: #fff; font-size: 14px; font-weight: 600; margin: 0 0 14px; }
+.footer-grid p { font-size: 13px; line-height: 1.6; color: var(--text-on-dark-secondary); margin: 0 0 6px; }
+.footer-grid a { font-size: 13px; color: var(--text-on-dark-secondary); }
+.footer-grid p:has(a) { margin: 0 0 4px; }
 .footer-grid a:hover { color: var(--gold); }
 .footer-logo { display: flex; align-items: center; gap: 10px; color: #fff; font-weight: 700; margin-bottom: 14px; }
 .footer-logo img { height: 30px; }

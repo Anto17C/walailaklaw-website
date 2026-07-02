@@ -26,4 +26,16 @@ document.addEventListener('DOMContentLoaded', function () {
       links.classList.toggle('mobile-open');
     });
   }
+
+  // Mobile dropdown tap-to-expand (Practice Areas submenu)
+  document.querySelectorAll('.nav-item').forEach(function (item) {
+    var link = item.querySelector('a');
+    if (!link) return;
+    link.addEventListener('click', function (e) {
+      if (window.innerWidth <= 880) {
+        e.preventDefault();
+        item.classList.toggle('mobile-open');
+      }
+    });
+  });
 });

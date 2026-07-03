@@ -27,13 +27,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Mobile dropdown tap-to-expand (Practice Areas submenu)
+  // Mobile dropdown: tapping the caret expands the submenu, tapping the label navigates normally
   document.querySelectorAll('.nav-item').forEach(function (item) {
-    var link = item.querySelector('a');
-    if (!link) return;
-    link.addEventListener('click', function (e) {
+    var caret = item.querySelector('.caret');
+    if (!caret) return;
+    caret.addEventListener('click', function (e) {
       if (window.innerWidth <= 880) {
         e.preventDefault();
+        e.stopPropagation();
         item.classList.toggle('mobile-open');
       }
     });

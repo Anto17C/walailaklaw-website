@@ -130,7 +130,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .nav-links a:hover { color: var(--gold); }
 .nav-item { position: relative; }
 .nav-item > a { display: flex; align-items: center; gap: 4px; }
-.nav-item .caret { font-size: 10px; transition: transform 0.15s ease; }
+.nav-item .caret { font-size: 10px; transition: transform 0.15s ease; padding: 8px; margin: -8px; }
 .nav-item:hover .caret { transform: rotate(180deg); }
 .dropdown-menu {
   position: absolute; top: 100%; left: -14px; margin-top: 14px;

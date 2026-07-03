@@ -59,9 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  // Sticky mobile contact button — WhatsApp (EN pages) or Line (TH pages), whichever exists on this page
+  // Sticky mobile WhatsApp button — reuses this page's existing (already customized) WhatsApp link
   var existingWhatsapp = document.querySelector('.ic-whatsapp');
-  var existingLine = document.querySelector('.ic-line');
   if (existingWhatsapp) {
     var waBtn = document.createElement('a');
     waBtn.className = 'sticky-whatsapp-btn';
@@ -71,14 +70,5 @@ document.addEventListener('DOMContentLoaded', function () {
     waBtn.setAttribute('aria-label', 'Chat on WhatsApp');
     waBtn.innerHTML = '<i class="ti ti-brand-whatsapp"></i>';
     document.body.appendChild(waBtn);
-  } else if (existingLine) {
-    var lineBtn = document.createElement('a');
-    lineBtn.className = 'sticky-whatsapp-btn sticky-line-btn';
-    lineBtn.href = existingLine.href;
-    lineBtn.target = '_blank';
-    lineBtn.rel = 'noopener';
-    lineBtn.setAttribute('aria-label', 'แชทผ่าน Line');
-    lineBtn.innerHTML = '<img src="' + (document.documentElement.lang === 'th' ? '../images/line-icon.png' : 'images/line-icon.png') + '" alt="Line" style="width:30px;height:30px;border-radius:6px;">';
-    document.body.appendChild(lineBtn);
   }
 });

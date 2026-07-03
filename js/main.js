@@ -57,4 +57,17 @@ document.addEventListener('DOMContentLoaded', function () {
   scrollBtn.addEventListener('click', function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+  // Sticky mobile WhatsApp button — reuses this page's existing (already customized) WhatsApp link
+  var existingWhatsapp = document.querySelector('.ic-whatsapp');
+  if (existingWhatsapp) {
+    var waBtn = document.createElement('a');
+    waBtn.className = 'sticky-whatsapp-btn';
+    waBtn.href = existingWhatsapp.href;
+    waBtn.target = '_blank';
+    waBtn.rel = 'noopener';
+    waBtn.setAttribute('aria-label', 'Chat on WhatsApp');
+    waBtn.innerHTML = '<i class="ti ti-brand-whatsapp"></i>';
+    document.body.appendChild(waBtn);
+  }
 });

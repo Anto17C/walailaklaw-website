@@ -111,12 +111,17 @@
 
       <div>
         <h2 style="font-size:22px; margin-bottom:18px;">Send us a message</h2>
-        <form style="display:flex; flex-direction:column; gap:12px;" onsubmit="return false;">
-          <input type="text" placeholder="Your name" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;">
-          <input type="email" placeholder="Your email" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;">
-          <input type="tel" placeholder="Contact number" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;">
+        <form id="contact-form" style="display:flex; flex-direction:column; gap:12px;">
+          <input type="hidden" name="access_key" value="29ee4653-31f2-4c8a-acc3-bb5c56220612">
+          <input type="hidden" name="subject" value="New Website Inquiry - Walailak Law Firm">
+          <input type="hidden" name="from_name" value="Walailak Law Firm Website">
+          <input type="text" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
+
+          <input type="text" name="Name" placeholder="Your name" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;">
+          <input type="email" name="Email" placeholder="Your email" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;">
+          <input type="tel" name="Phone" placeholder="Contact number" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;">
           <div style="display:flex; gap:12px;">
-            <select required style="flex:1; border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
+            <select name="Case Type" required style="flex:1; border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
               <option value="">Choose case type</option>
               <option>Criminal Case</option>
               <option>Bail Bond</option>
@@ -128,14 +133,14 @@
               <option>Arbitration</option>
               <option>Legal Documents</option>
             </select>
-            <select required style="flex:1; border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
+            <select name="Urgency" required style="flex:1; border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
               <option value="">Case urgency</option>
               <option>Urgent</option>
               <option>Within a few days</option>
               <option>Not urgent</option>
             </select>
           </div>
-          <select required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
+          <select name="Location" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
             <option value="">Select your location</option>
             <option>Pattaya</option>
             <option>Rayong</option>
@@ -144,10 +149,12 @@
             <option>Chiangmai</option>
             <option>Other</option>
           </select>
-          <textarea rows="4" placeholder="Please include any important details, deadlines, or documents (if available)." style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; resize:vertical;"></textarea>
+          <textarea name="Message" rows="4" placeholder="Please include any important details, deadlines, or documents (if available)." style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; resize:vertical;"></textarea>
           <button type="submit" class="btn btn-primary" style="width:100%; margin-top:6px;">Submit</button>
+          <p id="form-result" style="font-size:13.5px; margin:0; display:none;"></p>
         </form>
       </div>
+
 
     </div>
   </div>
@@ -215,5 +222,47 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var form = document.getElementById('contact-form');
+  if (!form) return;
+  var result = document.getElementById('form-result');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var formData = new FormData(form);
+    var submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    result.style.display = 'none';
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: formData
+    })
+    .then(function (response) { return response.json(); })
+    .then(function (data) {
+      result.style.display = 'block';
+      if (data.success) {
+        result.style.color = 'var(--gold-dim)';
+        result.textContent = "Thank you — your message has been sent. We'll respond within 15–60 minutes during office hours.";
+        form.reset();
+      } else {
+        result.style.color = '#c0392b';
+        result.textContent = 'Something went wrong. Please try again or contact us directly by phone or WhatsApp.';
+      }
+    })
+    .catch(function () {
+      result.style.display = 'block';
+      result.style.color = '#c0392b';
+      result.textContent = 'Something went wrong. Please try again or contact us directly by phone or WhatsApp.';
+    })
+    .finally(function () {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Submit';
+    });
+  });
+});
+</script>
 </body>
 </html>

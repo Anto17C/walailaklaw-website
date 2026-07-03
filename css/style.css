@@ -185,7 +185,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .hero-inner { max-width: 560px; position: relative; z-index: 2; }
 
 @media (max-width: 880px) {
-  .hero { background-image: linear-gradient(180deg, rgba(20,17,13,0.94), rgba(20,17,13,0.93)), var(--hero-img-mobile, none) !important; padding: 70px 0 56px; }
+  .hero { padding: 70px 0 56px; }
 }
 .hero h1 { font-size: 44px; color: #fff; margin: 18px 0 18px; letter-spacing: -0.01em; }
 .hero p.lead { font-size: 16.5px; color: var(--text-on-dark-secondary); margin: 0 0 32px; max-width: 520px; }

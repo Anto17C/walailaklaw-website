@@ -432,6 +432,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   transition: transform 0.15s ease;
 }
 .sticky-whatsapp-btn:hover { transform: translateY(-2px); }
+.sticky-line-btn { background: #06c755; padding: 9px; box-sizing: border-box; }
 @media (max-width: 880px) {
   .sticky-whatsapp-btn { display: flex; }
   .scroll-top-btn { bottom: 86px; }

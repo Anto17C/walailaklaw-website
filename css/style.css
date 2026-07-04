@@ -156,10 +156,10 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .nav-cta { gap: 12px; }
 .nav-phone { font-size: 20px; padding: 6px; gap: 0; }
 .phone-text { display: none; }
-.logo img { height: 44px; }
+.logo img { height: 50px; }
 .nav-cta .btn-primary { display: none; }
 }
-.menu-toggle { display: none; background: none; border: none; color: #fff; font-size: 24px; }
+.menu-toggle { display: none; background: none; border: none; color: #fff; font-size: 24px; padding: 8px 12px; margin: -8px -12px; }
 
 @media (max-width: 880px) {
   .nav-links { display: none; }

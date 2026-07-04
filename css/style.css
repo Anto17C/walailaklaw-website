@@ -163,7 +163,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .nav-phone { font-size: 20px; padding: 6px; gap: 0; }
 .phone-text { display: none; }
 }
-.menu-toggle { display: none; background: none; border: none; color: #fff; font-size: 24px; padding: 10px; margin: -10px 0; }
+.menu-toggle { display: none; background: none; border: none; color: #fff; font-size: 28px; padding: 10px; margin: -12px 0; }
 
 @media (max-width: 880px) {
   .nav-links { display: none; }

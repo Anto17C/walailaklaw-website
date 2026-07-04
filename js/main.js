@@ -18,12 +18,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Mobile nav toggle
+  // Mobile nav toggle: opening the menu also expands every submenu at once
   var toggle = document.querySelector('.menu-toggle');
   var links = document.querySelector('.nav-links');
   if (toggle && links) {
     toggle.addEventListener('click', function () {
+      var isOpening = !links.classList.contains('mobile-open');
       links.classList.toggle('mobile-open');
+      if (isOpening) {
+        links.querySelectorAll('.nav-item').forEach(function (item) {
+          if (item.querySelector('.dropdown-menu')) {
+            item.classList.add('mobile-open');
+          }
+        });
+      }
     });
   }
 

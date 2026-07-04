@@ -119,7 +119,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   font-size: 15px;
   letter-spacing: 0.02em;
 }
-.logo img { height: 52px; width: auto; }
+.logo img { height: 40px; width: auto; }
 .nav-links {
   display: flex;
   align-items: center;
@@ -357,7 +357,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .footer-grid p:has(a) { margin: 0 0 4px; }
 .footer-grid a:hover { color: var(--gold); }
 .footer-logo { display: flex; align-items: center; gap: 10px; color: #fff; font-weight: 700; margin-bottom: 14px; }
-.footer-logo img { height: 56px; }
+.footer-logo img { height: 44px; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 22px; display: flex; justify-content: space-between; font-size: 12.5px; flex-wrap: wrap; gap: 8px; }
 .social-row { display: flex; gap: 12px; margin-top: 14px; }
 .social-row a { width: 32px; height: 32px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 14px; transition: transform 0.15s ease; }
@@ -432,6 +432,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   transition: transform 0.15s ease;
 }
 .sticky-whatsapp-btn:hover { transform: translateY(-2px); }
+.sticky-line-btn { background: #06c755; padding: 9px; box-sizing: border-box; }
 @media (max-width: 880px) {
   .sticky-whatsapp-btn { display: flex; }
   .scroll-top-btn { bottom: 86px; }

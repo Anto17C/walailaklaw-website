@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://walailaklaw.com/sitemap.xml

@@ -196,7 +196,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .nav-cta { gap: 10px; }
 .nav-phone { font-size: 20px; padding: 6px; gap: 0; }
 .phone-text { display: none; }
-.nav-socials { gap: 5px; }
+.nav-socials { display: none; }
 .nav-social-link {
   width: 32px;
   height: 32px;
@@ -230,7 +230,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   .nav-links.mobile-open a { padding: 7px 0; width: 100%; }
   .nav-links.mobile-open .nav-item { width: 100%; }
   .nav-cta .btn-outline { display: none; }
-  .nav-cta .btn-primary { display: none; }
+  .nav-cta .btn-primary { display: inline-flex; }
   .menu-toggle { display: block; }
 }
 
@@ -624,7 +624,10 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
     gap: 0;
   }
 
-  .nav-socials { gap: 5px; }
+  .nav-socials {
+    display: flex;
+    gap: 5px;
+  }
 
   .nav-social-link {
     width: 30px;

@@ -129,7 +129,11 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .logo .logo-icon-mobile { display: none; }
 @media (max-width: 880px) {
   .logo .logo-full { display: none; }
-  .logo .logo-icon-mobile { display: block; height: 46px; }
+  .logo .logo-icon-mobile {
+    display: block;
+    width: min(86px, 24vw);
+    height: auto;
+  }
 }
 .nav-links {
   display: flex;
@@ -209,8 +213,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   font-size: 17px;
 }
 .logo .logo-icon-mobile {
-  background: #000;
-  border-radius: 12px;
+  background: transparent;
+  border-radius: 0;
 }
 }
 .menu-toggle { display: none; background: none; border: none; color: #fff; font-size: 28px; padding: 10px; margin: -12px 0; }
@@ -236,7 +240,11 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   .nav-links.mobile-open a { padding: 7px 0; width: 100%; }
   .nav-links.mobile-open .nav-item { width: 100%; }
   .nav-cta .btn-outline { display: none; }
-  .nav-cta .btn-primary { display: inline-flex; }
+  .nav-cta .btn-primary {
+    display: inline-flex;
+    padding: 8px 10px;
+    font-size: 12px;
+  }
   .menu-toggle { display: block; }
 }
 

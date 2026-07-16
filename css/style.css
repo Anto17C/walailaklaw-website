@@ -136,9 +136,9 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   .logo .logo-full { display: none; }
   .logo .logo-icon-mobile {
     display: block;
-    width: clamp(82px, 22vw, 104px);
-    height: auto;
-    max-height: 28px;
+    height: 35px;
+    width: auto;
+    max-width: 45vw;
     object-fit: contain;
     object-position: left center;
   }

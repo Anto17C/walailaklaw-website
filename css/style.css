@@ -131,6 +131,9 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   .container.nav-row {
     gap: 12px;
     justify-content: flex-start;
+    min-height: 71px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .logo .logo-full { display: none; }

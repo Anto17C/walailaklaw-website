@@ -157,16 +157,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="contact-form-col">
         <h2 style="font-size:22px; margin-bottom:18px;">Send us a message</h2>
         <form id="contact-form" style="display:flex; flex-direction:column; gap:12px;">
-          <input type="hidden" name="access_key" value="29ee4653-31f2-4c8a-acc3-bb5c56220612">
-          <input type="hidden" name="subject" value="New Website Inquiry - Walailak Law Firm">
-          <input type="hidden" name="from_name" value="Walailak Law Firm Website">
-          <input type="text" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="xnQsjsdp" value="0e5a0c79f82892431d03ae9513597f70c71a63d41782d6ab4dab2a6df3ff9f16">
+          <input type="hidden" name="zc_gad" id="zc_gad" value="">
+          <input type="hidden" name="xmIwtLD" value="38572f2309485df364f6bf6b4b8062c06420ca7838a6f9aa6368edef43831521f05e479017ae1363006d15787a828e44">
+          <input type="hidden" name="actionType" value="TGVhZHM=">
+          <input type="hidden" name="returnURL" value="null">
+          <input type="hidden" name="LEADCF3" value="https://walailaklaw.com/contact">
+          <input type="hidden" name="Lead Source" value="Inquiry Form">
+          <input type="text" name="aG9uZXlwb3Q" style="display:none;" tabindex="-1" autocomplete="off">
 
-          <input type="text" name="Name" placeholder="Your name" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;">
+          <input type="text" name="Last Name" placeholder="Your name" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;">
           <input type="email" name="Email" placeholder="Your email" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;">
           <input type="tel" name="Phone" placeholder="Contact number" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;">
           <div style="display:flex; gap:12px;">
-            <select name="Case Type" required style="flex:1; border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
+            <select name="LEADCF1" required style="flex:1; border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
               <option value="">Choose case type</option>
               <option>Criminal Case</option>
               <option>Bail Bond</option>
@@ -177,24 +181,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <option>Civil Case</option>
               <option>Arbitration</option>
               <option>Legal Documents</option>
+              <option>Other</option>
             </select>
-            <select name="Urgency" required style="flex:1; border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
+            <select name="LEADCF5" required style="flex:1; border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
               <option value="">Case urgency</option>
               <option>Urgent</option>
               <option>Within a few days</option>
               <option>Not urgent</option>
             </select>
           </div>
-          <select name="Location" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
+          <select name="LEADCF4" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
             <option value="">Select your location</option>
             <option>Pattaya</option>
             <option>Rayong</option>
             <option>Chonburi</option>
             <option>Bangkok</option>
-            <option>Chiangmai</option>
-            <option>Other</option>
+            <option>Chiang Mai</option>
+            <option>Phuket</option>
+            <option>Ayutthaya</option>
+            <option>Samut Prakan</option>
+            <option>Nonthaburi</option>
+            <option>Pathum Thani</option>
+            <option>Chachoengsao</option>
+            <option>Chanthaburi</option>
+            <option>Trat</option>
+            <option>Hua Hin / Prachuap Khiri Khan</option>
+            <option>Other Thailand</option>
+            <option>Outside Thailand</option>
           </select>
-          <textarea name="Message" rows="4" placeholder="Please include any important details, deadlines, or documents (if available)." style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; resize:vertical;"></textarea>
+          <select name="LEADCF2" style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
+            <option value="">Preferred language</option>
+            <option selected>English</option>
+            <option>Thai</option>
+          </select>
+          <textarea name="Description" rows="4" placeholder="Please include any important details, deadlines, or documents (if available)." style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; resize:vertical;"></textarea>
           <button type="submit" class="btn btn-primary" style="width:100%; margin-top:6px;">Submit</button>
           <p id="form-result" style="font-size:13.5px; margin:0; display:none;"></p>
         </form>
@@ -272,30 +292,40 @@ document.addEventListener('DOMContentLoaded', function () {
   var form = document.getElementById('contact-form');
   if (!form) return;
   var result = document.getElementById('form-result');
+  var sourceField = form.querySelector('[name="LEADCF3"]');
+
+  function setSourcePage() {
+    if (!sourceField) return;
+    sourceField.value = window.location.href;
+    sourceField.setAttribute('value', window.location.href);
+  }
+
+  setSourcePage();
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
+    setSourcePage();
     var formData = new FormData(form);
     var submitBtn = form.querySelector('button[type="submit"]');
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
     result.style.display = 'none';
 
-    fetch('https://api.web3forms.com/submit', {
+    fetch('https://crm.zoho.com/crm/WebToLeadForm', {
       method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: formData
+      body: formData,
+      cache: 'no-cache'
     })
-    .then(function (response) { return response.json(); })
+    .then(function (response) {
+      if (!response.ok) throw new Error('Submission failed');
+      return response.text();
+    })
     .then(function (data) {
       result.style.display = 'block';
-      if (data.success) {
-        result.style.color = 'var(--gold-dim)';
-        result.textContent = "Thank you — your message has been sent. We'll respond within 15–60 minutes during office hours.";
-        form.reset();
-      } else {
-        result.style.color = '#c0392b';
-        result.textContent = 'Something went wrong. Please try again or contact us directly by phone or WhatsApp.';
-      }
+      result.style.color = 'var(--gold-dim)';
+      result.textContent = "Thank you — your message has been sent. We'll respond within 15–60 minutes during office hours.";
+      form.reset();
+      setSourcePage();
     })
     .catch(function () {
       result.style.display = 'block';

@@ -51,3 +51,21 @@
 /legal-documents-services/ /legal-documents-services 301
 /pattaya-law-office/ /pattaya-law-office 301
 /rayong-law-office/ /rayong-law-office 301
+
+# Old WordPress/generated URLs that should not serve homepage duplicates
+/blog / 301
+/blog/ / 301
+/thank-you /contact 301
+/thank-you/ /contact 301
+/thank-you/* /contact 301
+/wp-content/uploads/* / 301
+/feed / 301
+/feed/ / 301
+/comments/feed / 301
+/comments/feed/ / 301
+/search/*/feed/rss2 / 301
+/search/*/feed/rss2/ / 301
+/real-estate-services /real-estate-lawyer 301
+/real-estate-services/ /real-estate-lawyer 301
+/real-estate-sevices /real-estate-lawyer 301
+/real-estate-sevices/ /real-estate-lawyer 301

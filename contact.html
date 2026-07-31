@@ -293,11 +293,62 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!form) return;
   var result = document.getElementById('form-result');
   var sourceField = form.querySelector('[name="LEADCF3"]');
+  var web3FormsKey = '29ee4653-31f2-4c8a-acc3-bb5c56220612';
 
   function setSourcePage() {
     if (!sourceField) return;
     sourceField.value = window.location.href;
     sourceField.setAttribute('value', window.location.href);
+  }
+
+  function fieldValue(formData, name) {
+    return (formData.get(name) || '').toString().trim();
+  }
+
+  function buildWeb3FormsPayload(formData) {
+    var name = fieldValue(formData, 'Last Name');
+    var email = fieldValue(formData, 'Email');
+    var phone = fieldValue(formData, 'Phone');
+    var caseType = fieldValue(formData, 'LEADCF1');
+    var urgency = fieldValue(formData, 'LEADCF5');
+    var location = fieldValue(formData, 'LEADCF4');
+    var language = fieldValue(formData, 'LEADCF2');
+    var sourcePage = fieldValue(formData, 'LEADCF3');
+    var leadSource = fieldValue(formData, 'Lead Source');
+    var message = fieldValue(formData, 'Description');
+
+    var details = [
+      'New website inquiry from Walailak Law Firm',
+      '',
+      'Name: ' + name,
+      'Email: ' + email,
+      'Phone: ' + phone,
+      'Case type: ' + caseType,
+      'Urgency: ' + urgency,
+      'Location: ' + location,
+      'Preferred language: ' + language,
+      'Lead source: ' + leadSource,
+      'Source page: ' + sourcePage,
+      '',
+      'Inquiry:',
+      message || '(No message provided)'
+    ].join('\n');
+
+    var payload = new FormData();
+    payload.append('access_key', web3FormsKey);
+    payload.append('subject', 'New website inquiry - ' + (name || 'Walailak Law Firm'));
+    payload.append('from_name', 'Walailak Law Firm Website');
+    payload.append('name', name);
+    payload.append('email', email);
+    payload.append('phone', phone);
+    payload.append('message', details);
+    payload.append('Case Type', caseType);
+    payload.append('Urgency', urgency);
+    payload.append('Location', location);
+    payload.append('Preferred Language', language);
+    payload.append('Lead Source', leadSource);
+    payload.append('Source Page', sourcePage);
+    return payload;
   }
 
   setSourcePage();
@@ -306,21 +357,40 @@ document.addEventListener('DOMContentLoaded', function () {
     e.preventDefault();
     setSourcePage();
     var formData = new FormData(form);
+    var emailData = buildWeb3FormsPayload(formData);
     var submitBtn = form.querySelector('button[type="submit"]');
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
     result.style.display = 'none';
 
-    fetch('https://crm.zoho.com/crm/WebToLeadForm', {
+    var emailSubmission = fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: emailData
+    }).then(function (response) {
+      if (!response.ok) throw new Error('Email submission failed');
+      return response.json();
+    }).then(function (data) {
+      if (!data.success) throw new Error(data.message || 'Email submission failed');
+      return data;
+    });
+
+    var crmSubmission = fetch('https://crm.zoho.com/crm/WebToLeadForm', {
       method: 'POST',
       body: formData,
       cache: 'no-cache'
-    })
-    .then(function (response) {
+    }).then(function (response) {
       if (!response.ok) throw new Error('Submission failed');
       return response.text();
-    })
-    .then(function (data) {
+    });
+
+    Promise.allSettled([emailSubmission, crmSubmission])
+    .then(function (results) {
+      if (results[0].status !== 'fulfilled') {
+        throw results[0].reason || new Error('Email submission failed');
+      }
+      if (results[1].status !== 'fulfilled') {
+        console.warn('Zoho CRM lead submission failed:', results[1].reason);
+      }
       result.style.display = 'block';
       result.style.color = 'var(--gold-dim)';
       result.textContent = "Thank you — your message has been sent. We'll respond within 15–60 minutes during office hours.";

@@ -349,11 +349,14 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
+.services-grid-three { grid-template-columns: repeat(3, 1fr); }
+.services-grid-four { grid-template-columns: repeat(4, 1fr); }
 .service-card {
   background: var(--surface-1);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 26px;
+  min-width: 0;
   transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
 }
 .service-card:hover { border-color: var(--gold-dim); transform: translateY(-3px); box-shadow: var(--shadow-soft); }
@@ -371,10 +374,14 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .service-card .link { font-size: 13px; font-weight: 600; color: var(--gold-dim); display: inline-flex; align-items: center; gap: 4px; }
 
 @media (max-width: 880px) {
-  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-grid,
+  .services-grid-three,
+  .services-grid-four { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 560px) {
   .services-grid { grid-template-columns: 1fr; }
+  .services-grid-three,
+  .services-grid-four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 /* ---------- Process steps ---------- */

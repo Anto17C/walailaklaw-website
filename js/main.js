@@ -48,6 +48,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  // Language dropdown: click to toggle at any width, click outside to close
+  document.querySelectorAll('.lang-trigger').forEach(function (trigger) {
+    trigger.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      trigger.closest('.lang-item').classList.toggle('open');
+    });
+  });
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.lang-item.open').forEach(function (item) {
+      if (!item.contains(e.target)) item.classList.remove('open');
+    });
+  });
+
   // Scroll-to-top button
   var scrollBtn = document.createElement('button');
   scrollBtn.className = 'scroll-top-btn';

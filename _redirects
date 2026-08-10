@@ -1,5 +1,6 @@
 /index.html / 301
 /th/index.html /th/ 301
+/fr/index.html /fr/ 301
 
 /about.html /about 301
 /services.html /services 301
@@ -32,6 +33,22 @@
 /th/legal-documents-services.html /th/legal-documents-services 301
 /th/pattaya-law-office.html /th/pattaya-law-office 301
 /th/rayong-law-office.html /th/rayong-law-office 301
+
+/fr/about.html /fr/about 301
+/fr/services.html /fr/services 301
+/fr/faqs.html /fr/faqs 301
+/fr/contact.html /fr/contact 301
+/fr/criminal-defence-lawyer.html /fr/criminal-defence-lawyer 301
+/fr/bail-bond-services.html /fr/bail-bond-services 301
+/fr/family-law-services.html /fr/family-law-services 301
+/fr/real-estate-lawyer.html /fr/real-estate-lawyer 301
+/fr/company-registration-services.html /fr/company-registration-services 301
+/fr/visa-work-permit.html /fr/visa-work-permit 301
+/fr/civil-litigation-services.html /fr/civil-litigation-services 301
+/fr/arbitration-lawyer.html /fr/arbitration-lawyer 301
+/fr/legal-documents-services.html /fr/legal-documents-services 301
+/fr/pattaya-law-office.html /fr/pattaya-law-office 301
+/fr/rayong-law-office.html /fr/rayong-law-office 301
 
 /about-law-firm/ /about 301
 /about/ /about 301

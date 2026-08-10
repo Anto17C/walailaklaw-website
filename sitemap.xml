@@ -4,160 +4,288 @@
     <loc>https://walailaklaw.com/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/" />
   </url>
   <url>
     <loc>https://walailaklaw.com/th/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/" />
+  </url>
+  <url>
+    <loc>https://walailaklaw.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/" />
   </url>
   <url>
     <loc>https://walailaklaw.com/about</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/about" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/about" />
   </url>
   <url>
     <loc>https://walailaklaw.com/th/about</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/about" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/about" />
+  </url>
+  <url>
+    <loc>https://walailaklaw.com/fr/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/about" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/about" />
   </url>
   <url>
     <loc>https://walailaklaw.com/services</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/services" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/services" />
   </url>
   <url>
     <loc>https://walailaklaw.com/th/services</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/services" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/services" />
+  </url>
+  <url>
+    <loc>https://walailaklaw.com/fr/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/services" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/services" />
   </url>
   <url>
     <loc>https://walailaklaw.com/faqs</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/faqs" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/faqs" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/faqs" />
   </url>
   <url>
     <loc>https://walailaklaw.com/th/faqs</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/faqs" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/faqs" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/faqs" />
+  </url>
+  <url>
+    <loc>https://walailaklaw.com/fr/faqs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/faqs" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/faqs" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/faqs" />
   </url>
   <url>
     <loc>https://walailaklaw.com/contact</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/contact" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/contact" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/contact" />
   </url>
   <url>
     <loc>https://walailaklaw.com/th/contact</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/contact" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/contact" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/contact" />
+  </url>
+  <url>
+    <loc>https://walailaklaw.com/fr/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/contact" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/contact" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/contact" />
   </url>
   <url>
     <loc>https://walailaklaw.com/criminal-defence-lawyer</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/criminal-defence-lawyer" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/criminal-defence-lawyer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/criminal-defence-lawyer" />
   </url>
   <url>
     <loc>https://walailaklaw.com/th/criminal-defence-lawyer</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/criminal-defence-lawyer" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/criminal-defence-lawyer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/criminal-defence-lawyer" />
+  </url>
+  <url>
+    <loc>https://walailaklaw.com/fr/criminal-defence-lawyer</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/criminal-defence-lawyer" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/criminal-defence-lawyer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/criminal-defence-lawyer" />
   </url>
   <url>
     <loc>https://walailaklaw.com/bail-bond-services</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/bail-bond-services" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/bail-bond-services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/bail-bond-services" />
   </url>
   <url>
     <loc>https://walailaklaw.com/th/bail-bond-services</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/bail-bond-services" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/bail-bond-services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/bail-bond-services" />
+  </url>
+  <url>
+    <loc>https://walailaklaw.com/fr/bail-bond-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/bail-bond-services" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/bail-bond-services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/bail-bond-services" />
   </url>
   <url>
     <loc>https://walailaklaw.com/family-law-services</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/family-law-services" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/family-law-services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/family-law-services" />
   </url>
   <url>
     <loc>https://walailaklaw.com/th/family-law-services</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/family-law-services" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/family-law-services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/family-law-services" />
+  </url>
+  <url>
+    <loc>https://walailaklaw.com/fr/family-law-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/family-law-services" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/family-law-services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/family-law-services" />
   </url>
   <url>
     <loc>https://walailaklaw.com/real-estate-lawyer</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/real-estate-lawyer" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/real-estate-lawyer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/real-estate-lawyer" />
   </url>
   <url>
     <loc>https://walailaklaw.com/th/real-estate-lawyer</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/real-estate-lawyer" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/real-estate-lawyer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/real-estate-lawyer" />
+  </url>
+  <url>
+    <loc>https://walailaklaw.com/fr/real-estate-lawyer</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/real-estate-lawyer" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/real-estate-lawyer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/real-estate-lawyer" />
   </url>
   <url>
     <loc>https://walailaklaw.com/company-registration-services</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/company-registration-services" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/company-registration-services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/company-registration-services" />
   </url>
   <url>
     <loc>https://walailaklaw.com/th/company-registration-services</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/company-registration-services" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/company-registration-services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/company-registration-services" />
+  </url>
+  <url>
+    <loc>https://walailaklaw.com/fr/company-registration-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/company-registration-services" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/company-registration-services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/company-registration-services" />
   </url>
   <url>
     <loc>https://walailaklaw.com/visa-work-permit</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/visa-work-permit" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/visa-work-permit" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/visa-work-permit" />
   </url>
   <url>
     <loc>https://walailaklaw.com/th/visa-work-permit</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/visa-work-permit" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/visa-work-permit" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/visa-work-permit" />
+  </url>
+  <url>
+    <loc>https://walailaklaw.com/fr/visa-work-permit</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/visa-work-permit" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/visa-work-permit" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/visa-work-permit" />
   </url>
   <url>
     <loc>https://walailaklaw.com/civil-litigation-services</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/civil-litigation-services" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/civil-litigation-services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/civil-litigation-services" />
   </url>
   <url>
     <loc>https://walailaklaw.com/th/civil-litigation-services</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/civil-litigation-services" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/civil-litigation-services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/civil-litigation-services" />
+  </url>
+  <url>
+    <loc>https://walailaklaw.com/fr/civil-litigation-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/civil-litigation-services" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/civil-litigation-services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/civil-litigation-services" />
   </url>
   <url>
     <loc>https://walailaklaw.com/arbitration-lawyer</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/arbitration-lawyer" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/arbitration-lawyer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/arbitration-lawyer" />
   </url>
   <url>
     <loc>https://walailaklaw.com/th/arbitration-lawyer</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/arbitration-lawyer" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/arbitration-lawyer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/arbitration-lawyer" />
+  </url>
+  <url>
+    <loc>https://walailaklaw.com/fr/arbitration-lawyer</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/arbitration-lawyer" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/arbitration-lawyer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/arbitration-lawyer" />
   </url>
   <url>
     <loc>https://walailaklaw.com/legal-documents-services</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/legal-documents-services" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/legal-documents-services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/legal-documents-services" />
   </url>
   <url>
     <loc>https://walailaklaw.com/th/legal-documents-services</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/legal-documents-services" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/legal-documents-services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/legal-documents-services" />
+  </url>
+  <url>
+    <loc>https://walailaklaw.com/fr/legal-documents-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/legal-documents-services" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/legal-documents-services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/legal-documents-services" />
   </url>
   <url>
     <loc>https://walailaklaw.com/pattaya-law-office</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/pattaya-law-office" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/pattaya-law-office" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/pattaya-law-office" />
   </url>
   <url>
     <loc>https://walailaklaw.com/th/pattaya-law-office</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/pattaya-law-office" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/pattaya-law-office" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/pattaya-law-office" />
+  </url>
+  <url>
+    <loc>https://walailaklaw.com/fr/pattaya-law-office</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/pattaya-law-office" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/pattaya-law-office" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/pattaya-law-office" />
   </url>
   <url>
     <loc>https://walailaklaw.com/rayong-law-office</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/rayong-law-office" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/rayong-law-office" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/rayong-law-office" />
   </url>
   <url>
     <loc>https://walailaklaw.com/th/rayong-law-office</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/rayong-law-office" />
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/rayong-law-office" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/rayong-law-office" />
+  </url>
+  <url>
+    <loc>https://walailaklaw.com/fr/rayong-law-office</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://walailaklaw.com/rayong-law-office" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/rayong-law-office" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/rayong-law-office" />
   </url>
 </urlset>

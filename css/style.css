@@ -100,6 +100,30 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .btn-sm { padding: 9px 16px; font-size: 13px; }
 .nav-cta .btn-primary { padding: 8px 14px; font-size: 12.5px; white-space: nowrap; }
 
+/* ---------- 404 ---------- */
+.not-found-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 48px 24px;
+}
+.not-found-content {
+  max-width: 520px;
+  text-align: center;
+}
+.not-found-logo {
+  width: 88px;
+  margin: 0 auto 28px;
+}
+.not-found-content h1 {
+  margin-bottom: 14px;
+  font-size: clamp(36px, 7vw, 64px);
+}
+.not-found-content p {
+  margin: 0 0 28px;
+  color: var(--text-secondary);
+}
+
 /* ---------- Header / Nav ---------- */
 .site-header {
   background: var(--ink);

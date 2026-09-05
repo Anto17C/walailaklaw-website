@@ -30,6 +30,7 @@
 /locations/nonthaburi.html /locations/nonthaburi 301
 /locations/samut-prakan.html /locations/samut-prakan 301
 /locations/ayutthaya.html /locations/ayutthaya 301
+/locations/chiang-rai.html /locations/chiang-rai 301
 /rayong-property-due-diligence.html /rayong-property-due-diligence 301
 /rayong-property-disputes.html /rayong-property-disputes 301
 /rayong-wills-estate-planning.html /rayong-wills-estate-planning 301
@@ -86,6 +87,10 @@
 /ayutthaya-supply-chain-disputes-debt-recovery.html /ayutthaya-supply-chain-disputes-debt-recovery 301
 /ayutthaya-industrial-property-due-diligence.html /ayutthaya-industrial-property-due-diligence 301
 /ayutthaya-employment-visa-work-permit.html /ayutthaya-employment-visa-work-permit 301
+/chiang-rai-company-cross-border-trade.html /chiang-rai-company-cross-border-trade 301
+/chiang-rai-property-due-diligence.html /chiang-rai-property-due-diligence 301
+/chiang-rai-commercial-disputes-debt-recovery.html /chiang-rai-commercial-disputes-debt-recovery 301
+/chiang-rai-family-wills-estates.html /chiang-rai-family-wills-estates 301
 
 /th/about.html /th/about 301
 /th/services.html /th/services 301
@@ -168,6 +173,7 @@
 /locations/nonthaburi/ /locations/nonthaburi 301
 /locations/samut-prakan/ /locations/samut-prakan 301
 /locations/ayutthaya/ /locations/ayutthaya 301
+/locations/chiang-rai/ /locations/chiang-rai 301
 /rayong-property-due-diligence/ /rayong-property-due-diligence 301
 /rayong-property-disputes/ /rayong-property-disputes 301
 /rayong-wills-estate-planning/ /rayong-wills-estate-planning 301
@@ -224,6 +230,10 @@
 /ayutthaya-supply-chain-disputes-debt-recovery/ /ayutthaya-supply-chain-disputes-debt-recovery 301
 /ayutthaya-industrial-property-due-diligence/ /ayutthaya-industrial-property-due-diligence 301
 /ayutthaya-employment-visa-work-permit/ /ayutthaya-employment-visa-work-permit 301
+/chiang-rai-company-cross-border-trade/ /chiang-rai-company-cross-border-trade 301
+/chiang-rai-property-due-diligence/ /chiang-rai-property-due-diligence 301
+/chiang-rai-commercial-disputes-debt-recovery/ /chiang-rai-commercial-disputes-debt-recovery 301
+/chiang-rai-family-wills-estates/ /chiang-rai-family-wills-estates 301
 
 # Old WordPress/generated URLs that should not serve homepage duplicates
 /blog /404.html 404

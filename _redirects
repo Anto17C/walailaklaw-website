@@ -29,6 +29,7 @@
 /locations/pathum-thani.html /locations/pathum-thani 301
 /locations/nonthaburi.html /locations/nonthaburi 301
 /locations/samut-prakan.html /locations/samut-prakan 301
+/locations/ayutthaya.html /locations/ayutthaya 301
 /rayong-property-due-diligence.html /rayong-property-due-diligence 301
 /rayong-property-disputes.html /rayong-property-disputes 301
 /rayong-wills-estate-planning.html /rayong-wills-estate-planning 301
@@ -81,6 +82,10 @@
 /samut-prakan-commercial-disputes-debt-recovery.html /samut-prakan-commercial-disputes-debt-recovery 301
 /samut-prakan-industrial-property-due-diligence.html /samut-prakan-industrial-property-due-diligence 301
 /samut-prakan-employment-visa-work-permit.html /samut-prakan-employment-visa-work-permit 301
+/ayutthaya-company-boi-investment.html /ayutthaya-company-boi-investment 301
+/ayutthaya-supply-chain-disputes-debt-recovery.html /ayutthaya-supply-chain-disputes-debt-recovery 301
+/ayutthaya-industrial-property-due-diligence.html /ayutthaya-industrial-property-due-diligence 301
+/ayutthaya-employment-visa-work-permit.html /ayutthaya-employment-visa-work-permit 301
 
 /th/about.html /th/about 301
 /th/services.html /th/services 301
@@ -162,6 +167,7 @@
 /locations/pathum-thani/ /locations/pathum-thani 301
 /locations/nonthaburi/ /locations/nonthaburi 301
 /locations/samut-prakan/ /locations/samut-prakan 301
+/locations/ayutthaya/ /locations/ayutthaya 301
 /rayong-property-due-diligence/ /rayong-property-due-diligence 301
 /rayong-property-disputes/ /rayong-property-disputes 301
 /rayong-wills-estate-planning/ /rayong-wills-estate-planning 301
@@ -214,6 +220,10 @@
 /samut-prakan-commercial-disputes-debt-recovery/ /samut-prakan-commercial-disputes-debt-recovery 301
 /samut-prakan-industrial-property-due-diligence/ /samut-prakan-industrial-property-due-diligence 301
 /samut-prakan-employment-visa-work-permit/ /samut-prakan-employment-visa-work-permit 301
+/ayutthaya-company-boi-investment/ /ayutthaya-company-boi-investment 301
+/ayutthaya-supply-chain-disputes-debt-recovery/ /ayutthaya-supply-chain-disputes-debt-recovery 301
+/ayutthaya-industrial-property-due-diligence/ /ayutthaya-industrial-property-due-diligence 301
+/ayutthaya-employment-visa-work-permit/ /ayutthaya-employment-visa-work-permit 301
 
 # Old WordPress/generated URLs that should not serve homepage duplicates
 /blog /404.html 404

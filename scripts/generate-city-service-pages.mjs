@@ -396,6 +396,62 @@ const pages = [
     warningTitle: 'One document may not control every asset or country',
     warning: 'Thai and overseas assets can be subject to different succession, tax and administration rules. Company interests, jointly held property and assets registered in another person’s name also require careful analysis. The scope should distinguish what the Thai plan can achieve from advice needed in another jurisdiction.',
     related: [['Property due diligence in Chonburi','/chonburi-property-due-diligence'],['Legal document services','/legal-documents-services'],['Chonburi legal services','/locations/chonburi']]
+  },
+  {
+    slug: 'hua-hin-property-due-diligence', city: 'Hua Hin', office: '/locations/hua-hin', practice: '/real-estate-lawyer', image: 'real-estate-lawyer.webp',
+    title: 'Property Due Diligence in Hua Hin | Walailak Law Firm',
+    description: 'Independent property due diligence in Hua Hin for villas, houses, condominiums, land purchases and long-term leasehold arrangements.',
+    eyebrow: 'HUA HIN PROPERTY SERVICES', h1: 'Property Due Diligence in Hua Hin',
+    lead: 'Independent title, contract and transaction review before buying or leasing a villa, house, condominium or land interest in Hua Hin.',
+    introTitle: 'Understand the legal structure before paying the deposit',
+    intro: 'Hua Hin property transactions may involve a resort condominium, managed villa development, resale house, land purchased by a Thai spouse or a long-term lease proposed to a foreign buyer. Walailak Law Firm acts independently from the seller, agent and developer, examining the property documents and proposed ownership arrangement before substantial funds are committed.',
+    situations: ['A new-build or resale condominium purchase','A villa or house within a managed development','Land purchased by a Thai spouse or partner','A proposed long-term lease, usufruct or superficies','A property with an existing mortgage or registered right','An overseas buyer needing remote review before travelling'],
+    checks: ['Verify title, registered owner and material encumbrances','Review seller, developer, company and signing authority','Examine reservation, sale, lease and management agreements','Review available access, building and development records','Plan ownership, remittance, payment and transfer documentation','Coordinate Land Office work through our Hua Hin local counsel when required'],
+    warningTitle: 'Marketing descriptions are not legal rights',
+    warning: 'Expressions such as villa ownership, guaranteed return, renewable lease or foreign-friendly structure may not describe the exact rights registered or enforceable in Thailand. The title, buildings, contracts and intended ownership arrangement should be reviewed together.',
+    related: [['Wills and estate planning in Hua Hin','/hua-hin-wills-estate-planning'],['Family law in Hua Hin','/hua-hin-family-divorce-mediation'],['Hua Hin legal services','/locations/hua-hin']]
+  },
+  {
+    slug: 'hua-hin-wills-estate-planning', city: 'Hua Hin', office: '/locations/hua-hin', practice: '/legal-documents-services', image: 'legal-documents-lawyer.webp',
+    title: 'Wills and Estate Planning in Hua Hin | Walailak Law Firm',
+    description: 'Thai wills and estate planning in Hua Hin for foreign residents, retirees, international families, property owners and overseas beneficiaries.',
+    eyebrow: 'HUA HIN WILLS & ESTATES', h1: 'Wills & Estate Planning in Hua Hin',
+    lead: 'Clear planning for Thai homes, condominiums, bank accounts, personal assets and beneficiaries living in Thailand or overseas.',
+    introTitle: 'A practical plan begins with actual ownership',
+    intro: 'Many Hua Hin residents have built a long-term life in Thailand while retaining family, assets or an existing will overseas. A Thai home may be held through condominium ownership, a spouse’s land title, a lease or registered rights. Walailak Law Firm maps the Thai assets and family circumstances before preparing a will and any supporting documents.',
+    situations: ['A foreign retiree preparing a Thai will','An international couple coordinating succession plans','A Hua Hin villa, house or condominium owner','A home registered in a Thai spouse’s name','Children or beneficiaries who live outside Thailand','An existing overseas will that may overlap with Thai assets'],
+    checks: ['Identify Thai assets and confirm how each is owned','Review marriage, children and intended beneficiaries','Consider executor, witness, language and safekeeping arrangements','Assess leases, usufructs and related property documents','Prepare the agreed Thai will and English explanation','Explain execution, copies and future updates'],
+    warningTitle: 'A will cannot transfer rights the estate does not own',
+    warning: 'Property registered to a spouse, leased property, company-held assets and overseas assets each require separate analysis. The estate plan should distinguish ownership from occupation or contractual rights and identify where advice from another jurisdiction is needed.',
+    related: [['Property due diligence in Hua Hin','/hua-hin-property-due-diligence'],['Family law in Hua Hin','/hua-hin-family-divorce-mediation'],['Hua Hin legal services','/locations/hua-hin']]
+  },
+  {
+    slug: 'hua-hin-family-divorce-mediation', city: 'Hua Hin', office: '/locations/hua-hin', practice: '/family-law-services', image: 'family-lawyer.webp',
+    title: 'Family, Divorce and Mediation Services in Hua Hin | Walailak Law Firm',
+    description: 'Family, divorce and mediation legal services in Hua Hin for international couples, foreign residents and cross-border family matters.',
+    eyebrow: 'HUA HIN FAMILY LAW', h1: 'Family, Divorce & Mediation in Hua Hin',
+    lead: 'Discreet advice for international couples addressing separation, divorce, children, finances and property across more than one country.',
+    introTitle: 'Understand the family’s complete position first',
+    intro: 'A Hua Hin family matter may involve a Thai-foreign marriage, retirement income, a locally occupied home, assets overseas or children with more than one nationality. Walailak Law Firm identifies the registrations, documents, jurisdictions and immediate concerns before recommending negotiation, mediation, an administrative process or court proceedings.',
+    situations: ['An agreed or contested divorce involving an international couple','Negotiation over a home, savings, support or other assets','Parental-power, residence or contact arrangements for children','A marriage or divorce registered in another country','A spouse living overseas while the family or assets are in Thailand','A sensitive dispute where early mediation may be constructive'],
+    checks: ['Review marriage, identity and family-registration documents','Identify Thai and overseas assets, income and liabilities','Assess jurisdiction and recognition issues','Define child-related facts and urgent safeguards','Prepare negotiation, mediation or settlement documentation','Manage proceedings with our Hua Hin local counsel when required'],
+    warningTitle: 'One process may not resolve every cross-border issue',
+    warning: 'A Thai divorce, foreign divorce, property transfer and child arrangement may involve different authorities and recognition rules. Advice should clarify what each step achieves and how the sequence affects rights in Thailand and abroad.',
+    related: [['Wills and estate planning in Hua Hin','/hua-hin-wills-estate-planning'],['Family law services','/family-law-services'],['Hua Hin legal services','/locations/hua-hin']]
+  },
+  {
+    slug: 'hua-hin-company-hospitality-services', city: 'Hua Hin', office: '/locations/hua-hin', practice: '/company-registration-services', image: 'company-registration-lawyer.webp',
+    title: 'Company and Hospitality Legal Services in Hua Hin | Walailak Law Firm',
+    description: 'Company, contract and operational legal support in Hua Hin for hotels, restaurants, wellness, property management and service businesses.',
+    eyebrow: 'HUA HIN BUSINESS SERVICES', h1: 'Company & Hospitality Services in Hua Hin',
+    lead: 'Lawful structuring and coordinated legal support for hospitality, wellness, restaurant, property-management and service businesses.',
+    introTitle: 'Build the company around its real activity',
+    intro: 'Hua Hin’s resort economy supports hotels, restaurants, wellness businesses, property services and other ventures serving residents and visitors. Foreign ownership, premises, licences, employment and management arrangements can change the legal route. Walailak Law Firm reviews the proposed operation before implementing the company and commercial documents.',
+    situations: ['A foreign investor establishing a hospitality or service business','A hotel, restaurant, wellness or leisure operation','A property-management or rental-services business','An existing company adding shareholders, capital or activities','A business employing Thai staff and foreign managers','A shareholder, lease or operating agreement requiring review'],
+    checks: ['Clarify services, customers, revenue and operating location','Assess lawful ownership without nominee arrangements','Identify registration, licence and premises requirements','Prepare corporate and shareholder documentation','Review leases, supplier and operating agreements','Coordinate employment, visa and work-permit requirements'],
+    warningTitle: 'Property control and business control are separate',
+    warning: 'A lease or interest in premises does not by itself authorize a company’s activity, and company registration does not validate nominee ownership or eliminate licensing requirements. The structure should connect genuine investment, management, premises and operations.',
+    related: [['Property due diligence in Hua Hin','/hua-hin-property-due-diligence'],['Company registration services','/company-registration-services'],['Hua Hin legal services','/locations/hua-hin']]
   }
 ];
 

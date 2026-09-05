@@ -88,6 +88,23 @@ const locations = [
     ],
     focus: 'Remote consultations and document review can begin before a client travels. Walailak Law Firm decides whether to handle every stage directly, arrange travel when appropriate or involve our Chiang Mai local counsel for a defined role while the firm continues to lead the matter.',
     related: [['Phuket','/locations/phuket'],['Bangkok enquiries','/contact'],['All locations','/locations']]
+  },
+  {
+    slug: 'hua-hin', name: 'Hua Hin', image: 'real-estate-lawyer.webp',
+    title: 'English-Speaking Lawyers in Hua Hin | Walailak Law Firm',
+    description: 'English-speaking legal services in Hua Hin for foreign residents, property owners, international families and hospitality businesses.',
+    lead: 'Independent legal support for foreign residents, property clients, international families and businesses in Hua Hin and nearby resort communities.',
+    contextTitle: 'Legal support for a mature resort and residential market',
+    context: 'Hua Hin combines established resort businesses, condominium and villa developments, retirement communities and long-term international residents. Legal matters often involve property ownership, Thai wills, international family circumstances or businesses serving the tourism and residential market. Walailak Law Firm provides the service directly and involves our Hua Hin local counsel when local attendance adds practical value.',
+    clients: ['Foreign residents and retirees', 'Villa, house and condominium buyers', 'International couples and families', 'Hospitality and service-business operators'],
+    services: [
+      ['Property due diligence', 'Independent title, contract and ownership review for houses, villas, condominiums, land and leasehold interests.', '/hua-hin-property-due-diligence'],
+      ['Wills & estate planning', 'Thai wills and succession planning for local property, accounts, family arrangements and overseas beneficiaries.', '/hua-hin-wills-estate-planning'],
+      ['Family, divorce & mediation', 'Discreet advice on separation, divorce, children, financial arrangements and cross-border family matters.', '/hua-hin-family-divorce-mediation'],
+      ['Company & hospitality support', 'Lawful business structuring, contracts, employment and operational coordination for hospitality and service businesses.', '/hua-hin-company-hospitality-services']
+    ],
+    focus: 'Walailak Law Firm may manage the entire engagement remotely or travel when appropriate. If a Land Office, court, authority or other local step benefits from support in Hua Hin, the firm assigns and manages our established local counsel while remaining responsible for the matter.',
+    related: [['Bangkok enquiries','/contact'],['Phuket','/locations/phuket'],['All locations','/locations']]
   }
 ];
 

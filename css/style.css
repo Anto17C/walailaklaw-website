@@ -782,9 +782,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   display: flex;
   align-items: center;
   gap: 12px;
-  position: absolute;
-  left: 0;
-  bottom: -58px;
+  position: relative;
+  margin-top: 24px;
   z-index: 2;
 }
 .hero-direct-label {
@@ -825,16 +824,15 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   height: 20px;
   border-radius: 5px;
 }
-.hero-sm .hero-direct-contact { bottom: -54px; }
+.hero-sm .hero-direct-contact { margin-top: 20px; }
 
 @media (max-width: 700px) {
   .hero-direct-contact {
-    bottom: -46px;
+    margin-top: 20px;
   }
   .hero-direct-label { display: none; }
   .hero-direct-link {
     width: 36px;
     height: 36px;
   }
-  .hero-sm .hero-direct-contact { bottom: -46px; }
 }

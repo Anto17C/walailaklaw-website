@@ -778,8 +778,9 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 24px;
-  position: relative;
+  position: absolute;
+  left: 0;
+  bottom: -58px;
   z-index: 2;
 }
 .hero-direct-label {
@@ -820,18 +821,16 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   height: 20px;
   border-radius: 5px;
 }
-.hero-sm .hero-direct-contact { margin-top: 20px; }
+.hero-sm .hero-direct-contact { bottom: -54px; }
 
 @media (max-width: 700px) {
   .hero-direct-contact {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 9px;
-    margin-top: 20px;
+    bottom: -46px;
   }
-  .hero-direct-label { font-size: 12.5px; }
+  .hero-direct-label { display: none; }
   .hero-direct-link {
     width: 36px;
     height: 36px;
   }
+  .hero-sm .hero-direct-contact { bottom: -46px; }
 }

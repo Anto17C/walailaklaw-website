@@ -499,7 +499,13 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   gap: 20px;
   flex-wrap: wrap;
 }
-.contact-module h4 { font-size: 15px; font-weight: 600; margin: 0 0 4px; }
+.contact-module h4 {
+  display: block;
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
 .contact-module p { font-size: 13px; color: var(--text-secondary); margin: 0; }
 .contact-icons { display: flex; gap: 18px; align-items: center; }
 .contact-icons .icon-circle {

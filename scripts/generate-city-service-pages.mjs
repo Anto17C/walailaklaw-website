@@ -116,6 +116,62 @@ const pages = [
     warningTitle: 'Administrative support and legal representation are different scopes',
     warning: 'Using a professional address, receiving correspondence and accepting formal legal documents may require different arrangements. The engagement should state exactly what the firm is authorized to receive, how notice will be given and whether advice or representation is included.',
     related: [['Property due diligence in Pattaya','/pattaya-property-due-diligence'],['Civil litigation services','/civil-litigation-services'],['Pattaya law office','/pattaya-law-office']]
+  },
+  {
+    slug: 'phuket-property-due-diligence', city: 'Phuket', office: '/locations/phuket', practice: '/real-estate-lawyer', image: 'real-estate-lawyer.webp',
+    title: 'Property Due Diligence Lawyer in Phuket | Walailak Law Firm',
+    description: 'Independent property due diligence in Phuket for villa, condominium, house and leasehold purchases, including title, building and contract review.',
+    eyebrow: 'PHUKET PROPERTY SERVICES', h1: 'Property Due Diligence in Phuket',
+    lead: 'Independent legal review for foreign buyers and investors before reserving, contracting for or completing a Phuket property purchase.',
+    introTitle: 'Verify the property and ownership structure before committing funds',
+    intro: 'Phuket transactions may involve a condominium under the foreign ownership quota, a villa on leased land, a Thai spouse purchasing land, a resale within a managed development or a proposed company structure. Walailak Law Firm reviews the actual documents and intended rights independently from the seller, agent and developer before advising on the transaction.',
+    situations: ['An off-plan or completed condominium purchase','A villa or house within a managed development','A leasehold acquisition or assignment','Land purchased by a Thai spouse or partner','A resale involving a company, developer or existing mortgage','An overseas buyer reviewing documents remotely'],
+    checks: ['Verify title, registered owner and material encumbrances','Review seller, developer or company authority','Examine contracts, payment stages and completion conditions','Review available permits, access and common-area arrangements','Assess foreign-quota, remittance and registration documentation','Plan closing, Land Office attendance and post-completion records'],
+    warningTitle: 'Marketing descriptions do not define the legal asset',
+    warning: 'A “villa purchase” may legally involve several different rights and documents relating to the land, building, lease, common areas and management arrangements. Due diligence should identify exactly what will be owned or registered, for how long, and under which enforceable documents.',
+    related: [['Leasehold and property disputes in Phuket','/phuket-property-disputes'],['Wills and estate planning in Phuket','/phuket-wills-estate-planning'],['Phuket legal services','/locations/phuket']]
+  },
+  {
+    slug: 'phuket-property-disputes', city: 'Phuket', office: '/locations/phuket', practice: '/civil-litigation-services', image: 'civil-litigation-lawyer.webp',
+    title: 'Property and Leasehold Dispute Lawyer in Phuket | Walailak Law Firm',
+    description: 'Legal assistance for Phuket villa, condominium, leasehold, developer, management-fee, defect and property contract disputes.',
+    eyebrow: 'PHUKET PROPERTY DISPUTES', h1: 'Property & Leasehold Disputes in Phuket',
+    lead: 'Contract assessment, negotiation and representation when a Phuket property purchase, lease or development relationship becomes disputed.',
+    introTitle: 'The legal response begins with the transaction documents',
+    intro: 'Property disputes in Phuket can involve delayed construction, defects, unfulfilled developer promises, lease renewal language, management charges, withheld deposits, ownership structures or disagreement over the use and transfer of a villa or condominium. The available remedy depends on the documents, evidence, parties and timing of the dispute.',
+    situations: ['A developer has delayed or failed to complete','The delivered property differs from the agreement','A lease renewal, assignment or termination is disputed','Management, common-area or maintenance charges are challenged','A deposit or purchase payment is being withheld','Ownership or control of a property-holding company is disputed'],
+    checks: ['Conflict check and document chronology','Contract, payment and correspondence analysis','Review of photographs, inspection material and expert evidence','Assessment of notices, termination and available remedies','Negotiation, mediation or settlement strategy','Court proceedings and enforcement planning where appropriate'],
+    warningTitle: 'Act before positions and evidence deteriorate',
+    warning: 'Continuing to pay, accepting revised terms or waiting through repeated informal promises may affect the practical options. Early advice can identify which rights should be reserved, which evidence should be secured and whether a negotiated or formal route is proportionate.',
+    related: [['Property due diligence in Phuket','/phuket-property-due-diligence'],['Company and hospitality services in Phuket','/phuket-company-registration-hospitality'],['Phuket legal services','/locations/phuket']]
+  },
+  {
+    slug: 'phuket-company-registration-hospitality', city: 'Phuket', office: '/locations/phuket', practice: '/company-registration-services', image: 'company-registration-lawyer.webp',
+    title: 'Company Registration and Hospitality Lawyer in Phuket | Walailak Law Firm',
+    description: 'Company registration, foreign ownership, contracts and hospitality business legal support in Phuket for investors and operators.',
+    eyebrow: 'PHUKET BUSINESS SERVICES', h1: 'Company & Hospitality Legal Services in Phuket',
+    lead: 'Lawful business structuring and operational support for Phuket hospitality, tourism, property-service and international ventures.',
+    introTitle: 'Build the structure around the real business—not a nominal arrangement',
+    intro: 'A Phuket business may combine premises, licences, staff, foreign investment, management agreements and customer contracts. Walailak Law Firm begins with the actual activity, ownership, funding and decision-making model before advising on company registration, foreign-business restrictions, investment promotion or other operational requirements.',
+    situations: ['A hotel, resort, restaurant or hospitality venture','A property-management or tourism-related service','An investor acquiring shares in an existing Phuket company','A foreign entrepreneur establishing an operating business','A business reviewing ownership, directors or shareholder arrangements','An operator needing employment, contract and compliance support'],
+    checks: ['Clarify activities, ownership, funding and management control','Assess lawful registration, licensing and foreign-investment routes','Conduct company and transaction due diligence where relevant','Prepare shareholder, director and commercial documents','Coordinate employment, visa and work-permit planning','Support leases, operating contracts and continuing compliance'],
+    warningTitle: 'Nominee ownership is not a business solution',
+    warning: 'Shareholders and governance arrangements should reflect genuine legal and commercial relationships. A structure designed only to conceal foreign ownership or control can create regulatory, criminal, asset and dispute risk. The correct route depends on the activity, investment and licences actually required.',
+    related: [['Property due diligence in Phuket','/phuket-property-due-diligence'],['Property disputes in Phuket','/phuket-property-disputes'],['Phuket legal services','/locations/phuket']]
+  },
+  {
+    slug: 'phuket-wills-estate-planning', city: 'Phuket', office: '/locations/phuket', practice: '/legal-documents-services', image: 'family-lawyer.webp',
+    title: 'Wills and Estate Planning Lawyer in Phuket | Walailak Law Firm',
+    description: 'Thai wills and estate planning in Phuket for foreign residents, villa and condominium owners, international families and overseas beneficiaries.',
+    eyebrow: 'PHUKET WILLS & ESTATES', h1: 'Wills & Estate Planning in Phuket',
+    lead: 'Thai estate planning for villa and condominium owners, foreign residents, international couples and beneficiaries living overseas.',
+    introTitle: 'Plan around the rights actually owned in Thailand',
+    intro: 'Phuket estates may include a foreign-owned condominium, a villa building, leasehold rights, shares in a Thai company, bank accounts, vehicles or agreements connected to land held by a spouse. Walailak Law Firm identifies the legal owner and nature of each Thai asset before preparing the will and any related succession documents.',
+    situations: ['A foreign owner of a Phuket condominium','A villa owner with registered leasehold rights','A resident holding shares in a Thai company','International spouses with Thai and overseas assets','Children, executors or beneficiaries outside Thailand','An existing foreign will that must be coordinated with Thai planning'],
+    checks: ['Map Thai assets, ownership and registered rights','Review family, marriage and beneficiary circumstances','Coordinate the Thai scope with foreign planning where necessary','Select suitable executor and signing arrangements','Prepare the agreed will and supporting explanation','Address storage, copies and future changes'],
+    warningTitle: 'A will passes the rights that form part of the estate',
+    warning: 'The estate may not include every asset a client informally regards as theirs. Lease terms, company ownership, matrimonial arrangements and registered property rights can affect what passes and how it is administered. Those issues should be identified before the document is finalized.',
+    related: [['Property due diligence in Phuket','/phuket-property-due-diligence'],['Company and hospitality services in Phuket','/phuket-company-registration-hospitality'],['Phuket legal services','/locations/phuket']]
   }
 ];
 

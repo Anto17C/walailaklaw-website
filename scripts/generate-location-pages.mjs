@@ -64,10 +64,10 @@ const locations = [
     context: 'Phuket’s villa, condominium, leasehold and hospitality markets create valuable opportunities alongside significant legal risk. Buyers and investors should verify title, building status, seller authority, contracts and the proposed ownership structure before committing funds. Businesses also need structures that reflect genuine ownership and comply with Thai law.',
     clients: ['Overseas villa and condominium buyers', 'Foreign residents and international families', 'Hospitality, restaurant and tourism businesses', 'Investors seeking lawful company structures'],
     services: [
-      ['Property due diligence', 'Independent title, encumbrance, seller-authority, building and contract checks before a deposit or completion.', '/real-estate-lawyer'],
-      ['Lease, usufruct & superficies advice', 'Advice on the rights, limitations and registration steps relevant to foreign-funded property arrangements.', '/real-estate-lawyer'],
-      ['Company setup & foreign ownership', 'Lawful structuring, shareholder documentation, licensing and compliance without nominee arrangements.', '/company-registration-services'],
-      ['Wills & international family matters', 'Thai wills, succession planning, family agreements and cross-border coordination for residents and property owners.', '/family-law-services']
+      ['Property due diligence', 'Independent title, encumbrance, seller-authority, building and contract checks before a deposit or completion.', '/phuket-property-due-diligence'],
+      ['Property & leasehold disputes', 'Advice and representation for developer, defect, lease, management and property-contract disputes.', '/phuket-property-disputes'],
+      ['Company & hospitality services', 'Lawful structuring, shareholder documentation, licensing and operational support without nominee arrangements.', '/phuket-company-registration-hospitality'],
+      ['Wills & estate planning', 'Thai wills and succession planning for residents, villa and condominium owners and overseas beneficiaries.', '/phuket-wills-estate-planning']
     ],
     focus: 'Walailak’s role is not to represent the seller, agent or developer. Conflict checks and independent instructions are established before confidential documents are reviewed.',
     related: [['Pattaya Office','/pattaya-law-office'],['Chiang Mai','/locations/chiang-mai'],['All locations','/locations']]

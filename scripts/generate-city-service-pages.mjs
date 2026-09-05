@@ -284,6 +284,62 @@ const pages = [
     warningTitle: 'Business use and residential use create different questions',
     warning: 'A suitable home for an executive may require a different review from premises used by a company for an office, warehouse or operation. Intended use, licences, lease restrictions, access and the party signing the agreement should be clear before commitment.',
     related: [['Corporate services in Si Racha','/si-racha-corporate-commercial-lawyer'],['Employment and work permits in Si Racha','/si-racha-employment-visa-work-permit'],['Si Racha legal services','/locations/si-racha']]
+  },
+  {
+    slug: 'laem-chabang-shipping-logistics-disputes', city: 'Laem Chabang', office: '/locations/laem-chabang', practice: '/civil-litigation-services', image: 'civil-litigation-lawyer.webp',
+    title: 'Shipping and Logistics Disputes in Laem Chabang | Walailak Law Firm',
+    description: 'Legal assistance for shipping, freight, cargo, warehousing, demurrage and logistics disputes connected to Laem Chabang port and businesses.',
+    eyebrow: 'LAEM CHABANG SHIPPING DISPUTES', h1: 'Shipping & Logistics Disputes in Laem Chabang',
+    lead: 'Commercially focused legal assistance for cargo owners, freight forwarders, logistics operators, warehouses, carriers and trading businesses.',
+    introTitle: 'Map the contract chain before assigning responsibility',
+    intro: 'A disrupted shipment may involve a seller, buyer, carrier, freight forwarder, customs-service provider, warehouse, truck operator and insurer. Their obligations may appear across quotations, booking confirmations, bills of lading, service terms, delivery records and email instructions. Walailak Law Firm reviews the complete transaction and evidence to identify the responsible parties, contractual remedies and practical route forward.',
+    situations: ['Demurrage, detention or storage charges are disputed','Cargo is delayed, damaged, short-delivered or released incorrectly','A freight, transport or warehouse invoice remains unpaid','The parties disagree over instructions, risk or delivery responsibility','A logistics provider faces a customer claim or formal demand','An overseas party needs representation in a Thailand-based dispute'],
+    checks: ['Identify every contracting party and applicable set of terms','Review bills of lading, bookings, invoices and delivery evidence','Assess jurisdiction, dispute clauses, notices and time limits','Preserve cargo records, photographs, surveys and communications','Prepare a demand, response or negotiated settlement strategy','Manage court proceedings through our Laem Chabang local counsel when required'],
+    warningTitle: 'Operational urgency does not replace legal analysis',
+    warning: 'Cargo, containers and storage costs can continue to accumulate while the parties argue. Early action may be needed, but a demand should still reflect the governing documents, available evidence and the commercial consequences of withholding goods, payment or documents.',
+    related: [['Trade debt recovery in Laem Chabang','/laem-chabang-trade-debt-recovery'],['Commercial contracts in Laem Chabang','/laem-chabang-commercial-contracts'],['Laem Chabang legal services','/locations/laem-chabang']]
+  },
+  {
+    slug: 'laem-chabang-trade-debt-recovery', city: 'Laem Chabang', office: '/locations/laem-chabang', practice: '/civil-litigation-services', image: 'arbitration-lawyer.webp',
+    title: 'Trade Debt Recovery in Laem Chabang | Walailak Law Firm',
+    description: 'Trade debt recovery in Laem Chabang for Thai and overseas suppliers, exporters, importers, manufacturers and logistics businesses.',
+    eyebrow: 'LAEM CHABANG DEBT RECOVERY', h1: 'Trade Debt Recovery in Laem Chabang',
+    lead: 'Evidence-led recovery strategy for unpaid goods, freight, logistics, service and cross-border commercial obligations.',
+    introTitle: 'Test both the debt and the prospects of recovery',
+    intro: 'Trade debts around Laem Chabang may arise from delivered goods, freight and handling services, warehousing, equipment, subcontracted work or advance payments. The creditor may be overseas while the debtor, evidence and assets are in Thailand. Walailak Law Firm assesses the contractual claim, payment history, debtor identity and commercial recovery objective before recommending the next step.',
+    situations: ['An overseas supplier has not been paid by a Thai buyer','Freight, warehouse or logistics invoices remain outstanding','A debtor has signed a payment plan or debt acknowledgement','Goods were accepted but quality or set-off is later alleged','Several related companies were involved in ordering and payment','The debtor shows signs of distress or asset movement'],
+    checks: ['Confirm the correct debtor, contract and jurisdiction','Organize purchase orders, invoices, delivery and payment records','Assess admissions, defences, limitation and dispute provisions','Conduct corporate and asset checks where appropriate','Prepare demands and a structured settlement strategy','Plan proceedings, security and enforcement with staged costs'],
+    warningTitle: 'The legal debtor may not be the commercial name used',
+    warning: 'Orders, invoices, deliveries and payments sometimes refer to different companies within a group. Before a demand or claim is filed, the evidence should establish which entity incurred the obligation, whether another party guaranteed it and where enforceable assets may be located.',
+    related: [['Shipping disputes in Laem Chabang','/laem-chabang-shipping-logistics-disputes'],['Commercial dispute services','/civil-litigation-services'],['Laem Chabang legal services','/locations/laem-chabang']]
+  },
+  {
+    slug: 'laem-chabang-commercial-contracts', city: 'Laem Chabang', office: '/locations/laem-chabang', practice: '/legal-documents-services', image: 'legal-documents-lawyer.webp',
+    title: 'Commercial Contracts in Laem Chabang | Walailak Law Firm',
+    description: 'Commercial contract drafting and review in Laem Chabang for logistics, warehousing, transport, supply, service and industrial relationships.',
+    eyebrow: 'LAEM CHABANG COMMERCIAL CONTRACTS', h1: 'Commercial Contracts in Laem Chabang',
+    lead: 'Clear Thai and cross-border agreements for logistics operators, suppliers, manufacturers, contractors and commercial partners.',
+    introTitle: 'A useful contract follows the real operation',
+    intro: 'Port and industrial transactions often pass through several businesses before goods reach their destination. Standard terms may conflict with a quotation, purchase order, booking confirmation or customer instruction. Walailak Law Firm first understands the service, payment flow and operational handoffs, then drafts or reviews documents that allocate responsibility in practical language.',
+    situations: ['A logistics or freight-forwarding service agreement','Warehousing, handling or domestic transport terms','A supply, distribution or purchasing arrangement','A contractor, maintenance or equipment agreement','Terms for customs coordination or supporting services','An overseas contract requiring a Thailand-law review'],
+    checks: ['Define services, deliverables and operational responsibilities','Align quotations, orders, statements of work and master terms','Clarify pricing, credit, taxes and payment triggers','Allocate delay, damage, indemnity and insurance risks','Set notice, termination and dispute-resolution procedures','Coordinate bilingual documents and local implementation where agreed'],
+    warningTitle: 'Imported templates may leave the critical gap unresolved',
+    warning: 'A foreign template may use unfamiliar concepts, select an impractical forum or fail to reflect how the Thai operation works. The contract should be reviewed alongside licences, insurance, customer commitments and the documents staff actually use for each shipment or service.',
+    related: [['Shipping disputes in Laem Chabang','/laem-chabang-shipping-logistics-disputes'],['Company and workforce support in Laem Chabang','/laem-chabang-company-workforce-support'],['Laem Chabang legal services','/locations/laem-chabang']]
+  },
+  {
+    slug: 'laem-chabang-company-workforce-support', city: 'Laem Chabang', office: '/locations/laem-chabang', practice: '/company-registration-services', image: 'company-registration-lawyer.webp',
+    title: 'Company and Workforce Support in Laem Chabang | Walailak Law Firm',
+    description: 'Company, corporate, employment, visa and work-permit legal support for logistics, industrial and trading businesses in Laem Chabang.',
+    eyebrow: 'LAEM CHABANG BUSINESS SUPPORT', h1: 'Company & Workforce Support in Laem Chabang',
+    lead: 'Coordinated legal support for businesses establishing, operating or expanding logistics, trade and industrial activities in Laem Chabang.',
+    introTitle: 'Build the legal structure around the planned operation',
+    intro: 'A business connected to Laem Chabang may need more than company registration. Its lawful structure depends on the actual services, foreign ownership, operating premises, licences, customer contracts, staffing and the roles of foreign personnel. Walailak Law Firm coordinates these workstreams so that corporate documents and operational plans support the same business model.',
+    situations: ['A foreign investor establishing a logistics or trading operation','An existing company opening or expanding near the port','A manufacturer creating a warehouse or distribution function','A business recruiting Thai staff and foreign specialists','Directors or employees requiring visa and work-permit support','A company reviewing ownership, governance or compliance'],
+    checks: ['Clarify activities, ownership, control and revenue model','Assess registration, licensing and investment-promotion pathways','Prepare corporate approvals and registration documents','Review premises, operating and key commercial arrangements','Coordinate employment documents and workplace requirements','Plan visa and work-permit steps for eligible foreign personnel'],
+    warningTitle: 'Registration alone does not authorize every activity',
+    warning: 'The company’s registered objectives, foreign-business position, licences, premises and immigration arrangements must match what it actually intends to do. Advice should begin with the proposed operation and timeline, not with a predetermined company structure or staffing formula.',
+    related: [['Commercial contracts in Laem Chabang','/laem-chabang-commercial-contracts'],['Visa and work-permit services','/visa-work-permit'],['Laem Chabang legal services','/locations/laem-chabang']]
   }
 ];
 

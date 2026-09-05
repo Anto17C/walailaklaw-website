@@ -47,10 +47,10 @@ const locations = [
     context: 'Laem Chabang’s commercial environment brings together port operations, shipping, customs coordination, warehousing, industrial estates and cross-border trade. Legal problems can involve several contracts and parties at once. We help clients define responsibility, preserve documents and coordinate the appropriate Thai legal response.',
     clients: ['Logistics and customs-service businesses', 'Importers, exporters and overseas suppliers', 'Manufacturers and warehouse operators', 'Shipping and transport counterparties'],
     services: [
-      ['Shipping & logistics disputes', 'Contract and liability review involving transport, demurrage, detention, cargo, agency and payment issues.', '/civil-litigation-services'],
-      ['Trade debt recovery', 'Assessment, demand letters, negotiation, court proceedings and enforcement strategy for unpaid commercial obligations.', '/civil-litigation-services'],
-      ['Commercial contracts', 'Drafting and review for suppliers, service providers, contractors and operating partners.', '/legal-documents-services'],
-      ['Company & workforce support', 'Company, licensing, employment, visa and work-permit coordination for businesses operating locally.', '/company-registration-services']
+      ['Shipping & logistics disputes', 'Contract and liability review involving transport, demurrage, detention, cargo, agency and payment issues.', '/laem-chabang-shipping-logistics-disputes'],
+      ['Trade debt recovery', 'Assessment, demand letters, negotiation, court proceedings and enforcement strategy for unpaid commercial obligations.', '/laem-chabang-trade-debt-recovery'],
+      ['Commercial contracts', 'Drafting and review for suppliers, service providers, contractors and operating partners.', '/laem-chabang-commercial-contracts'],
+      ['Company & workforce support', 'Company, licensing, employment, visa and work-permit coordination for businesses operating locally.', '/laem-chabang-company-workforce-support']
     ],
     focus: 'Walailak Law Firm may handle the full engagement directly. If a dispute, court, authority or operational issue calls for local support, the firm involves and manages our Laem Chabang local counsel while remaining responsible for the engagement and the client relationship.',
     related: [['Si Racha','/locations/si-racha'],['Chonburi','/locations/chonburi'],['Rayong Office','/rayong-law-office']]

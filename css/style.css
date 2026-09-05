@@ -333,6 +333,10 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   padding: 100px 0 90px;
 }
 .hero-inner { max-width: 560px; position: relative; z-index: 2; }
+@media (min-width: 881px) {
+  .hero:not(.hero-sm) .hero-inner { max-width: 700px; }
+  .hero:not(.hero-sm) h1 { max-width: 700px; }
+}
 
 @media (max-width: 880px) {
   .hero { padding: 70px 0 56px; }

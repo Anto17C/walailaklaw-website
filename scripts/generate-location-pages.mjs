@@ -30,10 +30,10 @@ const locations = [
     context: 'Si Racha sits between major industrial estates, residential communities and Laem Chabang’s logistics economy. Clients commonly need help that crosses company, employment, immigration, contract and property issues. Walailak Law Firm leads the matter in English and may handle it directly or involve our Si Racha local counsel for specific location-dependent work.',
     clients: ['Foreign-invested and Thai operating companies', 'International directors and managers', 'Suppliers, contractors and trade creditors', 'Foreign employees and their families'],
     services: [
-      ['Corporate & commercial support', 'Company establishment, governance, shareholder and contract matters for operating businesses.', '/company-registration-services'],
-      ['Employment, visa & work permits', 'Coordinated advice for lawful employment, management roles, work authorization and workforce issues.', '/visa-work-permit'],
-      ['Contract and payment disputes', 'Practical assessment, demand strategy, negotiation and litigation support for commercial disagreements.', '/civil-litigation-services'],
-      ['Executive property matters', 'Independent review of purchases, leases and property arrangements for foreign executives and families.', '/real-estate-lawyer']
+      ['Corporate & commercial support', 'Company establishment, governance, shareholder and contract matters for operating businesses.', '/si-racha-corporate-commercial-lawyer'],
+      ['Employment, visa & work permits', 'Coordinated advice for lawful employment, management roles, work authorization and workforce issues.', '/si-racha-employment-visa-work-permit'],
+      ['Contract and payment disputes', 'Practical assessment, demand strategy, negotiation and litigation support for commercial disagreements.', '/si-racha-commercial-disputes-debt-recovery'],
+      ['Executive property matters', 'Independent review of purchases, leases and property arrangements for foreign executives and families.', '/si-racha-property-due-diligence']
     ],
     focus: 'The Si Racha page is intentionally centred on corporate operations, executives and industrial relationships rather than duplicating Pattaya’s tourism and residential focus.',
     related: [['Chonburi','/locations/chonburi'],['Laem Chabang','/locations/laem-chabang'],['Rayong Office','/rayong-law-office']]

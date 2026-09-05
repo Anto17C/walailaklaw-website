@@ -228,6 +228,62 @@ const pages = [
     warningTitle: 'A registered company does not by itself authorize work',
     warning: 'Company registration, permission to conduct a business activity, immigration status and authorization to work are different questions. The proposed role and timeline should be reviewed before commitments are made to premises, staff, clients or relocation.',
     related: [['Property due diligence in Chiang Mai','/chiang-mai-property-due-diligence'],['Company registration services','/company-registration-services'],['Chiang Mai legal services','/locations/chiang-mai']]
+  },
+  {
+    slug: 'si-racha-corporate-commercial-lawyer', city: 'Si Racha', office: '/locations/si-racha', practice: '/company-registration-services', image: 'company-registration-lawyer.webp',
+    title: 'Corporate and Commercial Lawyer in Si Racha | Walailak Law Firm',
+    description: 'Corporate and commercial legal services in Si Racha for foreign-invested companies, manufacturers, suppliers, directors and operating businesses.',
+    eyebrow: 'SI RACHA BUSINESS SERVICES', h1: 'Corporate & Commercial Legal Services in Si Racha',
+    lead: 'Practical company, governance and contract support for international businesses operating across Si Racha and the Eastern Seaboard.',
+    introTitle: 'Connect the legal structure to the operating business',
+    intro: 'Si Racha businesses often sit between industrial estates, suppliers, international management teams and Laem Chabang’s logistics economy. Walailak Law Firm supports company establishment and continuing operations by reviewing the actual activity, ownership, management authority, contracts, workforce and regulatory requirements together.',
+    situations: ['A foreign investor establishing a Si Racha company','A manufacturer, supplier or service business entering the EEC','An existing company changing directors, shareholders or capital','A joint venture requiring clear governance arrangements','An overseas parent coordinating a Thai subsidiary','A business negotiating supply, service or operating contracts'],
+    checks: ['Clarify activities, investment, ownership and management control','Assess registration, licensing and foreign-business requirements','Prepare shareholder, director and corporate documents','Draft and review commercial agreements','Support governance, delegations and signing authority','Coordinate our Si Racha local counsel for defined local work when required'],
+    warningTitle: 'Corporate documents should reflect how decisions are really made',
+    warning: 'Registration records, shareholder arrangements, board authority and commercial contracts should work together. Informal understandings or nominal arrangements can create control, compliance and dispute risks when ownership changes, payments stop or a director leaves.',
+    related: [['Employment and work permits in Si Racha','/si-racha-employment-visa-work-permit'],['Commercial disputes in Si Racha','/si-racha-commercial-disputes-debt-recovery'],['Si Racha legal services','/locations/si-racha']]
+  },
+  {
+    slug: 'si-racha-employment-visa-work-permit', city: 'Si Racha', office: '/locations/si-racha', practice: '/visa-work-permit', image: 'visa-work-permit-thailand.webp',
+    title: 'Employment, Visa and Work Permit Lawyer in Si Racha | Walailak Law Firm',
+    description: 'Employment, visa and work permit legal support in Si Racha for foreign executives, technical specialists, employees and international companies.',
+    eyebrow: 'SI RACHA EMPLOYMENT & IMMIGRATION', h1: 'Employment, Visa & Work Permit Services in Si Racha',
+    lead: 'Connected employment and immigration support for companies, foreign executives, technical specialists and their families in Si Racha.',
+    introTitle: 'Plan the role, employer and immigration steps together',
+    intro: 'International companies in Si Racha regularly appoint foreign managers, engineers and technical specialists or transfer personnel between regional operations. The employer, job description, corporate records, work location and immigration status should be reviewed as one plan before the employee begins work or a filing deadline approaches.',
+    situations: ['A company appointing a foreign director or manager','An engineer or specialist transferring to a Si Racha operation','A new company planning its first foreign hire','An employee changing employer, role or work location','A business reviewing employment contracts or termination risk','A foreign employee relocating with family members'],
+    checks: ['Review the employer, role, qualifications and intended work','Plan the visa and work-permit sequence','Prepare employment and supporting corporate documents','Coordinate renewals, changes and required local filings','Advise on workplace policies, discipline and termination issues','Work with our Si Racha local counsel for location-dependent steps'],
+    warningTitle: 'Immigration permission and authority to work are separate matters',
+    warning: 'A visa or right to stay does not automatically authorize every type of work, and company registration alone does not complete the employment process. The proposed duties, employer and timing should be checked before the person starts working or changes role.',
+    related: [['Corporate services in Si Racha','/si-racha-corporate-commercial-lawyer'],['Property due diligence in Si Racha','/si-racha-property-due-diligence'],['Si Racha legal services','/locations/si-racha']]
+  },
+  {
+    slug: 'si-racha-commercial-disputes-debt-recovery', city: 'Si Racha', office: '/locations/si-racha', practice: '/civil-litigation-services', image: 'civil-litigation-lawyer.webp',
+    title: 'Commercial Disputes and Debt Recovery Lawyer in Si Racha | Walailak Law Firm',
+    description: 'Commercial dispute, contract claim and debt recovery legal services in Si Racha for manufacturers, suppliers, contractors and overseas businesses.',
+    eyebrow: 'SI RACHA COMMERCIAL DISPUTES', h1: 'Commercial Disputes & Debt Recovery in Si Racha',
+    lead: 'Evidence-led strategy for contract claims, unpaid invoices, supplier disputes and commercial litigation involving Si Racha businesses.',
+    introTitle: 'Assess the contract, evidence and recovery objective early',
+    intro: 'Disputes around Si Racha’s industrial economy may involve purchase orders, supply contracts, installation work, service failures, unpaid invoices, rejected goods, guarantees or several companies in the same operating group. Walailak Law Firm reviews the claim and the counterparty before recommending negotiation, formal demands, proceedings or enforcement planning.',
+    situations: ['An unpaid supplier, contractor or service provider','A manufacturer disputing quality, delivery or delay','An overseas creditor pursuing a Thai company','A customer withholding payment or set-off','A director facing an urgent summons or filing deadline','A dispute involving connected companies or guarantors'],
+    checks: ['Review jurisdiction, contracts and dispute clauses','Organize invoices, delivery records and communications','Assess liability, defences, limitation and counterclaims','Conduct corporate or asset checks where appropriate','Prepare demands and settlement strategy','Manage litigation, hearings and enforcement if required'],
+    warningTitle: 'A judgment is not the same as a recovery',
+    warning: 'The value of proceedings depends on the strength of the evidence, the counterparty’s position, recoverable assets, timing and cost. Those factors should be considered before committing to a recovery route or accepting a settlement proposal.',
+    related: [['Corporate services in Si Racha','/si-racha-corporate-commercial-lawyer'],['Debt recovery services','/civil-litigation-services'],['Si Racha legal services','/locations/si-racha']]
+  },
+  {
+    slug: 'si-racha-property-due-diligence', city: 'Si Racha', office: '/locations/si-racha', practice: '/real-estate-lawyer', image: 'real-estate-lawyer.webp',
+    title: 'Property Due Diligence Lawyer in Si Racha | Walailak Law Firm',
+    description: 'Independent property due diligence in Si Racha for condominium, house, land, lease and executive residential transactions.',
+    eyebrow: 'SI RACHA PROPERTY SERVICES', h1: 'Property Due Diligence in Si Racha',
+    lead: 'Independent legal review for executives, foreign residents, families and businesses buying or leasing property in Si Racha.',
+    introTitle: 'Review the legal property before signing the commercial deal',
+    intro: 'Si Racha property matters range from executive condominium purchases and family homes to commercial premises and long-term leases connected to an operating company. Walailak Law Firm reviews the title, parties, contract and intended use independently before the client signs, pays a substantial deposit or attends the Land Office.',
+    situations: ['An executive purchasing a condominium','A house and land purchase involving a Thai spouse','A residential or commercial lease','Business premises near an industrial estate','A property with an existing mortgage or registered right','An overseas buyer or regional company reviewing documents remotely'],
+    checks: ['Verify title, ownership and registered encumbrances','Review seller, landlord or company authority','Examine purchase, reservation and lease documents','Check available access, building and development records','Plan foreign-quota or Land Office documentation where relevant','Coordinate transfer or registration through our Si Racha local counsel when required'],
+    warningTitle: 'Business use and residential use create different questions',
+    warning: 'A suitable home for an executive may require a different review from premises used by a company for an office, warehouse or operation. Intended use, licences, lease restrictions, access and the party signing the agreement should be clear before commitment.',
+    related: [['Corporate services in Si Racha','/si-racha-corporate-commercial-lawyer'],['Employment and work permits in Si Racha','/si-racha-employment-visa-work-permit'],['Si Racha legal services','/locations/si-racha']]
   }
 ];
 

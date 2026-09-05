@@ -105,6 +105,23 @@ const locations = [
     ],
     focus: 'Walailak Law Firm may manage the entire engagement remotely or travel when appropriate. If a Land Office, court, authority or other local step benefits from support in Hua Hin, the firm assigns and manages our established local counsel while remaining responsible for the matter.',
     related: [['Bangkok enquiries','/contact'],['Phuket','/locations/phuket'],['All locations','/locations']]
+  },
+  {
+    slug: 'koh-samui', name: 'Koh Samui', image: 'real-estate-lawyer.webp',
+    title: 'English-Speaking Lawyers in Koh Samui | Walailak Law Firm',
+    description: 'English-speaking legal services in Koh Samui for foreign property buyers, residents, international families and hospitality businesses.',
+    lead: 'Independent legal support for property clients, foreign residents, international families and businesses in Koh Samui.',
+    contextTitle: 'Independent legal review in a high-value island market',
+    context: 'Koh Samui’s villa, resort, hospitality and long-term residential market creates legal questions involving land, buildings, leases, companies, licences and cross-border family arrangements. Walailak Law Firm handles the engagement directly and adds our Koh Samui local counsel when an island-based inspection, authority, court or other defined task benefits the client.',
+    clients: ['Overseas villa and property buyers', 'Foreign residents and international families', 'Hotel, restaurant and wellness businesses', 'Owners facing property or commercial disputes'],
+    services: [
+      ['Property due diligence', 'Independent title, access, building, contract and ownership review before buying or leasing island property.', '/koh-samui-property-due-diligence'],
+      ['Company & hospitality compliance', 'Lawful company structures, ownership reviews, contracts and operational support without nominee arrangements.', '/koh-samui-company-hospitality-compliance'],
+      ['Property & commercial disputes', 'Strategy and representation for developer, lease, construction, shareholder, contract and payment disputes.', '/koh-samui-property-commercial-disputes'],
+      ['Wills & estate planning', 'Thai wills and succession planning for island property, company interests, accounts and overseas beneficiaries.', '/koh-samui-wills-estate-planning']
+    ],
+    focus: 'Walailak Law Firm remains responsible for the client relationship and legal strategy. The firm may handle the complete matter remotely or travel; our established Koh Samui local counsel is involved only where local attendance or additional capability is useful.',
+    related: [['Phuket','/locations/phuket'],['Hua Hin','/locations/hua-hin'],['All locations','/locations']]
   }
 ];
 

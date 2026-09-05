@@ -24,6 +24,7 @@
 /locations/phuket.html /locations/phuket 301
 /locations/chiang-mai.html /locations/chiang-mai 301
 /locations/hua-hin.html /locations/hua-hin 301
+/locations/koh-samui.html /locations/koh-samui 301
 /rayong-property-due-diligence.html /rayong-property-due-diligence 301
 /rayong-property-disputes.html /rayong-property-disputes 301
 /rayong-wills-estate-planning.html /rayong-wills-estate-planning 301
@@ -56,6 +57,10 @@
 /hua-hin-wills-estate-planning.html /hua-hin-wills-estate-planning 301
 /hua-hin-family-divorce-mediation.html /hua-hin-family-divorce-mediation 301
 /hua-hin-company-hospitality-services.html /hua-hin-company-hospitality-services 301
+/koh-samui-property-due-diligence.html /koh-samui-property-due-diligence 301
+/koh-samui-company-hospitality-compliance.html /koh-samui-company-hospitality-compliance 301
+/koh-samui-property-commercial-disputes.html /koh-samui-property-commercial-disputes 301
+/koh-samui-wills-estate-planning.html /koh-samui-wills-estate-planning 301
 
 /th/about.html /th/about 301
 /th/services.html /th/services 301
@@ -132,6 +137,7 @@
 /locations/phuket/ /locations/phuket 301
 /locations/chiang-mai/ /locations/chiang-mai 301
 /locations/hua-hin/ /locations/hua-hin 301
+/locations/koh-samui/ /locations/koh-samui 301
 /rayong-property-due-diligence/ /rayong-property-due-diligence 301
 /rayong-property-disputes/ /rayong-property-disputes 301
 /rayong-wills-estate-planning/ /rayong-wills-estate-planning 301
@@ -164,6 +170,10 @@
 /hua-hin-wills-estate-planning/ /hua-hin-wills-estate-planning 301
 /hua-hin-family-divorce-mediation/ /hua-hin-family-divorce-mediation 301
 /hua-hin-company-hospitality-services/ /hua-hin-company-hospitality-services 301
+/koh-samui-property-due-diligence/ /koh-samui-property-due-diligence 301
+/koh-samui-company-hospitality-compliance/ /koh-samui-company-hospitality-compliance 301
+/koh-samui-property-commercial-disputes/ /koh-samui-property-commercial-disputes 301
+/koh-samui-wills-estate-planning/ /koh-samui-wills-estate-planning 301
 
 # Old WordPress/generated URLs that should not serve homepage duplicates
 /blog /404.html 404

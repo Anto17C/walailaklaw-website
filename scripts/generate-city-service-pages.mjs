@@ -452,6 +452,62 @@ const pages = [
     warningTitle: 'Property control and business control are separate',
     warning: 'A lease or interest in premises does not by itself authorize a company’s activity, and company registration does not validate nominee ownership or eliminate licensing requirements. The structure should connect genuine investment, management, premises and operations.',
     related: [['Property due diligence in Hua Hin','/hua-hin-property-due-diligence'],['Company registration services','/company-registration-services'],['Hua Hin legal services','/locations/hua-hin']]
+  },
+  {
+    slug: 'koh-samui-property-due-diligence', city: 'Koh Samui', office: '/locations/koh-samui', practice: '/real-estate-lawyer', image: 'real-estate-lawyer.webp',
+    title: 'Property Due Diligence in Koh Samui | Walailak Law Firm',
+    description: 'Independent property due diligence in Koh Samui for villas, land, condominiums, leases, access, buildings and proposed ownership structures.',
+    eyebrow: 'KOH SAMUI PROPERTY SERVICES', h1: 'Property Due Diligence in Koh Samui',
+    lead: 'Independent legal review before buying or leasing a villa, land, condominium or development property in Koh Samui.',
+    introTitle: 'Island property requires more than a title check',
+    intro: 'A Koh Samui transaction may involve hillside land, private access, a villa built separately from the land title, shared infrastructure, a managed development or a proposed company or lease structure. Walailak Law Firm acts independently from the seller, agent and developer and reviews the legal property, transaction documents and intended rights before substantial funds are committed.',
+    situations: ['A completed or off-plan villa purchase','Land and a separately owned or constructed building','A condominium or branded-residence transaction','A proposed lease, usufruct or superficies','Private-road, access, utility or shared-area arrangements','An existing company presented as part of the sale'],
+    checks: ['Verify title, owner, encumbrances and available access rights','Review seller, developer, company and attorney authority','Examine sale, construction, lease and management contracts','Review available building, permit and development records','Assess the proposed ownership structure without nominee arrangements','Coordinate inspections and Land Office work through our Koh Samui local counsel when required'],
+    warningTitle: 'Buying shares is not the same as buying verified property',
+    warning: 'Taking over a company may transfer its liabilities, tax history, contracts and governance problems as well as indirect control of an asset. A company-based proposal requires corporate due diligence in addition to title, building and transaction review.',
+    related: [['Property disputes in Koh Samui','/koh-samui-property-commercial-disputes'],['Wills and estate planning in Koh Samui','/koh-samui-wills-estate-planning'],['Koh Samui legal services','/locations/koh-samui']]
+  },
+  {
+    slug: 'koh-samui-company-hospitality-compliance', city: 'Koh Samui', office: '/locations/koh-samui', practice: '/company-registration-services', image: 'company-registration-lawyer.webp',
+    title: 'Company and Hospitality Compliance in Koh Samui | Walailak Law Firm',
+    description: 'Company structuring and hospitality compliance in Koh Samui for hotels, villas, restaurants, wellness, rentals and service businesses.',
+    eyebrow: 'KOH SAMUI BUSINESS SERVICES', h1: 'Company & Hospitality Compliance in Koh Samui',
+    lead: 'Lawful structuring and operational support for hospitality, property, wellness, restaurant and tourism-related businesses.',
+    introTitle: 'The legal structure must reflect genuine ownership and activity',
+    intro: 'Koh Samui businesses frequently combine premises, accommodation, property services, food and beverage, wellness or tourism-facing operations. Each activity can raise different ownership, licensing, employment and contract questions. Walailak Law Firm reviews the actual investment and management plan before implementing or correcting the corporate structure.',
+    situations: ['A foreign investor establishing a hotel or hospitality venture','A villa-rental or property-management business','A restaurant, wellness or tourism-service operation','The acquisition of shares in an existing local company','A shareholder or control arrangement requiring review','An operating business responding to an authority enquiry'],
+    checks: ['Clarify investment, activities, revenue and management roles','Assess lawful ownership and control without nominee shareholders','Review company records, shareholders, directors and historic obligations','Identify relevant premises, licence and operating requirements','Prepare shareholder, lease, management and commercial documents','Coordinate employment, visa and work-permit workstreams'],
+    warningTitle: 'Nominee risk cannot be solved with cosmetic documents',
+    warning: 'Where Thai shareholders do not make a genuine investment or exercise real rights, changing paperwork alone may not correct the underlying risk. Advice should examine funding, beneficial control, decision-making, land interests and how the business actually operates.',
+    related: [['Property due diligence in Koh Samui','/koh-samui-property-due-diligence'],['Commercial disputes in Koh Samui','/koh-samui-property-commercial-disputes'],['Koh Samui legal services','/locations/koh-samui']]
+  },
+  {
+    slug: 'koh-samui-property-commercial-disputes', city: 'Koh Samui', office: '/locations/koh-samui', practice: '/civil-litigation-services', image: 'civil-litigation-lawyer.webp',
+    title: 'Property and Commercial Disputes in Koh Samui | Walailak Law Firm',
+    description: 'Legal assistance for Koh Samui property, villa, construction, lease, shareholder, hospitality, contract and payment disputes.',
+    eyebrow: 'KOH SAMUI DISPUTE SERVICES', h1: 'Property & Commercial Disputes in Koh Samui',
+    lead: 'Evidence-led strategy for property, development, construction, company and hospitality disputes involving Koh Samui.',
+    introTitle: 'Preserve the evidence before positions harden',
+    intro: 'Island disputes can involve an overseas owner, local developer, contractor, property manager, tenant, company and several informal promises. The signed documents may not reflect the full payment or construction history. Walailak Law Firm builds a chronology, identifies the responsible parties and assesses negotiation, urgent protection, proceedings and enforcement options.',
+    situations: ['A villa or development was delayed or left incomplete','Construction quality, access or utilities are disputed','A lease, rental return or management arrangement has failed','Shareholders or directors dispute control of a property company','A hospitality supplier, customer or partner has breached a contract','An overseas owner requires representation without travelling immediately'],
+    checks: ['Complete conflict, jurisdiction and urgency review','Organize contracts, payments, plans, photographs and communications','Identify corporate parties, land rights and personal guarantees','Assess limitation, notices, remedies and counterclaims','Prepare demand, negotiation or mediation strategy','Manage court and local evidence work through our Koh Samui local counsel when required'],
+    warningTitle: 'The property, company and contract claims may differ',
+    warning: 'Control of a company does not automatically establish ownership of land or a building, and a payment claim may be against a different party from the registered owner. Each legal relationship should be separated before remedies are selected.',
+    related: [['Property due diligence in Koh Samui','/koh-samui-property-due-diligence'],['Civil litigation services','/civil-litigation-services'],['Koh Samui legal services','/locations/koh-samui']]
+  },
+  {
+    slug: 'koh-samui-wills-estate-planning', city: 'Koh Samui', office: '/locations/koh-samui', practice: '/legal-documents-services', image: 'legal-documents-lawyer.webp',
+    title: 'Wills and Estate Planning in Koh Samui | Walailak Law Firm',
+    description: 'Thai wills and estate planning in Koh Samui for foreign residents, villa owners, international families and overseas beneficiaries.',
+    eyebrow: 'KOH SAMUI WILLS & ESTATES', h1: 'Wills & Estate Planning in Koh Samui',
+    lead: 'Clear planning for Thai property rights, company interests, bank accounts and beneficiaries in Thailand and overseas.',
+    introTitle: 'Estate planning must follow the ownership structure',
+    intro: 'A Koh Samui home may be connected to a spouse’s land title, registered lease or usufruct, building ownership or shares in a Thai company. The client may also have an overseas will and beneficiaries living abroad. Walailak Law Firm identifies what forms part of the Thai estate before preparing the will and supporting plan.',
+    situations: ['A foreign resident preparing a will for Thai assets','A villa owner with separate land and building arrangements','An international couple coordinating succession plans','Shares in a Thai company connected to property or a business','Children or other beneficiaries living outside Thailand','An executor who may need to act from overseas'],
+    checks: ['Identify assets and verify legal ownership or registered rights','Review family status, beneficiaries and existing wills','Examine relevant leases, usufructs and company records','Consider executor, witness, language and safekeeping arrangements','Prepare the agreed Thai will and English explanation','Explain signing, future updates and likely administration steps'],
+    warningTitle: 'A will does not cure an unlawful or unclear structure',
+    warning: 'If property or company arrangements are unclear, disputed or dependent on nominee ownership, estate documents alone will not resolve that underlying problem. Existing structures should be reviewed separately and corrected where lawful and practical.',
+    related: [['Property due diligence in Koh Samui','/koh-samui-property-due-diligence'],['Company compliance in Koh Samui','/koh-samui-company-hospitality-compliance'],['Koh Samui legal services','/locations/koh-samui']]
   }
 ];
 

@@ -1,4 +1,73 @@
 document.addEventListener('DOMContentLoaded', function () {
+  var path = window.location.pathname;
+  var language = path.indexOf('/th/') === 0 ? 'th' : (path.indexOf('/fr/') === 0 ? 'fr' : 'en');
+  var prefix = language === 'en' ? '' : '/' + language;
+
+  // Keep the primary header focused: offices move from Contact into Locations.
+  var nav = document.querySelector('.nav-links');
+  if (nav) {
+    var labels = {
+      en: { locations: 'Locations', contact: 'Contact', pattaya: 'Pattaya Office', rayong: 'Rayong Office' },
+      th: { locations: 'พื้นที่ให้บริการ', contact: 'ติดต่อเรา', pattaya: 'สำนักงานพัทยา', rayong: 'สำนักงานระยอง' },
+      fr: { locations: 'Implantations', contact: 'Contact', pattaya: 'Bureau de Pattaya', rayong: 'Bureau de Rayong' }
+    }[language];
+    var contactLink = nav.querySelector('a[href="' + prefix + '/contact"]');
+    if (contactLink) {
+      var contactItem = contactLink.closest('.nav-item');
+      var locationsItem = document.createElement('div');
+      locationsItem.className = 'nav-item';
+      locationsItem.innerHTML =
+        '<a href="' + prefix + '/contact">' + labels.locations + ' <span class="caret">&#9662;</span></a>' +
+        '<div class="dropdown-menu">' +
+          '<a href="' + prefix + '/rayong-law-office">' + labels.rayong + '</a>' +
+          '<a href="' + prefix + '/pattaya-law-office">' + labels.pattaya + '</a>' +
+        '</div>';
+      contactItem.parentNode.insertBefore(locationsItem, contactItem);
+      var plainContact = document.createElement('a');
+      plainContact.href = prefix + '/contact';
+      plainContact.textContent = labels.contact;
+      contactItem.parentNode.replaceChild(plainContact, contactItem);
+    }
+  }
+
+  // Move direct contact choices into the hero. The homepage omits phone because
+  // its primary actions already contain a Call now button.
+  var heroInner = document.querySelector('.hero .hero-inner');
+  if (heroInner) {
+    var headerContacts = document.querySelector('.nav-socials');
+    var followingContact = document.querySelector('.hero + .section-tight .contact-module');
+    var source = followingContact || headerContacts;
+    if (source) {
+      function hrefFor(selector, fallback) {
+        var link = source.querySelector(selector) || (headerContacts && headerContacts.querySelector(selector));
+        return link ? link.getAttribute('href') : fallback;
+      }
+      var isHome = path === '/' || path === '/index.html' || path === '/th/' || path === '/th/index.html' || path === '/fr/' || path === '/fr/index.html';
+      var directLabels = {
+        en: { prompt: 'Speak with us directly?', phone: 'Call Walailak Law Firm', email: 'Email Walailak Law Firm' },
+        th: { prompt: 'ติดต่อเราโดยตรง', phone: 'โทรหาสำนักงานกฎหมายวลัยลักษณ์', email: 'อีเมลสำนักงานกฎหมายวลัยลักษณ์' },
+        fr: { prompt: 'Contactez-nous directement', phone: 'Appeler Walailak Law Firm', email: 'Envoyer un e-mail à Walailak Law Firm' }
+      }[language];
+      var links = [];
+      if (!isHome) {
+        links.push('<a href="' + hrefFor('a[href^="tel:"]', 'tel:+66946463940') + '" class="hero-direct-link is-phone" aria-label="' + directLabels.phone + '" title="' + directLabels.phone + '"><i class="ti ti-phone"></i></a>');
+      }
+      links.push('<a href="' + hrefFor('a[href^="mailto:"]', 'mailto:kae@walailaklaw.com') + '" class="hero-direct-link is-email" aria-label="' + directLabels.email + '" title="' + directLabels.email + '"><i class="ti ti-mail"></i></a>');
+      links.push('<a href="' + hrefFor('a[href*="wa.me"]', 'https://wa.me/66946463940') + '" class="hero-direct-link is-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp Walailak Law Firm" title="WhatsApp"><i class="ti ti-brand-whatsapp"></i></a>');
+      links.push('<a href="' + hrefFor('a[href*="line.me"]', 'https://line.me/ti/p/~kaezeeds') + '" class="hero-direct-link is-line" target="_blank" rel="noopener" aria-label="LINE Walailak Law Firm" title="LINE"><img src="/images/line-icon.png" alt=""></a>');
+      var direct = document.createElement('div');
+      direct.className = 'hero-direct-contact';
+      direct.setAttribute('aria-label', directLabels.prompt);
+      direct.innerHTML = '<span class="hero-direct-label">' + directLabels.prompt + '</span><div class="hero-direct-icons">' + links.join('') + '</div>';
+      heroInner.appendChild(direct);
+
+      if (followingContact) {
+        var contactSection = followingContact.closest('.section-tight');
+        if (contactSection) contactSection.remove();
+      }
+    }
+  }
+
   // FAQ accordion
   document.querySelectorAll('.faq-item').forEach(function (item) {
     var q = item.querySelector('.faq-q');

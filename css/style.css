@@ -221,7 +221,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .lang-dropdown a + a::before { content: "/"; position: absolute; left: -9px; color: rgba(255,255,255,0.32); }
 .nav-phone { color: #fff; font-size: 13.5px; font-weight: 600; display: flex; align-items: center; gap: 6px; }
 .nav-socials {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 7px;
 }
@@ -720,10 +720,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
     gap: 0;
   }
 
-  .nav-socials {
-    display: flex;
-    gap: 5px;
-  }
+  .nav-socials { display: none; }
 
   .nav-social-link {
     width: 30px;
@@ -773,5 +770,68 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
     flex-direction: column;
     text-align: center;
     justify-content: center;
+  }
+}
+
+/* ---------- Hero direct-contact row ---------- */
+.hero-direct-contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+  position: relative;
+  z-index: 2;
+}
+.hero-direct-label {
+  color: rgba(255,255,255,0.72);
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.hero-direct-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.hero-direct-link {
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgba(20,17,13,0.18);
+  font-size: 18px;
+  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+.hero-direct-link:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.1);
+}
+.hero-direct-link.is-phone { color: var(--gold); }
+.hero-direct-link.is-email { color: #ea6a5f; }
+.hero-direct-link.is-whatsapp { color: var(--whatsapp); }
+.hero-direct-link.is-line { color: #06c755; }
+.hero-direct-link img {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+.hero-sm .hero-direct-contact { margin-top: 20px; }
+
+@media (max-width: 700px) {
+  .hero-direct-contact {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 20px;
+  }
+  .hero-direct-label { font-size: 12.5px; }
+  .hero-direct-link {
+    width: 36px;
+    height: 36px;
   }
 }

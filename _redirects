@@ -25,6 +25,8 @@
 /locations/chiang-mai.html /locations/chiang-mai 301
 /locations/hua-hin.html /locations/hua-hin 301
 /locations/koh-samui.html /locations/koh-samui 301
+/locations/surat-thani.html /locations/surat-thani 301
+/locations/pathum-thani.html /locations/pathum-thani 301
 /rayong-property-due-diligence.html /rayong-property-due-diligence 301
 /rayong-property-disputes.html /rayong-property-disputes 301
 /rayong-wills-estate-planning.html /rayong-wills-estate-planning 301
@@ -61,6 +63,14 @@
 /koh-samui-company-hospitality-compliance.html /koh-samui-company-hospitality-compliance 301
 /koh-samui-property-commercial-disputes.html /koh-samui-property-commercial-disputes 301
 /koh-samui-wills-estate-planning.html /koh-samui-wills-estate-planning 301
+/surat-thani-company-commercial-support.html /surat-thani-company-commercial-support 301
+/surat-thani-trade-disputes-debt-recovery.html /surat-thani-trade-disputes-debt-recovery 301
+/surat-thani-property-due-diligence.html /surat-thani-property-due-diligence 301
+/surat-thani-wills-estate-planning.html /surat-thani-wills-estate-planning 301
+/pathum-thani-company-boi-technology.html /pathum-thani-company-boi-technology 301
+/pathum-thani-commercial-disputes-debt-recovery.html /pathum-thani-commercial-disputes-debt-recovery 301
+/pathum-thani-industrial-property-due-diligence.html /pathum-thani-industrial-property-due-diligence 301
+/pathum-thani-employment-visa-work-permit.html /pathum-thani-employment-visa-work-permit 301
 
 /th/about.html /th/about 301
 /th/services.html /th/services 301
@@ -138,6 +148,8 @@
 /locations/chiang-mai/ /locations/chiang-mai 301
 /locations/hua-hin/ /locations/hua-hin 301
 /locations/koh-samui/ /locations/koh-samui 301
+/locations/surat-thani/ /locations/surat-thani 301
+/locations/pathum-thani/ /locations/pathum-thani 301
 /rayong-property-due-diligence/ /rayong-property-due-diligence 301
 /rayong-property-disputes/ /rayong-property-disputes 301
 /rayong-wills-estate-planning/ /rayong-wills-estate-planning 301
@@ -174,6 +186,14 @@
 /koh-samui-company-hospitality-compliance/ /koh-samui-company-hospitality-compliance 301
 /koh-samui-property-commercial-disputes/ /koh-samui-property-commercial-disputes 301
 /koh-samui-wills-estate-planning/ /koh-samui-wills-estate-planning 301
+/surat-thani-company-commercial-support/ /surat-thani-company-commercial-support 301
+/surat-thani-trade-disputes-debt-recovery/ /surat-thani-trade-disputes-debt-recovery 301
+/surat-thani-property-due-diligence/ /surat-thani-property-due-diligence 301
+/surat-thani-wills-estate-planning/ /surat-thani-wills-estate-planning 301
+/pathum-thani-company-boi-technology/ /pathum-thani-company-boi-technology 301
+/pathum-thani-commercial-disputes-debt-recovery/ /pathum-thani-commercial-disputes-debt-recovery 301
+/pathum-thani-industrial-property-due-diligence/ /pathum-thani-industrial-property-due-diligence 301
+/pathum-thani-employment-visa-work-permit/ /pathum-thani-employment-visa-work-permit 301
 
 # Old WordPress/generated URLs that should not serve homepage duplicates
 /blog /404.html 404

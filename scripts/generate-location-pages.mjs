@@ -122,6 +122,40 @@ const locations = [
     ],
     focus: 'Walailak Law Firm remains responsible for the client relationship and legal strategy. The firm may handle the complete matter remotely or travel; our established Koh Samui local counsel is involved only where local attendance or additional capability is useful.',
     related: [['Phuket','/locations/phuket'],['Hua Hin','/locations/hua-hin'],['All locations','/locations']]
+  },
+  {
+    slug: 'surat-thani', name: 'Surat Thani', image: 'company-registration-lawyer.webp',
+    title: 'English-Speaking Lawyers in Surat Thani | Walailak Law Firm',
+    description: 'English-speaking legal services in Surat Thani for businesses, creditors, property clients, foreign residents and international families.',
+    lead: 'Practical legal support for businesses, property clients, foreign residents and international families in Surat Thani.',
+    contextTitle: 'Commercial legal support for an Upper Southern hub',
+    context: 'Mainland Surat Thani connects agriculture, processing, wholesale trade, transport, logistics, services and the province’s island economy. Matters may involve several counterparties, provincial authorities, commercial land or family assets. Walailak Law Firm provides and manages the service directly, adding our Surat Thani local counsel when a defined local step benefits the client.',
+    clients: ['Trading, processing and logistics businesses', 'Thai and overseas commercial creditors', 'Property buyers, owners and investors', 'Foreign residents and international families'],
+    services: [
+      ['Company & commercial support', 'Company structures, contracts, governance, employment and operational coordination for mainland businesses.', '/surat-thani-company-commercial-support'],
+      ['Trade disputes & debt recovery', 'Evidence-led demands, negotiation, litigation and enforcement planning for commercial claims.', '/surat-thani-trade-disputes-debt-recovery'],
+      ['Property due diligence', 'Independent review of residential, commercial and agricultural property transactions and leases.', '/surat-thani-property-due-diligence'],
+      ['Wills & estate planning', 'Thai wills and succession planning for local property, businesses, accounts and overseas beneficiaries.', '/surat-thani-wills-estate-planning']
+    ],
+    focus: 'Walailak Law Firm may handle the entire matter remotely or arrange travel. Where a court, Land Office, authority or evidence-gathering task requires local attendance, the firm assigns and manages our established Surat Thani local counsel while remaining accountable for the engagement.',
+    related: [['Koh Samui','/locations/koh-samui'],['Hua Hin','/locations/hua-hin'],['All locations','/locations']]
+  },
+  {
+    slug: 'pathum-thani', name: 'Pathum Thani', image: 'company-registration-lawyer.webp',
+    title: 'English-Speaking Lawyers in Pathum Thani | Walailak Law Firm',
+    description: 'English-speaking legal services in Pathum Thani for industrial, technology and logistics businesses, property clients and employers.',
+    lead: 'Business-focused legal support for companies, investors, employers and property clients in Pathum Thani and the northern Bangkok industrial corridor.',
+    contextTitle: 'Legal support for industry, technology and regional operations',
+    context: 'Pathum Thani combines major industrial communities, manufacturing and distribution operations, science and technology activity, universities and fast-growing residential areas. Walailak Law Firm handles matters directly and involves our Pathum Thani local counsel when court, authority, Land Office or other local attendance adds practical value.',
+    clients: ['Manufacturers and foreign-invested companies', 'Technology and data-infrastructure businesses', 'Suppliers, distributors and commercial creditors', 'Employers, executives and property investors'],
+    services: [
+      ['Company, BOI & technology support', 'Structuring, investment-promotion, governance and commercial support for industrial and technology projects.', '/pathum-thani-company-boi-technology'],
+      ['Commercial disputes & debt recovery', 'Contract claims, unpaid invoices, supplier disputes, litigation and enforcement planning.', '/pathum-thani-commercial-disputes-debt-recovery'],
+      ['Industrial property due diligence', 'Independent review of factories, warehouses, commercial land, leases and operating premises.', '/pathum-thani-industrial-property-due-diligence'],
+      ['Employment, visa & work permits', 'Employment documentation, workplace issues and coordinated authorization for foreign personnel.', '/pathum-thani-employment-visa-work-permit']
+    ],
+    focus: 'Walailak Law Firm provides and manages the engagement, whether handled entirely by the firm or supported by our established Pathum Thani local counsel for a defined court, authority, property or evidence-related task.',
+    related: [['Bangkok enquiries','/contact'],['Ayutthaya enquiries','/contact'],['All locations','/locations']]
   }
 ];
 

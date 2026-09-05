@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var nav = document.querySelector('.nav-links');
   if (nav) {
     var labels = {
-      en: { locations: 'Locations', contact: 'Contact', pattaya: 'Pattaya Office', rayong: 'Rayong Office' },
-      th: { locations: 'พื้นที่ให้บริการ', contact: 'ติดต่อเรา', pattaya: 'สำนักงานพัทยา', rayong: 'สำนักงานระยอง' },
-      fr: { locations: 'Implantations', contact: 'Contact', pattaya: 'Bureau de Pattaya', rayong: 'Bureau de Rayong' }
+      en: { locations: 'Locations', all: 'All locations', contact: 'Contact', pattaya: 'Pattaya Office', rayong: 'Rayong Office' },
+      th: { locations: 'พื้นที่ให้บริการ', all: 'พื้นที่ให้บริการทั้งหมด', contact: 'ติดต่อเรา', pattaya: 'สำนักงานพัทยา', rayong: 'สำนักงานระยอง' },
+      fr: { locations: 'Implantations', all: 'Toutes les implantations', contact: 'Contact', pattaya: 'Bureau de Pattaya', rayong: 'Bureau de Rayong' }
     }[language];
     var contactLink = nav.querySelector('a[href="' + prefix + '/contact"]');
     if (contactLink) {
@@ -17,10 +17,16 @@ document.addEventListener('DOMContentLoaded', function () {
       var locationsItem = document.createElement('div');
       locationsItem.className = 'nav-item';
       locationsItem.innerHTML =
-        '<a href="' + prefix + '/contact">' + labels.locations + ' <span class="caret">&#9662;</span></a>' +
+        '<a href="/locations">' + labels.locations + ' <span class="caret">&#9662;</span></a>' +
         '<div class="dropdown-menu">' +
+          '<a href="/locations">' + labels.all + '</a>' +
           '<a href="' + prefix + '/rayong-law-office">' + labels.rayong + '</a>' +
           '<a href="' + prefix + '/pattaya-law-office">' + labels.pattaya + '</a>' +
+          '<a href="/locations/chonburi">Chonburi</a>' +
+          '<a href="/locations/si-racha">Si Racha</a>' +
+          '<a href="/locations/laem-chabang">Laem Chabang</a>' +
+          '<a href="/locations/phuket">Phuket</a>' +
+          '<a href="/locations/chiang-mai">Chiang Mai</a>' +
         '</div>';
       contactItem.parentNode.insertBefore(locationsItem, contactItem);
       var plainContact = document.createElement('a');

@@ -17,6 +17,12 @@
 /legal-documents-services.html /legal-documents-services 301
 /pattaya-law-office.html /pattaya-law-office 301
 /rayong-law-office.html /rayong-law-office 301
+/locations.html /locations 301
+/locations/chonburi.html /locations/chonburi 301
+/locations/si-racha.html /locations/si-racha 301
+/locations/laem-chabang.html /locations/laem-chabang 301
+/locations/phuket.html /locations/phuket 301
+/locations/chiang-mai.html /locations/chiang-mai 301
 
 /th/about.html /th/about 301
 /th/services.html /th/services 301
@@ -86,6 +92,12 @@
 /legal-documents-services/ /legal-documents-services 301
 /pattaya-law-office/ /pattaya-law-office 301
 /rayong-law-office/ /rayong-law-office 301
+/locations/ /locations 301
+/locations/chonburi/ /locations/chonburi 301
+/locations/si-racha/ /locations/si-racha 301
+/locations/laem-chabang/ /locations/laem-chabang 301
+/locations/phuket/ /locations/phuket 301
+/locations/chiang-mai/ /locations/chiang-mai 301
 
 # Old WordPress/generated URLs that should not serve homepage duplicates
 /blog /404.html 404

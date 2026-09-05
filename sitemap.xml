@@ -288,4 +288,10 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://walailaklaw.com/th/rayong-law-office" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://walailaklaw.com/fr/rayong-law-office" />
   </url>
+  <url><loc>https://walailaklaw.com/locations</loc></url>
+  <url><loc>https://walailaklaw.com/locations/chonburi</loc></url>
+  <url><loc>https://walailaklaw.com/locations/si-racha</loc></url>
+  <url><loc>https://walailaklaw.com/locations/laem-chabang</loc></url>
+  <url><loc>https://walailaklaw.com/locations/phuket</loc></url>
+  <url><loc>https://walailaklaw.com/locations/chiang-mai</loc></url>
 </urlset>

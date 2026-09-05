@@ -340,6 +340,62 @@ const pages = [
     warningTitle: 'Registration alone does not authorize every activity',
     warning: 'The company’s registered objectives, foreign-business position, licences, premises and immigration arrangements must match what it actually intends to do. Advice should begin with the proposed operation and timeline, not with a predetermined company structure or staffing formula.',
     related: [['Commercial contracts in Laem Chabang','/laem-chabang-commercial-contracts'],['Visa and work-permit services','/visa-work-permit'],['Laem Chabang legal services','/locations/laem-chabang']]
+  },
+  {
+    slug: 'chonburi-company-boi-investment', city: 'Chonburi', office: '/locations/chonburi', practice: '/company-registration-services', image: 'company-registration-lawyer.webp',
+    title: 'Company Registration and BOI Support in Chonburi | Walailak Law Firm',
+    description: 'Company registration, foreign investment and BOI legal support in Chonburi for manufacturers, service businesses, contractors and investors.',
+    eyebrow: 'CHONBURI BUSINESS SERVICES', h1: 'Company Registration & BOI Support in Chonburi',
+    lead: 'Practical structuring and implementation for Thai and foreign investors establishing or expanding a business in Chonburi.',
+    introTitle: 'Choose the structure after defining the real business',
+    intro: 'Chonburi accommodates manufacturing, logistics, construction, services, property and tourism-related businesses across several commercial centres. The appropriate route depends on the activities, customers, ownership, premises, staffing and licences—not simply the fastest way to register a company. Walailak Law Firm assesses the operating plan before preparing the corporate structure and implementation steps.',
+    situations: ['A foreign investor establishing a Chonburi company','A manufacturer or technology business considering BOI promotion','An overseas company opening a Thai subsidiary or regional operation','An existing business adding activities, capital or shareholders','A contractor, supplier or service company entering the province','A business that will employ foreign directors or specialists'],
+    checks: ['Clarify activities, revenue model, customers and location','Assess lawful ownership and control without nominee arrangements','Compare ordinary registration, licensing and BOI pathways','Prepare incorporation, shareholder and director documents','Coordinate tax, employment, visa and work-permit workstreams','Support governance, contracts and post-registration changes'],
+    warningTitle: 'A registered company may still need further approvals',
+    warning: 'Company registration does not itself authorize every foreign-owned activity, regulated service, factory, premises or employment arrangement. The legal plan should connect ownership, licences, investment promotion, contracts and staffing to the intended opening timeline.',
+    related: [['Commercial disputes in Chonburi','/chonburi-commercial-disputes-debt-recovery'],['Company registration services','/company-registration-services'],['Chonburi legal services','/locations/chonburi']]
+  },
+  {
+    slug: 'chonburi-commercial-disputes-debt-recovery', city: 'Chonburi', office: '/locations/chonburi', practice: '/civil-litigation-services', image: 'civil-litigation-lawyer.webp',
+    title: 'Commercial Disputes and Debt Recovery in Chonburi | Walailak Law Firm',
+    description: 'Commercial dispute and debt recovery legal services in Chonburi for companies, suppliers, contractors, creditors and overseas businesses.',
+    eyebrow: 'CHONBURI COMMERCIAL DISPUTES', h1: 'Commercial Disputes & Debt Recovery in Chonburi',
+    lead: 'Evidence-led strategy for contract claims, unpaid debts, supplier disagreements and business litigation across Chonburi.',
+    introTitle: 'Define the claim, counterparty and commercial objective',
+    intro: 'Chonburi disputes may arise from manufacturing, construction, supply, distribution, services, property or cross-border trade. The documents and responsible parties can span several companies and locations. Walailak Law Firm reviews the contractual claim, evidence, urgency and recovery prospects before recommending negotiation, formal demands, proceedings or enforcement planning.',
+    situations: ['Unpaid invoices for goods, services or contracted work','A supplier or customer disputes quality, delivery or delay','An overseas creditor is pursuing a Chonburi business','A construction, installation or commercial property contract fails','A shareholder, director or business partner dispute develops','Court papers, interim protection or an urgent response is required'],
+    checks: ['Confirm parties, jurisdiction and dispute-resolution clauses','Organize contracts, orders, invoices and performance evidence','Assess liability, defences, limitation and counterclaims','Review debtor, guarantor and recoverable-asset information','Prepare demand and settlement options with clear thresholds','Manage litigation and local court work through our Chonburi local counsel when required'],
+    warningTitle: 'Winning the legal argument is only one objective',
+    warning: 'A proportionate strategy also considers the value at stake, business relationship, evidence, counterparty solvency, enforceable assets and likely cost. These factors should be tested before committing to proceedings or accepting a payment proposal.',
+    related: [['Company and BOI support in Chonburi','/chonburi-company-boi-investment'],['Civil litigation services','/civil-litigation-services'],['Chonburi legal services','/locations/chonburi']]
+  },
+  {
+    slug: 'chonburi-property-due-diligence', city: 'Chonburi', office: '/locations/chonburi', practice: '/real-estate-lawyer', image: 'real-estate-lawyer.webp',
+    title: 'Property Due Diligence in Chonburi | Walailak Law Firm',
+    description: 'Independent property due diligence in Chonburi for houses, land, condominiums, leases, commercial premises and development transactions.',
+    eyebrow: 'CHONBURI PROPERTY SERVICES', h1: 'Property Due Diligence in Chonburi',
+    lead: 'Independent title, contract and transaction review for residential and commercial property across Chonburi province.',
+    introTitle: 'The review should reflect the property and intended use',
+    intro: 'A Chonburi purchase may involve a condominium, family home, development plot, factory, warehouse, commercial building or long-term lease. Each structure raises different questions about ownership, title, access, buildings, existing rights and permitted use. Walailak Law Firm acts independently from the seller, agent and developer and defines the review scope before substantial funds are committed.',
+    situations: ['A house or land purchase involving a Thai spouse','A condominium purchase outside central Pattaya','A factory, warehouse or commercial-premises transaction','A long-term residential or business lease','A property with a mortgage, tenant or registered right','An overseas buyer requiring remote review and coordination'],
+    checks: ['Verify title, registered owner and material encumbrances','Review seller, landlord, director or attorney authority','Examine sale, reservation, lease and supporting agreements','Review available access, building and land-use documentation','Plan payment, transfer, tax and registration requirements','Coordinate Land Office work through our Chonburi local counsel when required'],
+    warningTitle: 'Residential and operating property require different checks',
+    warning: 'A title search alone does not establish that premises are suitable for the buyer’s intended home, factory, warehouse or commercial activity. Building records, access, lease restrictions, licences and the proposed ownership structure may require separate review.',
+    related: [['Wills and estate planning in Chonburi','/chonburi-wills-estate-planning'],['Real estate services','/real-estate-lawyer'],['Chonburi legal services','/locations/chonburi']]
+  },
+  {
+    slug: 'chonburi-wills-estate-planning', city: 'Chonburi', office: '/locations/chonburi', practice: '/legal-documents-services', image: 'family-lawyer.webp',
+    title: 'Wills and Estate Planning in Chonburi | Walailak Law Firm',
+    description: 'Thai wills and estate planning in Chonburi for foreign residents, international families, property owners and overseas beneficiaries.',
+    eyebrow: 'CHONBURI WILLS & ESTATES', h1: 'Wills & Estate Planning in Chonburi',
+    lead: 'Clear planning for Thai property, bank accounts, company interests and family arrangements involving Chonburi residents and assets.',
+    introTitle: 'Plan around legal ownership and family circumstances',
+    intro: 'Chonburi estate planning often involves a home or condominium, Thai bank accounts, vehicles, company shares, a Thai spouse and beneficiaries living overseas. Walailak Law Firm first identifies how each Thai asset is legally held and reviews relevant family circumstances before recommending the will and any supporting arrangements.',
+    situations: ['A foreign resident preparing a will for Thai assets','International spouses coordinating their estate plans','A home or land registered in a Thai spouse’s name','Children or beneficiaries living outside Thailand','Company shares or business interests forming part of the estate','An existing overseas will that may interact with Thai planning'],
+    checks: ['Identify Thai assets, ownership and intended beneficiaries','Review family status and existing wills or agreements','Consider executor, guardian, witness and language arrangements','Assess registered lease, usufruct or property rights','Prepare the agreed Thai and English documentation','Explain signing, safekeeping and future-update requirements'],
+    warningTitle: 'One document may not control every asset or country',
+    warning: 'Thai and overseas assets can be subject to different succession, tax and administration rules. Company interests, jointly held property and assets registered in another person’s name also require careful analysis. The scope should distinguish what the Thai plan can achieve from advice needed in another jurisdiction.',
+    related: [['Property due diligence in Chonburi','/chonburi-property-due-diligence'],['Legal document services','/legal-documents-services'],['Chonburi legal services','/locations/chonburi']]
   }
 ];
 

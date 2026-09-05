@@ -13,10 +13,10 @@ const locations = [
     context: 'Chonburi combines major industrial estates, international supply chains, Laem Chabang Port, established residential communities and Pattaya’s tourism economy. A matter may involve provincial courts and authorities, an industrial estate, a Land Office or specialist local attendance. Walailak Law Firm leads each engagement and can handle the matter directly, involving our established local counsel only when the work benefits from it.',
     clients: ['Manufacturers and foreign-invested companies', 'Executives and international employees', 'Property buyers and long-term residents', 'Overseas counsel needing Thai representation'],
     services: [
-      ['Company, BOI & investment support', 'Company structuring, foreign ownership questions, contracts and practical coordination for businesses entering or operating in the Eastern Economic Corridor.', '/company-registration-services'],
-      ['Commercial disputes & debt recovery', 'Contract claims, trade debts, negotiation, litigation strategy and enforcement planning involving Chonburi businesses.', '/civil-litigation-services'],
-      ['Property & Land Office matters', 'Independent due diligence, contract review, title checks and registration support for residential and commercial property.', '/real-estate-lawyer'],
-      ['Employment & regulatory matters', 'Employment documentation, workplace disputes, work permits and liaison with relevant authorities.', '/visa-work-permit']
+      ['Company, BOI & investment support', 'Company structuring, foreign ownership questions, contracts and practical coordination for businesses entering or operating in the Eastern Economic Corridor.', '/chonburi-company-boi-investment'],
+      ['Commercial disputes & debt recovery', 'Contract claims, trade debts, negotiation, litigation strategy and enforcement planning involving Chonburi businesses.', '/chonburi-commercial-disputes-debt-recovery'],
+      ['Property & Land Office matters', 'Independent due diligence, contract review, title checks and registration support for residential and commercial property.', '/chonburi-property-due-diligence'],
+      ['Wills & estate planning', 'Thai wills and coordinated planning for property owners, international families and overseas beneficiaries.', '/chonburi-wills-estate-planning']
     ],
     focus: 'Chonburi is a broad provincial market. Walailak Law Firm determines whether to handle the full matter directly or involve our Chonburi local counsel for a particular court, authority or local task.',
     related: [['Pattaya Office','/pattaya-law-office'],['Si Racha','/locations/si-racha'],['Laem Chabang','/locations/laem-chabang']]

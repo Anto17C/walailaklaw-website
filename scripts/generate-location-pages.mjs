@@ -156,6 +156,40 @@ const locations = [
     ],
     focus: 'Walailak Law Firm provides and manages the engagement, whether handled entirely by the firm or supported by our established Pathum Thani local counsel for a defined court, authority, property or evidence-related task.',
     related: [['Bangkok enquiries','/contact'],['Ayutthaya enquiries','/contact'],['All locations','/locations']]
+  },
+  {
+    slug: 'nonthaburi', name: 'Nonthaburi', image: 'family-lawyer.webp',
+    title: 'English-Speaking Lawyers in Nonthaburi | Walailak Law Firm',
+    description: 'English-speaking legal services in Nonthaburi for businesses, condominium owners, foreign residents and international families.',
+    lead: 'Clear legal support for businesses, property owners, foreign residents and international families in Nonthaburi.',
+    contextTitle: 'Bangkok-connected legal work with a distinct local setting',
+    context: 'Nonthaburi combines dense residential communities, condominium developments, commercial centres and businesses operating across the wider Bangkok region. Matters often require coordination between local property, court or registration steps and clients elsewhere in Thailand or overseas. Walailak Law Firm provides and manages the engagement directly.',
+    clients: ['Foreign residents and international families', 'Condominium and residential property clients', 'SMEs, shareholders and commercial operators', 'Thai and overseas creditors or counterparties'],
+    services: [
+      ['Company & commercial contracts', 'Company establishment, governance and practical contract support for Bangkok-region businesses.', '/nonthaburi-company-commercial-contracts'],
+      ['Condominium & property due diligence', 'Independent review of titles, purchase agreements, leases and residential property arrangements.', '/nonthaburi-condominium-property-due-diligence'],
+      ['Civil disputes & debt recovery', 'Evidence-led strategy for contract, property, shareholder and payment disputes.', '/nonthaburi-civil-disputes-debt-recovery'],
+      ['Family, wills & estates', 'Divorce, family arrangements, Thai wills and succession planning for international households.', '/nonthaburi-family-wills-estates']
+    ],
+    focus: 'Walailak Law Firm may handle the complete matter directly. When a Nonthaburi court, Land Office, district office or other local step requires attendance, the firm assigns and manages our established Nonthaburi local counsel while remaining responsible for the engagement.',
+    related: [['Pathum Thani','/locations/pathum-thani'],['Bangkok enquiries','/contact'],['All locations','/locations']]
+  },
+  {
+    slug: 'samut-prakan', name: 'Samut Prakan', image: 'company-registration-lawyer.webp',
+    title: 'English-Speaking Lawyers in Samut Prakan | Walailak Law Firm',
+    description: 'Legal services in Samut Prakan for manufacturers, logistics businesses, investors, employers and industrial property clients.',
+    lead: 'Business-focused legal support for manufacturers, logistics operators, investors and employers in Samut Prakan.',
+    contextTitle: 'Legal support for a major industrial and logistics gateway',
+    context: 'Samut Prakan combines manufacturing estates, warehouses, logistics operations, airport-connected businesses and dense commercial communities. Walailak Law Firm handles matters directly and adds our Samut Prakan local counsel when a court, authority, Land Office or on-site task benefits the client.',
+    clients: ['Manufacturers and foreign-invested companies','Logistics, warehouse and distribution operators','Suppliers, creditors and commercial counterparties','Employers, executives and industrial property clients'],
+    services: [
+      ['Company, BOI & investment support','Company structuring, promotion, governance and operational coordination for industrial projects.','/samut-prakan-company-boi-investment'],
+      ['Commercial disputes & debt recovery','Contract claims, supply disputes, unpaid debts, litigation and enforcement planning.','/samut-prakan-commercial-disputes-debt-recovery'],
+      ['Industrial property due diligence','Independent review of factories, warehouses, industrial land, leases and operating premises.','/samut-prakan-industrial-property-due-diligence'],
+      ['Employment, visa & work permits','Employment documentation, workplace issues and coordinated authorization for foreign personnel.','/samut-prakan-employment-visa-work-permit']
+    ],
+    focus: 'Walailak Law Firm provides and manages the engagement, whether handled entirely by the firm or supported by our established Samut Prakan local counsel for a defined local task.',
+    related: [['Bangkok enquiries','/contact'],['Chonburi','/locations/chonburi'],['All locations','/locations']]
   }
 ];
 

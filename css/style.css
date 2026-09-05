@@ -660,6 +660,12 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 }
 .location-card h3 { font-size: 21px; margin-bottom: 9px; }
 .location-card p { color: var(--text-secondary); font-size: 14px; line-height: 1.7; margin-bottom: 16px; }
+.location-card .link {
+  color: var(--gold);
+  font-weight: 700;
+}
+.location-card .link:hover,
+.location-card .link:focus-visible { color: var(--gold-dim); }
 .location-panel {
   border-left: 3px solid var(--gold);
   border-radius: var(--radius-sm);

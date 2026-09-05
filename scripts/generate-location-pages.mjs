@@ -81,10 +81,10 @@ const locations = [
     context: 'Chiang Mai attracts long-term foreign residents, international couples, retirees, entrepreneurs and small businesses. Their matters often combine Thai documentation with overseas assets, family relationships or remote decision-makers. Walailak Law Firm can manage the engagement remotely or arrange travel as appropriate, involving our Chiang Mai local counsel only when local attendance or added capability benefits the client.',
     clients: ['International couples and families', 'Retirees and long-term foreign residents', 'Property buyers, owners and tenants', 'Entrepreneurs and small international businesses'],
     services: [
-      ['Family agreements & disputes', 'Separation, mediation, divorce, children and cross-border family coordination handled with discretion.', '/family-law-services'],
-      ['Wills & estate planning', 'Thai wills and succession planning for local property, accounts and international family circumstances.', '/legal-documents-services'],
-      ['Property and lease review', 'Independent due diligence, title checks, purchase agreements and lease documentation.', '/real-estate-lawyer'],
-      ['Company, employment & immigration', 'Business establishment, contracts, employment documentation, visas and work permits.', '/company-registration-services']
+      ['Family, divorce & mediation', 'Separation, mediation, divorce, children and cross-border family coordination handled with discretion.', '/chiang-mai-family-divorce-mediation'],
+      ['Wills & estate planning', 'Thai wills and succession planning for local property, accounts and international family circumstances.', '/chiang-mai-wills-estate-planning'],
+      ['Property due diligence', 'Independent due diligence, title checks, purchase agreements and lease documentation.', '/chiang-mai-property-due-diligence'],
+      ['Company, visa & work permits', 'Business establishment, contracts, employment documentation, visas and work permits.', '/chiang-mai-company-visa-work-permit']
     ],
     focus: 'Remote consultations and document review can begin before a client travels. Walailak Law Firm decides whether to handle every stage directly, arrange travel when appropriate or involve our Chiang Mai local counsel for a defined role while the firm continues to lead the matter.',
     related: [['Phuket','/locations/phuket'],['Bangkok enquiries','/contact'],['All locations','/locations']]

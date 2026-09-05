@@ -172,6 +172,62 @@ const pages = [
     warningTitle: 'A will passes the rights that form part of the estate',
     warning: 'The estate may not include every asset a client informally regards as theirs. Lease terms, company ownership, matrimonial arrangements and registered property rights can affect what passes and how it is administered. Those issues should be identified before the document is finalized.',
     related: [['Property due diligence in Phuket','/phuket-property-due-diligence'],['Company and hospitality services in Phuket','/phuket-company-registration-hospitality'],['Phuket legal services','/locations/phuket']]
+  },
+  {
+    slug: 'chiang-mai-family-divorce-mediation', city: 'Chiang Mai', office: '/locations/chiang-mai', practice: '/family-law-services', image: 'family-lawyer.webp',
+    title: 'Family, Divorce and Mediation Lawyer in Chiang Mai | Walailak Law Firm',
+    description: 'English-speaking family, separation, divorce and mediation legal services in Chiang Mai for international couples, parents and expatriate families.',
+    eyebrow: 'CHIANG MAI FAMILY LAW', h1: 'Family, Divorce & Mediation in Chiang Mai',
+    lead: 'Constructive legal support for international couples and families dealing with separation, divorce, children, finances and cross-border arrangements.',
+    introTitle: 'Define the immediate family arrangements before positions harden',
+    intro: 'International families in Chiang Mai may need to address living arrangements, financial responsibilities, schooling, relocation, travel and parenting while deciding whether to separate formally or divorce. Walailak Law Firm helps clients organize the legal and practical issues, understand available processes and prepare for structured discussion or proceedings.',
+    situations: ['A couple considering a structured separation','An agreed or contested divorce','Parenting, residence, schooling or travel arrangements','Financial support and division of responsibilities','Relocation involving another province or country','A foreign spouse who needs clear English-language advice'],
+    checks: ['Clarify marriage status, nationality and current residence','Identify urgent safety, child or financial concerns','Organize assets, income, agreements and relevant communications','Define subjects suitable for negotiation or mediation','Prepare settlement terms and supporting documents where agreed','Plan court steps and representation if agreement is not possible'],
+    warningTitle: 'Mediation works best with informed and voluntary participation',
+    warning: 'Constructive negotiation can preserve time, privacy and working family relationships, but it is not suitable for every situation. Each party should understand the proposed terms and the effect of any agreement, and urgent protective or court action may sometimes need to be considered first.',
+    related: [['Wills and estate planning in Chiang Mai','/chiang-mai-wills-estate-planning'],['Family law services','/family-law-services'],['Chiang Mai legal services','/locations/chiang-mai']]
+  },
+  {
+    slug: 'chiang-mai-wills-estate-planning', city: 'Chiang Mai', office: '/locations/chiang-mai', practice: '/legal-documents-services', image: 'legal-documents-lawyer.webp',
+    title: 'Wills and Estate Planning Lawyer in Chiang Mai | Walailak Law Firm',
+    description: 'Thai wills and estate planning in Chiang Mai for foreign residents, international couples, property owners and overseas beneficiaries.',
+    eyebrow: 'CHIANG MAI WILLS & ESTATES', h1: 'Wills & Estate Planning in Chiang Mai',
+    lead: 'Practical Thai estate planning for long-term residents, international couples, property owners and families with beneficiaries overseas.',
+    introTitle: 'Connect the Thai will to the assets and family circumstances',
+    intro: 'Chiang Mai residents may hold a condominium, lease or registered property right, Thai bank accounts, vehicles, business interests and personal property while maintaining assets and family relationships overseas. Walailak Law Firm identifies the Thai estate and existing documents before preparing a will and related implementation plan.',
+    situations: ['A foreign resident preparing a Thai will','International spouses coordinating separate wills','A condominium, leasehold or registered property right','Thai bank accounts, vehicles or business interests','Children, beneficiaries or executors living overseas','An existing foreign will requiring coordination'],
+    checks: ['Identify Thai assets and confirm how they are owned','Review marriage, family and beneficiary details','Consider how Thai and foreign documents should fit together','Select an executor and practical signing arrangement','Prepare the agreed will and English explanation','Explain safekeeping, copies and future updates'],
+    warningTitle: 'Cross-border estates need clearly divided advice',
+    warning: 'A Thai will can be prepared around assets and rights in Thailand, but overseas assets may require advice in the country where they are located. The documents should be coordinated carefully so that one plan does not unintentionally revoke or contradict another.',
+    related: [['Family and mediation in Chiang Mai','/chiang-mai-family-divorce-mediation'],['Property due diligence in Chiang Mai','/chiang-mai-property-due-diligence'],['Chiang Mai legal services','/locations/chiang-mai']]
+  },
+  {
+    slug: 'chiang-mai-property-due-diligence', city: 'Chiang Mai', office: '/locations/chiang-mai', practice: '/real-estate-lawyer', image: 'real-estate-lawyer.webp',
+    title: 'Property Due Diligence Lawyer in Chiang Mai | Walailak Law Firm',
+    description: 'Independent property due diligence in Chiang Mai for condominium, house, land and leasehold transactions, including title and contract review.',
+    eyebrow: 'CHIANG MAI PROPERTY SERVICES', h1: 'Property Due Diligence in Chiang Mai',
+    lead: 'Independent title, contract and ownership review for foreign residents, international couples and overseas buyers purchasing property in Chiang Mai.',
+    introTitle: 'Confirm the title, building and proposed legal rights',
+    intro: 'A Chiang Mai purchase may involve a foreign-owned condominium, land acquired by a Thai spouse, a house whose building records require review or a long-term lease and registered rights. Walailak Law Firm examines the proposed transaction independently and explains what the documents establish before the client signs or transfers substantial funds.',
+    situations: ['A condominium purchase under the foreign ownership quota','A house and land purchase involving a Thai spouse','A leasehold home or development resale','A property with an existing mortgage or registered right','An overseas purchaser reviewing the transaction remotely','A buyer who needs Land Office transfer planning'],
+    checks: ['Verify title, registered owner and encumbrances','Review seller identity, authority and company records where relevant','Examine sale, reservation and lease documentation','Review available permits, access and development information','Assess financing, remittance and registration documents','Plan the closing sequence and Land Office requirements'],
+    warningTitle: 'The address and house registration are not a title review',
+    warning: 'Property identification can involve several Thai records relating to the parcel, building, registered occupants and contractual rights. The review should reconcile those records and the physical property rather than relying on an address, translation or copy supplied by the seller alone.',
+    related: [['Wills and estate planning in Chiang Mai','/chiang-mai-wills-estate-planning'],['Company and immigration services in Chiang Mai','/chiang-mai-company-visa-work-permit'],['Chiang Mai legal services','/locations/chiang-mai']]
+  },
+  {
+    slug: 'chiang-mai-company-visa-work-permit', city: 'Chiang Mai', office: '/locations/chiang-mai', practice: '/company-registration-services', image: 'company-registration-lawyer.webp',
+    title: 'Company Registration, Visa and Work Permit Lawyer in Chiang Mai | Walailak Law Firm',
+    description: 'Company registration, foreign investment, employment, visa and work permit legal support for businesses and entrepreneurs in Chiang Mai.',
+    eyebrow: 'CHIANG MAI BUSINESS SERVICES', h1: 'Company, Visa & Work Permit Services in Chiang Mai',
+    lead: 'Connected legal support for entrepreneurs and businesses establishing operations, employing people and arranging lawful work authorization in Chiang Mai.',
+    introTitle: 'Treat the company and immigration plan as one operating model',
+    intro: 'Founders often consider registration, ownership, employment, visas and work permits as separate tasks. In practice, the proposed activity, investment, staffing, workplace and role of each foreign national need to fit together. Walailak Law Firm reviews the complete plan before recommending the registration and immigration sequence.',
+    situations: ['A foreign entrepreneur starting a Chiang Mai business','A digital, creative, tourism or wellness venture','An existing company appointing a foreign director or employee','A business comparing ordinary registration and BOI options','A family relocating with an operating business','A company reviewing contracts, staff and continuing compliance'],
+    checks: ['Clarify activities, ownership, funding and management roles','Assess company, licensing and foreign-business requirements','Consider relevant investment-promotion pathways','Prepare corporate and commercial documents','Plan employment, visa and work-permit steps','Coordinate local filings and our Chiang Mai local counsel when required'],
+    warningTitle: 'A registered company does not by itself authorize work',
+    warning: 'Company registration, permission to conduct a business activity, immigration status and authorization to work are different questions. The proposed role and timeline should be reviewed before commitments are made to premises, staff, clients or relocation.',
+    related: [['Property due diligence in Chiang Mai','/chiang-mai-property-due-diligence'],['Company registration services','/company-registration-services'],['Chiang Mai legal services','/locations/chiang-mai']]
   }
 ];
 

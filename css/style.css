@@ -541,12 +541,16 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   padding-bottom: 8px;
   border-bottom: 2px solid var(--gold);
 }
-.footer-grid p { font-size: 13px; line-height: 1.6; color: var(--text-on-dark-secondary); margin: 0 0 6px; }
-.footer-grid a { font-size: 13px; color: var(--text-on-dark-secondary); }
+.footer-grid p { font-size: 0.8rem; line-height: 1.6; color: var(--text-on-dark-secondary); margin: 0 0 6px; }
+.footer-grid a { font-size: 0.8rem; color: var(--text-on-dark-secondary); }
 .footer-grid p:has(a) { margin: 0 0 4px; }
 .footer-grid a:hover { color: var(--gold); }
-.footer-logo { display: flex; align-items: center; gap: 10px; color: #fff; font-weight: 700; margin-bottom: 14px; }
+.footer-logo { display: flex; align-items: center; gap: 10px; color: #fff; font-size: 0.82rem; font-weight: 700; margin-bottom: 14px; }
 .footer-logo img { height: 52px; }
+.footer-grid > div:nth-child(3) p:not(:first-of-type),
+.footer-grid > div:nth-child(3) p:not(:first-of-type) a,
+.footer-grid > div:nth-child(4) p,
+.footer-grid > div:nth-child(4) a { font-size: 0.78rem; }
 .footer-bottom {
   background: rgba(0,0,0,0.25);
   border-top: 1px solid rgba(255,255,255,0.08);
@@ -568,7 +572,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .social-row .footer-social-email { color: #ea6a5f; }
 .social-row .footer-social-phone { color: var(--gold); }
 .social-row .footer-social-line img { width: 18px; height: 18px; border-radius: 4px; }
-.footer-locations-link { margin-top: 10px; font-size: 12.5px; }
+.footer-locations-link { margin-top: 10px; font-size: 0.8rem; }
 .footer-locations-link a { color: var(--text-on-dark-secondary); }
 .footer-locations-link a:hover { color: var(--gold); }
 .footer-locations-link i { font-size: 12px; margin-left: 3px; }

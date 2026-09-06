@@ -568,6 +568,10 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .social-row .footer-social-email { color: #ea6a5f; }
 .social-row .footer-social-phone { color: var(--gold); }
 .social-row .footer-social-line img { width: 18px; height: 18px; border-radius: 4px; }
+.footer-locations-link { margin-top: 10px; font-size: 12.5px; }
+.footer-locations-link a { color: var(--text-on-dark-secondary); }
+.footer-locations-link a:hover { color: var(--gold); }
+.footer-locations-link i { font-size: 12px; margin-left: 3px; }
 
 @media (max-width: 880px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }

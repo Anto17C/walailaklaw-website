@@ -209,6 +209,8 @@ const contactRow = `<div class="contact-module"><div><h4>Discuss a matter confid
 
 const tracking = `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53CDHSWB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-53CDHSWB');</script>`;
 
+const standardHeroOverlay = 'linear-gradient(90deg,rgba(20,17,13,0.97) 0%,rgba(20,17,13,0.93) 30%,rgba(20,17,13,0.55) 65%,rgba(20,17,13,0.15) 100%)';
+
 function head(title, description, canonical) {
   return `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>${title}</title><meta name="description" content="${description}"><meta property="og:type" content="website"><meta property="og:url" content="https://walailaklaw.com${canonical}"><meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:image" content="https://walailaklaw.com/images/og-image.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${title}"><meta name="twitter:description" content="${description}"><meta name="twitter:image" content="https://walailaklaw.com/images/og-image.jpg"><link rel="icon" type="image/svg+xml" href="/images/favicon.svg"><link rel="apple-touch-icon" href="/images/apple-touch-icon.png"><link rel="canonical" href="https://walailaklaw.com${canonical}"><link rel="alternate" hreflang="en" href="https://walailaklaw.com${canonical}"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.44.0/dist/tabler-icons.min.css"><link rel="stylesheet" href="/css/style.css"></head><body>`;
 }
@@ -249,6 +251,8 @@ const hub = `${head('Legal Services Across Thailand | Walailak Law Firm','Find W
 
 function cleanHtml(html) {
   return html
+    .replaceAll('linear-gradient(90deg,rgba(20,17,13,.97) 0%,rgba(20,17,13,.91) 38%,rgba(20,17,13,.35) 100%)', standardHeroOverlay)
+    .replaceAll('linear-gradient(90deg,rgba(20,17,13,.97),rgba(20,17,13,.75))', standardHeroOverlay)
     .replaceAll('&family=', '&amp;family=')
     .replaceAll('&display=', '&amp;display=')
     .replaceAll(' & ', ' &amp; ');

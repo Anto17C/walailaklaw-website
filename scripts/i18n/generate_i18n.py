@@ -85,6 +85,15 @@ THAI_NAME = {
     'Chanthaburi':'จันทบุรี','Trat':'ตราด',
 }
 
+CHINESE_NAME = {
+    'Rayong':'罗勇','Pattaya':'芭堤雅','Chonburi':'春武里','Si Racha':'是拉差',
+    'Laem Chabang':'林查班','Phuket':'普吉','Chiang Mai':'清迈','Hua Hin':'华欣',
+    'Koh Samui':'苏梅岛','Surat Thani':'素叻他尼','Pathum Thani':'巴吞他尼',
+    'Nonthaburi':'暖武里','Samut Prakan':'北榄','Ayutthaya':'大城',
+    'Chiang Rai':'清莱','Khon Kaen':'孔敬','Udon Thani':'乌隆他尼','Korat':'呵叻',
+    'Chanthaburi':'尖竹汶','Trat':'达叻',
+}
+
 # Static UI strings per locale
 UI = {
   'th': {
@@ -138,6 +147,32 @@ UI = {
     'lstep3_t':'Exécution gérée :','lstep3_d':"Walailak Law Firm fournit et gère la mission, qu'elle soit traitée entièrement par le cabinet ou soutenue par notre conseil local établi pour une tâche définie.",
     'related_locations':'Zones connexes',
     'call_aria':'Appeler',
+  },
+  'zh': {
+    'home':'首页','locations':'服务地区',
+    'nationwide_eyebrow':'全国服务 · 本地专业能力',
+    'focused_advice':'针对本地情况的专业建议','when_contact':'客户联系我们时',
+    'scope_assist':'协助范围','how_assist':'瓦莱拉克律师事务所如何提供协助',
+    'scope_note':'具体协助范围将在审查利益冲突、文件、目标及紧急程度后予以确认。',
+    'typical_work':'典型工作内容','practical_point':'实务提示',
+    'view_practice':'查看主要业务领域','starting_matter':'案件启动',
+    'clear_review':'清晰的审查、范围界定及后续步骤',
+    'step1_t':'初步审查：','step1_d':'本所将识别利益冲突、紧急程度、目标及尚缺的关键信息。',
+    'step2_t':'明确范围：','step2_d':'您将收到一份说明工作内容、职责分工、费用及可能产生的第三方费用的方案书。',
+    'step3_t':'法律事务办理：','step3_d':'瓦莱拉克律师事务所将管理案件进展，并以清晰的中文向您通报进度。',
+    'related_services':'相关法律服务',
+    'discuss':'保密咨询您的案件','discuss_p':'直接联系Kae，获取初步审查、策略建议及范围界定。',
+    'legal_support_in':'本地法律支持 ·','who_assist':'服务对象',
+    'relevant_services':'相关服务','matters_we_handle_in':'地区法律事务处理范围',
+    'matters_note_pre':'瓦莱拉克律师事务所将根据案件事实、管辖权及实际需要，决定是直接处理',
+    'matters_note_post':'的相关事务，或指定我们长期合作的当地律师负责特定环节。',
+    'explore_service':'查看详情','flexible_model':'本所灵活运作模式说明',
+    'one_firm':'由一家律师事务所全权负责，执行方式灵活',
+    'lstep1_t':'初步审查：','lstep1_d':'瓦莱拉克律师事务所评估案件事实、紧急程度及利益冲突。',
+    'lstep2_t':'明确范围：','lstep2_d':'您将获得一份清晰的方案，说明各部分工作由谁负责及相应费用。',
+    'lstep3_t':'统筹执行：','lstep3_d':'无论案件完全由本所办理，还是由我们长期合作的当地律师就特定任务提供支持，瓦莱拉克律师事务所均负责提供并管理该项服务。',
+    'related_locations':'相关地区',
+    'call_aria':'致电',
   }
 }
 
@@ -145,11 +180,13 @@ WA_TEXT = {
   'en': 'I%20need%20legal%20assistance%20in%20this%20location.%20Please%20contact%20me.',
   'th': 'I%20need%20legal%20assistance%20in%20this%20location.%20Please%20contact%20me.',
   'fr': 'J%27ai%20besoin%20d%27une%20assistance%20juridique.%20Merci%20de%20me%20contacter.',
+  'zh': 'I%20need%20legal%20assistance%20in%20this%20location.%20Please%20contact%20me.',
 }
 WA_TEXT_SERVICE = {
   'en': '',
   'th': '',
   'fr': '',
+  'zh': '',
 }
 
 def localize_path(en_path, locale):
@@ -168,14 +205,17 @@ def extract(html, tag):
 en_home = read(f"{ROOT}/index.html")
 th_home = read(f"{ROOT}/th/index.html")
 fr_home = read(f"{ROOT}/fr/index.html")
+zh_home = read(f"{ROOT}/zh/index.html")
 
 en_header_raw = extract(en_home, 'header').replace('src="images/', 'src="/images/')
 th_header_raw = extract(th_home, 'header').replace('src="../images/', 'src="/images/').replace('href="/th/', 'href="/th/')
 fr_header_raw = extract(fr_home, 'header').replace('src="../images/', 'src="/images/')
+zh_header_raw = extract(zh_home, 'header')
 
 en_footer = extract(en_home, 'footer').replace('src="images/', 'src="/images/')
 th_footer_raw = extract(th_home, 'footer').replace('src="../images/', 'src="/images/')
 fr_footer_raw = extract(fr_home, 'footer').replace('src="../images/', 'src="/images/')
+zh_footer_raw = extract(zh_home, 'footer')
 
 def fix_footer_locations(footer_html, locale):
     """Prefix internal footer-locations-bar hrefs with /th or /fr."""
@@ -189,27 +229,33 @@ def fix_footer_locations(footer_html, locale):
 
 th_footer = fix_footer_locations(th_footer_raw, 'th')
 fr_footer = fix_footer_locations(fr_footer_raw, 'fr')
+# zh/index.html's footer-locations-bar hrefs are already absolute (/zh/...) in the hand-authored
+# template, so no prefixing is needed here.
+zh_footer = zh_footer_raw
 
 def set_lang_item(header_html, locale, en_path):
     """Replace the .lang-item block so it points to the correct sibling-language equivalents."""
     if locale == 'en':
         trigger = 'EN'
-        dropdown = f'<a href="/th{en_path}">TH</a><a href="/fr{en_path}">FR</a>'
+        dropdown = f'<a href="/th{en_path}">ไทย</a><a href="/fr{en_path}">FR</a><a href="/zh{en_path}">中文</a>'
     elif locale == 'th':
         trigger = 'ไทย'
-        dropdown = f'<a href="{en_path}">EN</a><a href="/fr{en_path}">FR</a>'
-    else:
+        dropdown = f'<a href="{en_path}">EN</a><a href="/fr{en_path}">FR</a><a href="/zh{en_path}">中文</a>'
+    elif locale == 'fr':
         trigger = 'FR'
-        dropdown = f'<a href="{en_path}">EN</a><a href="/th{en_path}">TH</a>'
+        dropdown = f'<a href="{en_path}">EN</a><a href="/th{en_path}">ไทย</a><a href="/zh{en_path}">中文</a>'
+    else:
+        trigger = '中文'
+        dropdown = f'<a href="{en_path}">EN</a><a href="/th{en_path}">ไทย</a><a href="/fr{en_path}">FR</a>'
     new_block = f'<div class="lang-item"><a href="#" class="lang-trigger">{trigger} <span class="caret">&#9662;</span></a><div class="lang-dropdown">{dropdown}</div></div>'
     return re.sub(r'<div class="lang-item">.*?</div></div>', new_block, header_html, count=1, flags=re.S)
 
 def header_for(locale, en_path):
-    base = {'en': en_header_raw, 'th': th_header_raw, 'fr': fr_header_raw}[locale]
+    base = {'en': en_header_raw, 'th': th_header_raw, 'fr': fr_header_raw, 'zh': zh_header_raw}[locale]
     return set_lang_item(base, locale, en_path)
 
 def footer_for(locale):
-    return {'en': en_footer, 'th': th_footer, 'fr': fr_footer}[locale]
+    return {'en': en_footer, 'th': th_footer, 'fr': fr_footer, 'zh': zh_footer}[locale]
 
 TRACKING = "<noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-53CDHSWB\" height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-53CDHSWB');</script>"
 
@@ -220,8 +266,11 @@ def head(locale, title, description, en_path):
     lang = locale
     hreflang_links = ''.join(
         f'<link rel="alternate" hreflang="{lc}" href="https://walailaklaw.com{localize_path(en_path, lc)}">'
-        for lc in ['en', 'th', 'fr']
+        for lc in ['en', 'th', 'fr', 'zh']
     )
+    font_family = ('Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&amp;family=Inter:wght@400;500;600;700'
+        + ('&amp;family=Noto+Sans+SC:wght@400;500;600;700' if locale == 'zh' else ''))
+    zh_font_style = "<style>:lang(zh){font-family:'Noto Sans SC','Inter',sans-serif;}</style>" if locale == 'zh' else ''
     return (f'<!DOCTYPE html><html lang="{lang}"><head><meta charset="UTF-8">'
         f'<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>{title}</title>'
         f'<meta name="description" content="{description}"><meta property="og:type" content="website">'
@@ -235,9 +284,9 @@ def head(locale, title, description, en_path):
         f'<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">'
         f'<link rel="canonical" href="{canonical}">{hreflang_links}'
         f'<link rel="preconnect" href="https://fonts.googleapis.com">'
-        f'<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">'
+        f'<link href="https://fonts.googleapis.com/css2?family={font_family}&amp;display=swap" rel="stylesheet">'
         f'<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.44.0/dist/tabler-icons.min.css">'
-        f'<link rel="stylesheet" href="/css/style.css"></head><body>')
+        f'<link rel="stylesheet" href="/css/style.css">{zh_font_style}</head><body>')
 
 def contact_module(locale, with_text=True):
     txt = UI.get(locale, {})
@@ -307,7 +356,12 @@ def render_city_page(en, locale):
         office_href = en['office']
         practice_href = en['practice']
     else:
-        city_name = THAI_NAME.get(en['city'], en['city']) if locale == 'th' else en['city']
+        if locale == 'th':
+            city_name = THAI_NAME.get(en['city'], en['city'])
+        elif locale == 'zh':
+            city_name = CHINESE_NAME.get(en['city'], en['city'])
+        else:
+            city_name = en['city']
         office_href = f"/{locale}{en['office']}"
         practice_href = f"/{locale}{en['practice']}"
     related_items = t['related'] if locale != 'en' else [r[0] for r in en['related']]
@@ -385,6 +439,8 @@ print("City-page renderer ready")
 def city_disp(name, locale):
     if locale == 'th':
         return THAI_NAME.get(name, name)
+    if locale == 'zh':
+        return CHINESE_NAME.get(name, name)
     return name
 
 def render_location_page(en, locale):
@@ -422,11 +478,17 @@ def render_location_page(en, locale):
         h1 = t['title'].split(' | ')[0]
         breadcrumb_home = ui['home']; locations_label = ui['locations']
         eyebrow = ui['nationwide_eyebrow']
-        legal_support_in = f"{ui['legal_support_in']} {name_disp}" if locale == 'th' else f"{ui['legal_support_in']} {name_disp}"
+        legal_support_in = f"{ui['legal_support_in']} {name_disp}"
         who_assist = ui['who_assist']
         relevant_services = ui['relevant_services']
-        matters_h2 = f"{ui['matters_we_handle_in']}{'' if locale=='th' else ' '}{name_disp}" if locale=='th' else f"{ui['matters_we_handle_in']} {name_disp}"
-        matters_p = f"{ui['matters_note_pre']}{name_disp}{ui['matters_note_post']}" if locale == 'th' else f"{ui['matters_note_pre']} {name_disp} {ui['matters_note_post']}"
+        if locale == 'th':
+            matters_h2 = f"{ui['matters_we_handle_in']}{name_disp}"
+        elif locale == 'zh':
+            # Chinese reads naturally with the city name first, e.g. "罗勇地区法律事务处理范围"
+            matters_h2 = f"{name_disp}{ui['matters_we_handle_in']}"
+        else:
+            matters_h2 = f"{ui['matters_we_handle_in']} {name_disp}"
+        matters_p = f"{ui['matters_note_pre']}{name_disp}{ui['matters_note_post']}" if locale in ('th', 'zh') else f"{ui['matters_note_pre']} {name_disp} {ui['matters_note_post']}"
         explore_service = ui['explore_service']
         flexible_model = ui['flexible_model']
         one_firm = ui['one_firm']
@@ -519,8 +581,8 @@ def render_hub(locale):
         office_label = t['officeLabel']; coverage_label = t['coverageLabel']; view_location = t['viewLocation']
         breadcrumb_home = t['breadcrumbHome']
         rayong_desc = t['rayongDesc']; pattaya_desc = t['pattayaDesc']
-        rayong_name = THAI_NAME['Rayong'] if locale == 'th' else 'Rayong'
-        pattaya_name = THAI_NAME['Pattaya'] if locale == 'th' else 'Pattaya'
+        rayong_name = city_disp('Rayong', locale)
+        pattaya_name = city_disp('Pattaya', locale)
         breadcrumb_self = t['breadcrumbSelf']
 
     cards = []
@@ -578,7 +640,7 @@ if __name__ == '__main__':
     import sys
     DRY = '--dry' in sys.argv
     written = []
-    for locale in ['en', 'th', 'fr']:
+    for locale in ['en', 'th', 'fr', 'zh']:
         # hub
         out = render_hub(locale)
         p = path_for(locale, 'hub')
@@ -597,6 +659,7 @@ if __name__ == '__main__':
             if not DRY: write(p, out)
             written.append(p)
     print(f"Total files {'planned' if DRY else 'written'}:", len(written))
-    print("EN:", sum(1 for p in written if '/th/' not in p and '/fr/' not in p))
+    print("EN:", sum(1 for p in written if '/th/' not in p and '/fr/' not in p and '/zh/' not in p))
     print("TH:", sum(1 for p in written if '/th/' in p))
     print("FR:", sum(1 for p in written if '/fr/' in p))
+    print("ZH:", sum(1 for p in written if '/zh/' in p))

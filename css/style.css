@@ -335,6 +335,12 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   .nav-cta { gap: 2px; }
   .nav-cta .btn-primary { padding: 5px 5px; font-size: 9.5px; }
   .menu-toggle { padding: 3px; }
+  /* The Thai label reads as "ไทย" (wider than the old "TH" abbreviation) — tighten the
+     language-switcher spacing on narrow screens so it doesn't push the menu button off-screen. */
+  .lang-dropdown { gap: 5px; }
+  .lang-dropdown a { font-size: 10px; }
+  .lang-dropdown a + a { margin-left: 5px; }
+  .lang-dropdown a + a::before { left: -6px; }
 }
 
 /* ---------- Hero ---------- */

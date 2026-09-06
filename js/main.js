@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   var path = window.location.pathname;
-  var language = path.indexOf('/th/') === 0 ? 'th' : (path.indexOf('/fr/') === 0 ? 'fr' : 'en');
+  var language = path.indexOf('/th/') === 0 ? 'th' : (path.indexOf('/fr/') === 0 ? 'fr' : (path.indexOf('/zh/') === 0 ? 'zh' : 'en'));
   var prefix = language === 'en' ? '' : '/' + language;
 
   // Keep the primary header focused: offices move from Contact into Locations.
@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var labels = {
       en: { locations: 'Locations', other: 'Other locations', contact: 'Contact', pattaya: 'Pattaya Office', rayong: 'Rayong Office' },
       th: { locations: 'พื้นที่ให้บริการ', other: 'พื้นที่อื่น ๆ', contact: 'ติดต่อเรา', pattaya: 'สำนักงานพัทยา', rayong: 'สำนักงานระยอง' },
-      fr: { locations: 'Implantations', other: 'Autres implantations', contact: 'Contact', pattaya: 'Bureau de Pattaya', rayong: 'Bureau de Rayong' }
+      fr: { locations: 'Implantations', other: 'Autres implantations', contact: 'Contact', pattaya: 'Bureau de Pattaya', rayong: 'Bureau de Rayong' },
+      zh: { locations: '服务地区', other: '其他地区', contact: '联系我们', pattaya: '芭堤雅办公室', rayong: '罗勇办公室' }
     }[language];
     var contactLink = nav.querySelector('a[href="' + prefix + '/contact"]');
     if (contactLink) {
@@ -48,11 +49,12 @@ document.addEventListener('DOMContentLoaded', function () {
         var link = source.querySelector(selector) || (headerContacts && headerContacts.querySelector(selector));
         return link ? link.getAttribute('href') : fallback;
       }
-      var isHome = path === '/' || path === '/index.html' || path === '/th/' || path === '/th/index.html' || path === '/fr/' || path === '/fr/index.html';
+      var isHome = path === '/' || path === '/index.html' || path === '/th/' || path === '/th/index.html' || path === '/fr/' || path === '/fr/index.html' || path === '/zh/' || path === '/zh/index.html';
       var directLabels = {
         en: { prompt: 'Speak with us directly?', phone: 'Call Walailak Law Firm', email: 'Email Walailak Law Firm' },
         th: { prompt: 'ติดต่อเราโดยตรง', phone: 'โทรหาสำนักงานกฎหมายวลัยลักษณ์', email: 'อีเมลสำนักงานกฎหมายวลัยลักษณ์' },
-        fr: { prompt: 'Contactez-nous directement', phone: 'Appeler Walailak Law Firm', email: 'Envoyer un e-mail à Walailak Law Firm' }
+        fr: { prompt: 'Contactez-nous directement', phone: 'Appeler Walailak Law Firm', email: 'Envoyer un e-mail à Walailak Law Firm' },
+        zh: { prompt: '直接与我们联系？', phone: '致电瓦莱拉克律师事务所', email: '发送邮件至瓦莱拉克律师事务所' }
       }[language];
       var links = [];
       if (!isHome) {

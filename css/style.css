@@ -403,6 +403,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .section-header p { color: var(--text-secondary); font-size: 15px; margin: 0; }
 .on-dark { background: var(--ink); color: #fff; }
 .on-dark .section-header p { color: var(--text-on-dark-secondary); }
+.locations-hub .locations-model { background: #302d29; }
+.locations-hub + .site-footer { margin-top: 0; }
 .on-tint { background: var(--surface-2); }
 
 /* ---------- Practice area grid ---------- */

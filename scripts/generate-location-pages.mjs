@@ -253,6 +253,10 @@ function cleanHtml(html) {
     .replaceAll(' & ', ' &amp; ');
 }
 
-writeFileSync(resolve(root, 'locations.html'), cleanHtml(hub));
+const themedHub = hub
+  .replace('<main>', '<main class="locations-hub">')
+  .replace('<section class="section on-dark">', '<section class="section on-dark locations-model">');
+
+writeFileSync(resolve(root, 'locations.html'), cleanHtml(themedHub));
 mkdirSync(resolve(root, 'locations'), { recursive: true });
 for (const x of locations) writeFileSync(resolve(root, 'locations', `${x.slug}.html`), cleanHtml(locationPage(x)));

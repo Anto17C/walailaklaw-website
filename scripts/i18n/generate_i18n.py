@@ -261,11 +261,17 @@ TRACKING = "<noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=
 
 STANDARD_OVERLAY = 'linear-gradient(90deg,rgba(20,17,13,0.97) 0%,rgba(20,17,13,0.93) 30%,rgba(20,17,13,0.55) 65%,rgba(20,17,13,0.15) 100%)'
 
+# SEO-facing language tags: URLs/locale keys stay plain 'zh' (path prefix, JSON keys, UI dict),
+# but hreflang and <html lang> use the BCP-47 script-qualified 'zh-Hans' so Google (and other
+# engines) can tell this apart from Traditional Chinese, since 'zh' alone is ambiguous between
+# scripts. See Google's hreflang guidance on Chinese script variants.
+HTML_LANG = {'en': 'en', 'th': 'th', 'fr': 'fr', 'zh': 'zh-Hans'}
+
 def head(locale, title, description, en_path):
     canonical = f'https://walailaklaw.com{localize_path(en_path, locale)}'
-    lang = locale
+    lang = HTML_LANG[locale]
     hreflang_links = ''.join(
-        f'<link rel="alternate" hreflang="{lc}" href="https://walailaklaw.com{localize_path(en_path, lc)}">'
+        f'<link rel="alternate" hreflang="{HTML_LANG[lc]}" href="https://walailaklaw.com{localize_path(en_path, lc)}">'
         for lc in ['en', 'th', 'fr', 'zh']
     )
     font_family = ('Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&amp;family=Inter:wght@400;500;600;700'

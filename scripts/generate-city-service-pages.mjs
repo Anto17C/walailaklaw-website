@@ -1,8 +1,9 @@
 import fs from 'node:fs';
 
-const officeHtml = fs.readFileSync('rayong-law-office.html', 'utf8');
 const homeHtml = fs.readFileSync('index.html', 'utf8');
-const header = officeHtml.match(/<header class="site-header">[\s\S]*?<\/header>/)[0];
+const header = homeHtml
+  .match(/<header class="site-header">[\s\S]*?<\/header>/)[0]
+  .replaceAll('src="images/', 'src="/images/');
 const footer = homeHtml.match(/<footer class="site-footer">[\s\S]*?<\/footer>/)[0];
 
 const pages = [

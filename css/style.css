@@ -345,9 +345,15 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .hero p.lead { font-size: 16.5px; color: var(--text-on-dark-secondary); margin: 0 0 32px; max-width: 520px; }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 
-.hero-sm { padding: 100px 0 72px; }
+.hero-sm {
+  min-height: 420px;
+  padding: 56px 0;
+  display: flex;
+  align-items: center;
+}
+.hero-sm > .container { width: 100%; }
 @media (min-width: 881px) {
-  .hero-sm { min-height: 420px; }
+  .hero-sm { height: 420px; padding: 0; }
 }
 .hero-sm h1 { font-size: 32px; color: #fff; margin: 14px 0 12px; }
 .hero-sm p.lead { font-size: 14.5px; margin: 0; }
@@ -551,6 +557,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .footer-grid > div:nth-child(3) p:not(:first-of-type) a,
 .footer-grid > div:nth-child(4) p,
 .footer-grid > div:nth-child(4) a { font-size: 0.78rem; }
+.footer-grid > div:nth-child(3) p:nth-of-type(3),
+.footer-grid > div:nth-child(3) p:nth-of-type(5) { font-size: 11.5px; }
 .footer-bottom {
   background: rgba(0,0,0,0.25);
   border-top: 1px solid rgba(255,255,255,0.08);

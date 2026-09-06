@@ -1,0 +1,42 @@
+{
+"th": {
+"title": "บริการทางกฎหมายทั่วประเทศไทย | สำนักงานกฎหมายวลัยลักษณ์",
+"description": "ค้นหาสำนักงานและบริการทางกฎหมายของสำนักงานกฎหมายวลัยลักษณ์ในระยอง พัทยา ชลบุรี ศรีราชา แหลมฉบัง ภูเก็ต และเชียงใหม่",
+"eyebrow": "สำนักงาน · บริการกฎหมายทั่วประเทศ",
+"h1": "บริการทางกฎหมายทั่วประเทศไทย",
+"lead": "สำนักงานกฎหมายวลัยลักษณ์ให้บริการทางกฎหมายทั่วประเทศไทย โดยดำเนินการโดยตรงและร่วมงานกับทนายความท้องถิ่นที่เราร่วมงานด้วยเฉพาะเมื่อเรื่องนั้นต้องการการสนับสนุนในพื้นที่",
+"whereEyebrow": "พื้นที่ให้บริการของเรา",
+"whereH2": "จุดติดต่อที่เชื่อถือได้เพียงจุดเดียว หนุนด้วยศักยภาพในพื้นที่",
+"whereBody": "ระยองและพัทยาเป็นสำนักงานที่ตั้งจริงของเรา ในพื้นที่อื่นๆ ที่ระบุไว้ สำนักงานกฎหมายวลัยลักษณ์ให้บริการและดูแลบริการทางกฎหมายทั่วประเทศ โดยร่วมงานกับทนายความท้องถิ่นที่เราร่วมงานด้วยเฉพาะเมื่อเหมาะสม",
+"modelEyebrow": "รูปแบบการทำงานของวลัยลักษณ์",
+"modelH2": "การนำโดยตรง พร้อมการดำเนินงานที่ยืดหยุ่น",
+"modelBody": "สำนักงานกฎหมายวลัยลักษณ์ตรวจสอบคำร้องขอและตัดสินใจวิธีที่ดีที่สุดในการดำเนินการ สำนักงานอาจดูแลทุกขั้นตอนโดยตรง ทำงานจากระยะไกล หรือจัดการเดินทาง ทนายความท้องถิ่นที่เราร่วมงานด้วยจะเข้ามาเกี่ยวข้องเฉพาะเมื่อการเข้าร่วม ความเชี่ยวชาญเฉพาะทาง หรือประสิทธิภาพในทางปฏิบัติเป็นประโยชน์ต่อลูกความ",
+"officeLabel": "สำนักงาน",
+"coverageLabel": "บริการทั่วประเทศ",
+"rayongDesc": "สำนักงานหลักของเราในพื้นที่ชายฝั่งทะเลตะวันออกสำหรับเรื่องทรัพย์สิน อุตสาหกรรม ข้อพิพาท และเรื่องเร่งด่วน",
+"pattayaDesc": "สำนักงานพัทยาของเราสำหรับเรื่องทรัพย์สิน ธุรกิจ ครอบครัว และคดีอาญา",
+"viewLocation": "ดูรายละเอียดพื้นที่",
+"breadcrumbHome": "หน้าแรก",
+"breadcrumbSelf": "พื้นที่ให้บริการ"
+},
+"fr": {
+"title": "Services Juridiques dans toute la Thaïlande | Walailak Law Firm",
+"description": "Retrouvez les bureaux et services juridiques de Walailak Law Firm à Rayong, Pattaya, Chonburi, Si Racha, Laem Chabang, Phuket et Chiang Mai.",
+"eyebrow": "BUREAUX · SERVICES JURIDIQUES NATIONAUX",
+"h1": "Services Juridiques dans toute la Thaïlande",
+"lead": "Walailak Law Firm fournit des services juridiques dans toute la Thaïlande, traitant les affaires directement et travaillant avec notre conseil local établi uniquement lorsque l'affaire nécessite un soutien local.",
+"whereEyebrow": "Où nous intervenons",
+"whereH2": "Un point de contact de confiance, soutenu par une capacité locale",
+"whereBody": "Rayong et Pattaya sont nos bureaux physiques. Dans les autres lieux répertoriés, Walailak Law Firm fournit et gère le service juridique à l'échelle nationale, en travaillant avec notre conseil local établi uniquement lorsque cela est approprié.",
+"modelEyebrow": "LE MODÈLE WALAILAK",
+"modelH2": "Une direction directe avec une exécution flexible",
+"modelBody": "Walailak Law Firm examine la demande et décide de la meilleure façon de la traiter. Le cabinet peut gérer chaque étape directement, travailler à distance ou organiser un déplacement ; notre conseil local établi n'est associé que lorsque sa présence, une expertise spécialisée ou une efficacité pratique bénéficie au client.",
+"officeLabel": "Bureau",
+"coverageLabel": "Couverture nationale",
+"rayongDesc": "Notre bureau principal sur la côte Est pour les questions immobilières, industrielles, litigieuses et urgentes.",
+"pattayaDesc": "Notre bureau de Pattaya pour les questions immobilières, commerciales, familiales et pénales.",
+"viewLocation": "Voir la zone",
+"breadcrumbHome": "Accueil",
+"breadcrumbSelf": "Zones desservies"
+}
+}

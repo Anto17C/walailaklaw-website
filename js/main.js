@@ -17,16 +17,16 @@ document.addEventListener('DOMContentLoaded', function () {
       var locationsItem = document.createElement('div');
       locationsItem.className = 'nav-item';
       locationsItem.innerHTML =
-        '<a href="/locations">' + labels.locations + ' <span class="caret">&#9662;</span></a>' +
+        '<a href="' + prefix + '/locations">' + labels.locations + ' <span class="caret">&#9662;</span></a>' +
         '<div class="dropdown-menu">' +
           '<a href="' + prefix + '/rayong-law-office">' + labels.rayong + '</a>' +
           '<a href="' + prefix + '/pattaya-law-office">' + labels.pattaya + '</a>' +
-          '<a href="/locations/chonburi">Chonburi</a>' +
-          '<a href="/locations/si-racha">Si Racha</a>' +
-          '<a href="/locations/laem-chabang">Laem Chabang</a>' +
-          '<a href="/locations/phuket">Phuket</a>' +
-          '<a href="/locations/chiang-mai">Chiang Mai</a>' +
-          '<a href="/locations">' + labels.other + '</a>' +
+          '<a href="' + prefix + '/locations/chonburi">Chonburi</a>' +
+          '<a href="' + prefix + '/locations/si-racha">Si Racha</a>' +
+          '<a href="' + prefix + '/locations/laem-chabang">Laem Chabang</a>' +
+          '<a href="' + prefix + '/locations/phuket">Phuket</a>' +
+          '<a href="' + prefix + '/locations/chiang-mai">Chiang Mai</a>' +
+          '<a href="' + prefix + '/locations">' + labels.other + '</a>' +
         '</div>';
       contactItem.parentNode.insertBefore(locationsItem, contactItem);
       var plainContact = document.createElement('a');

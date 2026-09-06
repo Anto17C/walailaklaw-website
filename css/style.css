@@ -165,14 +165,16 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
     min-height: 71px;
     padding-top: 0;
     padding-bottom: 0;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .logo .logo-full { display: none; }
   .logo .logo-icon-mobile {
     display: block;
-    height: 35px;
+    height: 30px;
     width: auto;
-    max-width: 45vw;
+    max-width: 42vw;
     object-fit: contain;
     object-position: left center;
   }
@@ -318,10 +320,21 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   .nav-cta .btn-outline { display: none; }
   .nav-cta .btn-primary {
     display: inline-flex;
-    padding: 8px 10px;
-    font-size: 12px;
+    padding: 7px 8px;
+    font-size: 11.5px;
   }
-  .menu-toggle { display: block; padding: 7px; margin: -9px 0; }
+  .menu-toggle { display: block; padding: 5px; margin: -7px 0; }
+}
+
+/* Narrow phones (iPhone SE/8, small Android): the header row above is tuned for ~375px+;
+   tighten it further here so the menu button never gets clipped by the site-wide
+   `overflow-x: hidden` on narrower screens, even with the longest CTA label (French). */
+@media (max-width: 400px) {
+  .container.nav-row { padding-left: 10px; padding-right: 10px; gap: 4px; }
+  .logo .logo-icon-mobile { height: 24px; max-width: 30vw; }
+  .nav-cta { gap: 2px; }
+  .nav-cta .btn-primary { padding: 5px 5px; font-size: 9.5px; }
+  .menu-toggle { padding: 3px; }
 }
 
 /* ---------- Hero ---------- */

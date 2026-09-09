@@ -120,6 +120,20 @@ const pages = [
     related: [['Property due diligence in Pattaya','/pattaya-property-due-diligence'],['Civil litigation services','/civil-litigation-services'],['Pattaya law office','/pattaya-law-office']]
   },
   {
+    slug: 'pattaya-company-registration-business-licensing', city: 'Pattaya', office: '/pattaya-law-office', practice: '/company-registration-services', image: 'company-registration-lawyer.webp',
+    title: 'Company Registration and Business Licensing in Pattaya | Walailak Law Firm',
+    description: 'Company registration, business acquisition and licensing support in Pattaya for foreign investors in hospitality, healthcare and service businesses.',
+    eyebrow: 'PATTAYA BUSINESS SERVICES', h1: 'Company Registration & Business Licensing in Pattaya',
+    lead: 'Practical structuring, acquisition and licensing support for foreign investors establishing or buying an operating business in Pattaya.',
+    introTitle: 'Build the legal structure around the business that will actually operate',
+    intro: 'Recent Pattaya enquiries include investors acquiring hospitality businesses and establishing aesthetic medicine or dental clinics. These projects require more than registering a Thai company. Walailak Law Firm reviews the intended activities, ownership, existing company or assets, premises, licences, funding, directors and workforce before defining a coordinated route to operation.',
+    situations: ['A foreign investor establishing a new Pattaya operating company','The acquisition of an existing bar, guesthouse, restaurant or service business','A medical, dental, wellness or aesthetic clinic project','A share purchase requiring company, contract, licence and debt due diligence','A business needing lawful foreign ownership and control options','An operator planning foreign directors, specialists or other personnel'],
+    checks: ['Clarify the activities, ownership objectives, premises and operating model','Assess lawful ownership and control options without nominee arrangements','Compare a new company with a share, asset or business acquisition','Review the target company, material contracts, leases, licences and liabilities','Map sector licences, premises approvals and responsible professional requirements','Coordinate capital, remittance, employment, visa and work-permit planning','Assess BOI or foreign-business approval routes where genuinely relevant','Prepare the agreed corporate, transaction and implementation documents'],
+    warningTitle: 'Company registration does not authorize every business activity',
+    warning: 'Hospitality, alcohol, accommodation, medical, dental and other regulated activities have different licensing and professional requirements. BOI promotion is also not available merely because a business has foreign investment. The scope and sequence should be confirmed for the specific activities, premises and ownership structure before money is committed or operations begin.',
+    related: [['Company registration services','/company-registration-services'],['Property due diligence in Pattaya','/pattaya-property-due-diligence'],['Pattaya law office','/pattaya-law-office']]
+  },
+  {
     slug: 'phuket-property-due-diligence', city: 'Phuket', office: '/locations/phuket', practice: '/real-estate-lawyer', image: 'real-estate-lawyer.webp',
     title: 'Property Due Diligence Lawyer in Phuket | Walailak Law Firm',
     description: 'Independent property due diligence in Phuket for villa, condominium, house and leasehold purchases, including title, building and contract review.',

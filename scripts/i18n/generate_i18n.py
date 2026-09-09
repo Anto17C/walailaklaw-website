@@ -618,7 +618,7 @@ def render_hub(locale):
     contact = contact_module(locale)
 
     html = (f'{h}{TRACKING}{header}<main class="locations-hub">'
-        f'<section class="hero hero-sm" style="--hero-img-mobile:url(\'/images/locations-thailand-hero.webp\');background-image:linear-gradient(90deg,rgba(20,17,13,.97),rgba(20,17,13,.75)),url(\'/images/locations-thailand-hero.webp\');">'
+        f'<section class="hero hero-sm" style="--hero-img-mobile:url(\'/images/locations-thailand-hero.webp\');background-image:linear-gradient(90deg,rgba(20,17,13,0.97) 0%,rgba(20,17,13,0.93) 30%,rgba(20,17,13,0.55) 65%,rgba(20,17,13,0.15) 100%),url(\'/images/locations-thailand-hero.webp\');">'
         f'<div class="container"><div class="hero-inner"><div class="breadcrumb"><a href="{home_href}">{breadcrumb_home}</a> / {breadcrumb_self}</div>'
         f'<span class="eyebrow">{eyebrow}</span><h1>{h1}</h1><p class="lead">{lead}</p></div></div></section>'
         f'<section class="section"><div class="container"><div class="section-header">'

@@ -353,8 +353,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 }
 .hero-inner { max-width: 560px; position: relative; z-index: 2; }
 @media (min-width: 881px) {
-  .hero:not(.hero-sm) .hero-inner { max-width: 700px; }
-  .hero:not(.hero-sm) h1 { max-width: 700px; }
+  html[lang="en"] .hero:not(.hero-sm) .hero-inner { max-width: 700px; }
+  html[lang="en"] .hero:not(.hero-sm) h1 { max-width: 700px; }
 }
 
 @media (max-width: 880px) {

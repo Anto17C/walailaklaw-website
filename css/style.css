@@ -355,6 +355,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 @media (min-width: 881px) {
   html[lang="en"] .hero:not(.hero-sm) .hero-inner { max-width: 700px; }
   html[lang="en"] .hero:not(.hero-sm) h1 { max-width: 700px; }
+  html[lang="th"] .hero:not(.hero-sm) .hero-inner { max-width: 580px; }
+  html[lang="th"] .hero:not(.hero-sm) h1 { max-width: 580px; }
 }
 
 @media (max-width: 880px) {

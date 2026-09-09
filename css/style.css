@@ -361,6 +361,9 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   .hero { padding: 70px 0 56px; }
 }
 .hero h1 { font-size: 44px; color: #fff; margin: 18px 0 18px; letter-spacing: -0.01em; }
+@media (min-width: 769px) {
+  .hero h1.fr-home-hero-title { width: 900px; max-width: calc(100vw - 48px); }
+}
 .hero p.lead { font-size: 16.5px; color: var(--text-on-dark-secondary); margin: 0 0 32px; max-width: 520px; }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 

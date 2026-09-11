@@ -109,7 +109,7 @@ UI = {
     'step2_t':'ขอบเขตที่ชัดเจน:','step2_d':'ท่านจะได้รับข้อเสนอที่อธิบายงาน ความรับผิดชอบ ค่าธรรมเนียม และค่าใช้จ่ายจากบุคคลภายนอกที่อาจเกิดขึ้น',
     'step3_t':'การดำเนินงานทางกฎหมาย:','step3_d':'สำนักงานกฎหมายวลัยลักษณ์ดูแลการดำเนินงานและแจ้งความคืบหน้าให้ท่านทราบอย่างชัดเจน',
     'related_services':'บริการทางกฎหมายที่เกี่ยวข้อง',
-    'discuss':'ปรึกษาเรื่องของท่านเป็นความลับ','discuss_p':'ติดต่อแก้วโดยตรงเพื่อรับการตรวจสอบเบื้องต้น กลยุทธ์ และขอบเขตงาน',
+    'discuss':'ปรึกษาเรื่องของท่านเป็นความลับ','discuss_p':'ติดต่อเราโดยตรงเพื่อรับการตรวจสอบเบื้องต้น กลยุทธ์ และขอบเขตงาน',
     'legal_support_in':'การสนับสนุนทางกฎหมายใน','who_assist':'กลุ่มลูกความที่เราให้บริการ',
     'relevant_services':'บริการที่เกี่ยวข้อง','matters_we_handle_in':'เรื่องทางกฎหมายที่เราดำเนินการใน',
     'matters_note_pre':'สำนักงานกฎหมายวลัยลักษณ์จะพิจารณาว่าจะดำเนินเรื่องโดยตรงหรือให้ทนายความท้องถิ่นที่เราร่วมงานด้วยใน',
@@ -135,7 +135,7 @@ UI = {
     'step2_t':'Périmètre défini :','step2_d':"Vous recevez une proposition expliquant le travail, les responsabilités, les honoraires et les coûts probables de tiers.",
     'step3_t':'Travail juridique :','step3_d':'Walailak Law Firm gère le dossier et vous tient informé clairement en français.',
     'related_services':'Services juridiques connexes',
-    'discuss':'Discutez d’une affaire en toute confidentialité','discuss_p':'Contactez Kae directement pour un premier examen, une stratégie et un périmètre.',
+    'discuss':'Discutez d’une affaire en toute confidentialité','discuss_p':'Contactez-nous directement pour un premier examen, une stratégie et la définition du périmètre.',
     'legal_support_in':'Soutien juridique à','who_assist':'Qui nous accompagnons',
     'relevant_services':'Services pertinents','matters_we_handle_in':'Affaires juridiques que nous traitons à',
     'matters_note_pre':"Walailak Law Firm détermine s'il convient de traiter l'affaire directement ou d'associer notre conseil local établi à",
@@ -161,7 +161,7 @@ UI = {
     'step2_t':'明确范围：','step2_d':'您将收到一份说明工作内容、职责分工、费用及可能产生的第三方费用的方案书。',
     'step3_t':'法律事务办理：','step3_d':'瓦莱拉克律师事务所将管理案件进展，并以清晰的中文向您通报进度。',
     'related_services':'相关法律服务',
-    'discuss':'保密咨询您的案件','discuss_p':'直接联系Kae，获取初步审查、策略建议及范围界定。',
+    'discuss':'保密咨询您的案件','discuss_p':'直接联系我们，获取初步审查、策略建议及范围界定。',
     'legal_support_in':'本地法律支持 ·','who_assist':'服务对象',
     'relevant_services':'相关服务','matters_we_handle_in':'地区法律事务处理范围',
     'matters_note_pre':'瓦莱拉克律师事务所将根据案件事实、管辖权及实际需要，决定是直接处理',
@@ -297,7 +297,7 @@ def head(locale, title, description, en_path):
 def contact_module(locale, with_text=True):
     txt = UI.get(locale, {})
     if locale == 'en':
-        title, body = 'Discuss a matter confidentially', 'Contact Kae directly for an initial review, strategy and scope.'
+        title, body = 'Discuss a matter confidentially', 'Contact us directly for an initial review, strategy and scope.'
     else:
         title, body = txt['discuss'], txt['discuss_p']
     wa_href = 'https://wa.me/66946463940'
@@ -384,7 +384,7 @@ def render_city_page(en, locale):
     checks = list_items(t['checks'])
 
     if locale == 'en':
-        focused_advice = 'Focused local advice'
+        focused_advice = 'Focused legal strategy' if en.get('national') else 'Focused local advice'
         when_contact = 'When clients contact us'
         scope_assist = 'Scope of assistance'
         how_assist = 'How Walailak Law Firm can assist'
@@ -399,7 +399,7 @@ def render_city_page(en, locale):
         step3_t, step3_d = 'Legal work:', 'Walailak Law Firm manages the engagement and keeps you informed in clear English.'
         related_services = 'Related legal services'
     else:
-        focused_advice = ui['focused_advice']; when_contact = ui['when_contact']
+        focused_advice = ({'th':'กลยุทธ์ทางกฎหมายที่มุ่งเน้น','fr':'Stratégie juridique ciblée','zh':'聚焦法律策略'}[locale] if en.get('national') else ui['focused_advice']); when_contact = ui['when_contact']
         scope_assist = ui['scope_assist']; how_assist = ui['how_assist']; scope_note = ui['scope_note']
         typical_work = ui['typical_work']; practical_point = ui['practical_point']; view_practice = ui['view_practice']
         starting_matter = ui['starting_matter']; clear_review = ui['clear_review']

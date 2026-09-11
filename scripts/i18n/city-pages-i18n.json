@@ -8011,5 +8011,89 @@
     "芭堤雅办公室"
    ]
   }
+ },
+ {
+  "slug": "pattaya-criminal-defence-appeals",
+  "th": {
+   "title": "ทนายความคดีอาญาและอุทธรณ์ในพัทยา | สำนักงานกฎหมายวลัยลักษณ์",
+   "description": "บริการว่าความคดีอาญาและอุทธรณ์ในพัทยา สำหรับจำเลย ผู้เสียหาย และโจทก์ร่วมในกระบวนพิจารณาคดีอาญาที่ซับซ้อน",
+   "eyebrow": "คดีอาญาในพัทยา", "h1": "คดีอาญาและอุทธรณ์ในพัทยา",
+   "lead": "การดำเนินคดีเชิงกลยุทธ์ตั้งแต่ชั้นสอบสวน การพิจารณาคดี และอุทธรณ์ รวมถึงคดีเอกสารซับซ้อนและการดำเนินการแทนผู้เสียหายหรือโจทก์ร่วม",
+   "introTitle": "การอุทธรณ์ต้องตรวจคำพิพากษาและสำนวนการพิจารณาอย่างเจาะจง",
+   "intro": "คดีอาญาในพัทยาอาจเกี่ยวข้องกับการสอบสวนเร่งด่วน การพิจารณาคดีที่มีข้อโต้แย้ง คำพิพากษายกฟ้องหรือลงโทษที่อยู่ระหว่างอุทธรณ์ หรือผู้เสียหายที่ต้องการคุ้มครองสิทธิของตนควบคู่กับพนักงานอัยการ สำนักงานกฎหมายวลัยลักษณ์ตรวจสอบสถานะกระบวนพิจารณา คำพิพากษา พยานหลักฐาน และกำหนดเวลา ก่อนกำหนดกลยุทธ์และขอบเขตการว่าความที่เหมาะสม",
+   "situations": ["การสอบสวน การจับกุม หรือข้อกล่าวหาคดีอาญาในพัทยา","จำเลยกำลังพิจารณายื่นอุทธรณ์หรือตอบอุทธรณ์","ผู้เสียหายหรือโจทก์ร่วมภายหลังมีคำพิพากษายกฟ้อง","พนักงานอัยการยื่นอุทธรณ์และผู้เสียหายต้องการคำแนะนำแยกต่างหาก","คดีฉ้อโกงหรือคดีการเงินที่มีเอกสารจำนวนมาก","คดีอาญาที่เชื่อมโยงกับเงินที่ถูกอายัดหรือการเรียกคืนทรัพย์สินแยกต่างหาก"],
+   "checks": ["ยืนยันสถานะในคดีของลูกความและตรวจสอบผลประโยชน์ขัดกัน","ระบุกำหนดเวลาอุทธรณ์ คำแก้อุทธรณ์ และพยานหลักฐาน","ตรวจคำพิพากษา คำคู่ความ สำนวน และคำเบิกความที่มีอยู่","ประเมินเหตุอุทธรณ์ด้านข้อเท็จจริง ข้อกฎหมาย และกระบวนพิจารณา","ให้คำแนะนำเรื่องการยื่นพยานหลักฐานเพิ่มเติมและวิธีนำเสนอ","ประสานงานกับพนักงานอัยการเมื่อจำเป็นตามสถานะของลูกความ","จัดทำอุทธรณ์ คำแก้อุทธรณ์ คำแถลง หรือดำเนินคดีตามที่ตกลง","กำหนดขอบเขตงานรักษาทรัพย์สินหรือการเรียกคืนทางแพ่งแยกต่างหากเมื่อเกี่ยวข้อง"],
+   "warningTitle": "การอุทธรณ์ไม่ใช่เพียงการพิจารณาคดีใหม่อีกครั้ง",
+   "warning": "การพิจารณาอุทธรณ์ของไทยอยู่ภายใต้หลักเกณฑ์กระบวนพิจารณา เหตุที่อนุญาต และกำหนดเวลาที่เคร่งครัด พยานหลักฐานใหม่ไม่ได้รับอนุญาตโดยอัตโนมัติ และการเรียกคืนทรัพย์สินที่เกี่ยวข้องอาจต้องใช้ช่องทางกฎหมายแยกต่างหาก จึงควรตรวจสอบโดยเร็วเพื่อรักษาทางเลือกก่อนสิ้นกำหนดเวลา",
+   "related": ["บริการคดีอาญา","บริการคดีแพ่ง","สำนักงานพัทยา"]
+  },
+  "fr": {
+   "title": "Avocat en Défense Pénale et Appels à Pattaya | Walailak Law Firm",
+   "description": "Défense pénale et représentation en appel à Pattaya pour prévenus, victimes et parties civiles dans des procédures pénales thaïlandaises complexes.",
+   "eyebrow": "DÉFENSE PÉNALE À PATTAYA", "h1": "Défense Pénale et Appels à Pattaya",
+   "lead": "Représentation stratégique lors des enquêtes, procès et appels, y compris dans les affaires documentaires complexes et pour les victimes ou parties civiles.",
+   "introTitle": "Un appel exige un examen ciblé du jugement et du dossier de première instance",
+   "intro": "Une procédure pénale à Pattaya peut concerner une enquête urgente, un procès contesté, un acquittement ou une condamnation faisant l'objet d'un appel, ou une victime souhaitant préserver sa position indépendamment du ministère public. Walailak Law Firm examine l'état de la procédure, le jugement, les preuves et les délais avant de définir la stratégie et le périmètre de représentation appropriés.",
+   "situations": ["Enquête de police, arrestation ou accusation pénale à Pattaya","Prévenu envisageant un appel ou devant y répondre","Victime ou partie civile après un acquittement","Appel du ministère public nécessitant un conseil indépendant pour la victime","Affaire de fraude ou financière complexe comportant de nombreux documents","Affaire pénale liée à des fonds gelés ou à une demande distincte de recouvrement"],
+   "checks": ["Confirmer le rôle procédural du client et vérifier les conflits d'intérêts","Identifier les délais d'appel, de réponse et de preuve","Examiner le jugement, les actes, le dossier d'audience et les transcriptions disponibles","Évaluer les moyens factuels, juridiques et procéduraux","Conseiller sur l'admissibilité et la présentation d'éventuelles preuves supplémentaires","Coordonner avec le ministère public lorsque le rôle du client l'exige","Préparer l'appel, la réponse, les écritures ou la représentation convenus","Définir séparément la préservation des actifs ou le recouvrement civil si nécessaire"],
+   "warningTitle": "Un appel n'est pas simplement un second procès",
+   "warning": "Les appels pénaux thaïlandais obéissent à des règles procédurales, à des moyens autorisés et à des délais stricts. Les nouvelles preuves ne sont pas automatiquement admises et le recouvrement d'actifs peut nécessiter une voie distincte. Un examen rapide permet d'identifier les options avant l'expiration des délais.",
+   "related": ["Services de défense pénale","Services de contentieux civil","Bureau de Pattaya"]
+  },
+  "zh": {
+   "title": "芭堤雅刑事辩护与上诉律师 | 瓦莱拉克律师事务所",
+   "description": "为芭堤雅复杂刑事诉讼中的被告、受害人及共同原告提供刑事辩护与上诉代理服务。",
+   "eyebrow": "芭堤雅刑事辩护", "h1": "芭堤雅刑事辩护与上诉",
+   "lead": "为侦查、审判及上诉提供策略性代理，包括文件复杂的案件以及受害人或共同原告事项。",
+   "introTitle": "上诉需要有针对性地审查判决及一审案卷",
+   "intro": "芭堤雅刑事程序可能涉及紧急侦查、争议审判、无罪或有罪判决的上诉，或受害人在检察官之外维护自身独立立场。瓦莱拉克律师事务所在确定适当的策略及代理范围前，会审查程序状态、判决、证据及期限。",
+   "situations": ["芭堤雅的警方调查、逮捕或刑事指控","被告考虑提起上诉或回应上诉","无罪判决后的受害人或共同原告事项","检察官上诉时受害人需要独立法律意见","涉及大量文件的复杂欺诈或金融案件","与冻结资金或独立追偿请求相关的刑事案件"],
+   "checks": ["确认客户的诉讼身份并完成利益冲突审查","确定上诉、答辩及证据期限","审查判决、诉状、庭审记录及现有笔录","评估事实、法律及程序方面的上诉理由","就能否提交补充证据及其呈现方式提供意见","在客户身份需要时与检察官协调","准备约定的上诉、答辩、书面意见或出庭代理","在相关情况下另行界定资产保全或民事追偿范围"],
+   "warningTitle": "上诉并非简单地重新审判",
+   "warning": "泰国刑事上诉受到程序规则、允许理由及严格期限的约束。新证据不会自动获准提交，相关资产追偿也可能需要采取独立法律程序。及早审查有助于在期限届满前确定可行方案。",
+   "related": ["刑事辩护服务","民事诉讼服务","芭堤雅办公室"]
+  }
+ },
+ {
+  "slug": "cross-border-debt-recovery-thailand",
+  "th": {
+   "title": "การติดตามหนี้ข้ามพรมแดนในประเทศไทย | สำนักงานกฎหมายวลัยลักษณ์",
+   "description": "บริการติดตามหนี้ข้ามพรมแดนในประเทศไทยสำหรับเจ้าหนี้ต่างประเทศ กรณีใบแจ้งหนี้ค้างชำระ ผิดนัดตามข้อตกลง และข้อเรียกร้องทางการค้าต่อลูกหนี้ไทย",
+   "eyebrow": "การติดตามหนี้ข้ามพรมแดน", "h1": "การติดตามหนี้ข้ามพรมแดนในประเทศไทย",
+   "lead": "กลยุทธ์การติดตามหนี้ทางการค้าสำหรับเจ้าหนี้ต่างประเทศที่มีใบแจ้งหนี้ค้างชำระ หนังสือรับสภาพหนี้ หรือข้อตกลงที่ผิดนัดซึ่งเกี่ยวข้องกับลูกหนี้ไทย",
+   "introTitle": "แม้ข้อเรียกร้องจะแข็งแรง ก็ยังต้องมีกลยุทธ์ติดตามหนี้ที่ใช้ได้จริง",
+   "intro": "การติดตามหนี้ข้ามพรมแดนไม่ได้จบเพียงการแสดงว่าใบแจ้งหนี้ยังไม่ได้รับชำระ สำนักงานกฎหมายวลัยลักษณ์ตรวจสัญญา หลักฐานการปฏิบัติงาน หนังสือรับสภาพหนี้หรือข้อตกลง กฎหมายที่ใช้บังคับ เขตอำนาจ อายุความ สถานะของลูกหนี้ไทย และแนวทางบังคับคดีที่เป็นจริง ก่อนเสนอหนังสือทวงถาม การเจรจา หรือการดำเนินคดี",
+   "situations": ["ผู้ขายสินค้าหรือผู้ให้บริการต่างประเทศมีลูกหนี้เป็นบริษัทไทย","ใบแจ้งหนี้ค้างชำระที่มีสัญญา คำสั่งซื้อ หรือหลักฐานการส่งมอบ","หนังสือรับสภาพหนี้หรือข้อตกลงที่ลงนามแล้วแต่มีการผิดนัด","ข้อเรียกร้องทางการค้าที่เกี่ยวข้องกับเอกสารหรือการชำระเงินหลายประเทศ","เจ้าหนี้ต้องการประเมินลูกหนี้ไทยและทรัพย์สินที่มีอยู่","ข้อเรียกร้องที่ต้องดำเนินคดี บังคับคดี หรือเจรจายุติข้อพิพาทในไทย"],
+   "checks": ["ตรวจคู่สัญญา อำนาจลงนาม และตัวลูกหนี้ที่ถูกต้อง","ตรวจสัญญา ใบแจ้งหนี้ การส่งมอบ การปฏิบัติงาน และหลักฐานการชำระเงิน","ประเมินกฎหมายที่ใช้บังคับ เขตอำนาจ และอายุความ","วิเคราะห์หนังสือรับสภาพหนี้ การค้ำประกัน หรือข้อตกลงยุติข้อพิพาท","ตรวจสถานะนิติบุคคลของลูกหนี้และข้อมูลทรัพย์สินที่มีอยู่","จัดทำหนังสือทวงถามและกลยุทธ์การเจรจาอย่างเป็นระบบ","เริ่มดำเนินคดีในไทยเมื่อเหมาะสมและได้รับมอบหมาย","วางแผนบังคับคดีและการประสานงานข้ามพรมแดนเมื่อจำเป็น"],
+   "warningTitle": "การชนะคดีและการได้รับชำระหนี้ไม่ใช่เรื่องเดียวกัน",
+   "warning": "ก่อนมีค่าใช้จ่ายจำนวนมาก ควรพิจารณาข้อกฎหมายควบคู่กับเขตอำนาจ พยานหลักฐาน อายุความ ความสามารถในการชำระหนี้ และทรัพย์สินที่ระบุได้ของลูกหนี้ อาจจำเป็นต้องมีคำแนะนำกฎหมายต่างประเทศหรือการบังคับคดีนอกไทยซึ่งควรประสานแยกต่างหาก",
+   "related": ["บริการคดีแพ่ง","บริการอนุญาโตตุลาการ","การติดตามหนี้ทางการค้าในระยอง"]
+  },
+  "fr": {
+   "title": "Recouvrement Transfrontalier de Créances en Thaïlande | Walailak Law Firm",
+   "description": "Recouvrement transfrontalier en Thaïlande pour créanciers étrangers confrontés à des factures impayées, accords inexécutés et créances commerciales.",
+   "eyebrow": "RECOUVREMENT TRANSFRONTALIER", "h1": "Recouvrement Transfrontalier de Créances en Thaïlande",
+   "lead": "Stratégie de recouvrement commercial pour les créanciers étrangers confrontés à des factures impayées, des dettes reconnues ou des accords inexécutés impliquant un débiteur thaïlandais.",
+   "introTitle": "Une créance solide exige néanmoins une stratégie de recouvrement réaliste",
+   "intro": "Le recouvrement transfrontalier ne consiste pas seulement à démontrer qu'une facture reste impayée. Walailak Law Firm examine le contrat, les preuves d'exécution, la reconnaissance de dette ou l'accord, la loi applicable, la compétence, la prescription, la situation du débiteur thaïlandais et les possibilités réalistes d'exécution avant de recommander une mise en demeure, une négociation ou une procédure.",
+   "situations": ["Fournisseur ou prestataire étranger auquel une société thaïlandaise doit de l'argent","Factures impayées appuyées par des contrats, commandes ou preuves de livraison","Reconnaissance de dette ou accord signé désormais inexécuté","Créance commerciale impliquant des documents ou paiements de plusieurs pays","Créancier souhaitant évaluer le débiteur thaïlandais et ses actifs","Créance nécessitant une procédure thaïlandaise, l'exécution d'un jugement ou un accord"],
+   "checks": ["Vérifier les parties contractantes, les pouvoirs et le débiteur exact","Examiner contrats, factures, livraison, exécution et preuves de paiement","Évaluer la loi applicable, la compétence et les délais de prescription","Analyser toute reconnaissance, garantie ou transaction","Examiner la situation sociale du débiteur et les informations disponibles sur ses actifs","Préparer une mise en demeure et une stratégie structurée de négociation","Engager une procédure thaïlandaise lorsqu'elle est proportionnée et mandatée","Planifier l'exécution du jugement et la coordination transfrontalière si nécessaire"],
+   "warningTitle": "Obtenir un jugement et recouvrer effectivement sont deux choses différentes",
+   "warning": "Avant d'engager des frais importants, le bien-fondé juridique doit être apprécié avec la compétence, les preuves, la prescription, la solvabilité du débiteur et ses actifs identifiables. Des conseils en droit étranger ou une exécution hors de Thaïlande peuvent aussi être nécessaires et doivent être coordonnés séparément.",
+   "related": ["Services de contentieux civil","Services d'arbitrage","Recouvrement commercial à Rayong"]
+  },
+  "zh": {
+   "title": "泰国跨境债务追偿 | 瓦莱拉克律师事务所",
+   "description": "为向泰国债务人追讨未付发票、和解违约及商业债权的海外债权人提供泰国跨境债务追偿服务。",
+   "eyebrow": "跨境债务追偿", "h1": "泰国跨境债务追偿",
+   "lead": "为因泰国债务人拖欠发票、确认债务或违反和解协议的海外债权人制定商业追偿策略。",
+   "introTitle": "有力的债权仍需要切实可行的追偿策略",
+   "intro": "跨境追偿不只是证明发票尚未支付。瓦莱拉克律师事务所在建议催款、谈判或诉讼前，会审查合同、履行记录、债务确认或和解协议、适用法律与管辖条款、诉讼时效、泰国债务人的状态以及现实的执行路径。",
+   "situations": ["泰国公司拖欠海外供应商或服务商款项","有合同、订单或交付记录支持的未付发票","已签署但现已违约的债务确认书或和解协议","涉及多个国家文件或付款的商业债权","债权人需要评估泰国债务人及可供执行的资产","需要在泰国诉讼、执行判决或和解的债权"],
+   "checks": ["核实合同主体、授权及正确债务人","审查合同、发票、交付、履行及付款证据","评估适用法律、管辖权及诉讼时效","分析债务确认、担保或和解协议","审查债务人的公司状态及现有资产信息","准备正式催款函及结构化谈判策略","在适当且受委托时启动泰国诉讼","在需要时规划判决执行及跨境协调"],
+   "warningTitle": "取得胜诉判决与实际收回款项并不相同",
+   "warning": "在产生重大费用前，应结合管辖权、证据、时效、债务人的偿付能力及可识别资产评估法律依据。还可能需要外国法律意见或在泰国境外执行，并应另行协调。",
+   "related": ["民事诉讼服务","仲裁服务","罗勇商业债务追偿"]
+  }
  }
 ]

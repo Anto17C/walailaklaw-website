@@ -397,6 +397,8 @@ document.addEventListener('DOMContentLoaded', function () {
       result.style.display = 'block';
       result.style.color = 'var(--gold-dim)';
       result.textContent = 'ขอบคุณค่ะ ข้อความของคุณถูกส่งเรียบร้อยแล้ว เราจะตอบกลับภายใน 15–60 นาทีในเวลาทำการ';
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'contact_form_success' });
       form.reset();
       setSourcePage();
     })

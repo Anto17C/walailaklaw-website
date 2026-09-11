@@ -395,6 +395,8 @@ document.addEventListener('DOMContentLoaded', function () {
       result.style.display = 'block';
       result.style.color = 'var(--gold-dim)';
       result.textContent = "Merci — votre message a bien été envoyé. Nous vous répondrons en 15 à 60 minutes pendant les heures de bureau.";
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'contact_form_success' });
       form.reset();
       setSourcePage();
     })

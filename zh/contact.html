@@ -397,6 +397,8 @@ document.addEventListener('DOMContentLoaded', function () {
       result.style.display = 'block';
       result.style.color = 'var(--gold-dim)';
       result.textContent = '感谢您的留言——我们已收到您的消息，将在办公时间内15至60分钟内回复。';
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'contact_form_success' });
       form.reset();
       setSourcePage();
     })

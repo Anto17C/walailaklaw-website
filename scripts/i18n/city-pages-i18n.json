@@ -8017,41 +8017,104 @@
   "th": {
    "title": "ทนายความคดีอาญาและอุทธรณ์ในพัทยา | สำนักงานกฎหมายวลัยลักษณ์",
    "description": "บริการว่าความคดีอาญาและอุทธรณ์ในพัทยา สำหรับจำเลย ผู้เสียหาย และโจทก์ร่วมในกระบวนพิจารณาคดีอาญาที่ซับซ้อน",
-   "eyebrow": "คดีอาญาในพัทยา", "h1": "คดีอาญาและอุทธรณ์ในพัทยา",
+   "eyebrow": "คดีอาญาในพัทยา",
+   "h1": "คดีอาญาและอุทธรณ์ในพัทยา",
    "lead": "การดำเนินคดีเชิงกลยุทธ์ตั้งแต่ชั้นสอบสวน การพิจารณาคดี และอุทธรณ์ รวมถึงคดีเอกสารซับซ้อนและการดำเนินการแทนผู้เสียหายหรือโจทก์ร่วม",
    "introTitle": "การอุทธรณ์ต้องตรวจคำพิพากษาและสำนวนการพิจารณาอย่างเจาะจง",
    "intro": "คดีอาญาในพัทยาอาจเกี่ยวข้องกับการสอบสวนเร่งด่วน การพิจารณาคดีที่มีข้อโต้แย้ง คำพิพากษายกฟ้องหรือลงโทษที่อยู่ระหว่างอุทธรณ์ หรือผู้เสียหายที่ต้องการคุ้มครองสิทธิของตนควบคู่กับพนักงานอัยการ สำนักงานกฎหมายวลัยลักษณ์ตรวจสอบสถานะกระบวนพิจารณา คำพิพากษา พยานหลักฐาน และกำหนดเวลา ก่อนกำหนดกลยุทธ์และขอบเขตการว่าความที่เหมาะสม",
-   "situations": ["การสอบสวน การจับกุม หรือข้อกล่าวหาคดีอาญาในพัทยา","จำเลยกำลังพิจารณายื่นอุทธรณ์หรือตอบอุทธรณ์","ผู้เสียหายหรือโจทก์ร่วมภายหลังมีคำพิพากษายกฟ้อง","พนักงานอัยการยื่นอุทธรณ์และผู้เสียหายต้องการคำแนะนำแยกต่างหาก","คดีฉ้อโกงหรือคดีการเงินที่มีเอกสารจำนวนมาก","คดีอาญาที่เชื่อมโยงกับเงินที่ถูกอายัดหรือการเรียกคืนทรัพย์สินแยกต่างหาก"],
-   "checks": ["ยืนยันสถานะในคดีของลูกความและตรวจสอบผลประโยชน์ขัดกัน","ระบุกำหนดเวลาอุทธรณ์ คำแก้อุทธรณ์ และพยานหลักฐาน","ตรวจคำพิพากษา คำคู่ความ สำนวน และคำเบิกความที่มีอยู่","ประเมินเหตุอุทธรณ์ด้านข้อเท็จจริง ข้อกฎหมาย และกระบวนพิจารณา","ให้คำแนะนำเรื่องการยื่นพยานหลักฐานเพิ่มเติมและวิธีนำเสนอ","ประสานงานกับพนักงานอัยการเมื่อจำเป็นตามสถานะของลูกความ","จัดทำอุทธรณ์ คำแก้อุทธรณ์ คำแถลง หรือดำเนินคดีตามที่ตกลง","กำหนดขอบเขตงานรักษาทรัพย์สินหรือการเรียกคืนทางแพ่งแยกต่างหากเมื่อเกี่ยวข้อง"],
+   "situations": [
+    "การสอบสวน การจับกุม หรือข้อกล่าวหาคดีอาญาในพัทยา",
+    "จำเลยกำลังพิจารณายื่นอุทธรณ์หรือตอบอุทธรณ์",
+    "ผู้เสียหายหรือโจทก์ร่วมภายหลังมีคำพิพากษายกฟ้อง",
+    "พนักงานอัยการยื่นอุทธรณ์และผู้เสียหายต้องการคำแนะนำแยกต่างหาก",
+    "คดีฉ้อโกงหรือคดีการเงินที่มีเอกสารจำนวนมาก",
+    "คดีอาญาที่เชื่อมโยงกับเงินที่ถูกอายัดหรือการเรียกคืนทรัพย์สินแยกต่างหาก"
+   ],
+   "checks": [
+    "ยืนยันสถานะในคดีของลูกความและตรวจสอบผลประโยชน์ขัดกัน",
+    "ระบุกำหนดเวลาอุทธรณ์ คำแก้อุทธรณ์ และพยานหลักฐาน",
+    "ตรวจคำพิพากษา คำคู่ความ สำนวน และคำเบิกความที่มีอยู่",
+    "ประเมินเหตุอุทธรณ์ด้านข้อเท็จจริง ข้อกฎหมาย และกระบวนพิจารณา",
+    "ให้คำแนะนำเรื่องการยื่นพยานหลักฐานเพิ่มเติมและวิธีนำเสนอ",
+    "ประสานงานกับพนักงานอัยการเมื่อจำเป็นตามสถานะของลูกความ",
+    "จัดทำอุทธรณ์ คำแก้อุทธรณ์ คำแถลง หรือดำเนินคดีตามที่ตกลง",
+    "กำหนดขอบเขตงานรักษาทรัพย์สินหรือการเรียกคืนทางแพ่งแยกต่างหากเมื่อเกี่ยวข้อง"
+   ],
    "warningTitle": "การอุทธรณ์ไม่ใช่เพียงการพิจารณาคดีใหม่อีกครั้ง",
    "warning": "การพิจารณาอุทธรณ์ของไทยอยู่ภายใต้หลักเกณฑ์กระบวนพิจารณา เหตุที่อนุญาต และกำหนดเวลาที่เคร่งครัด พยานหลักฐานใหม่ไม่ได้รับอนุญาตโดยอัตโนมัติ และการเรียกคืนทรัพย์สินที่เกี่ยวข้องอาจต้องใช้ช่องทางกฎหมายแยกต่างหาก จึงควรตรวจสอบโดยเร็วเพื่อรักษาทางเลือกก่อนสิ้นกำหนดเวลา",
-   "related": ["บริการคดีอาญา","บริการคดีแพ่ง","สำนักงานพัทยา"]
+   "related": [
+    "บริการคดีอาญา",
+    "บริการคดีแพ่ง",
+    "สำนักงานพัทยา"
+   ]
   },
   "fr": {
    "title": "Avocat en Défense Pénale et Appels à Pattaya | Walailak Law Firm",
    "description": "Défense pénale et représentation en appel à Pattaya pour prévenus, victimes et parties civiles dans des procédures pénales thaïlandaises complexes.",
-   "eyebrow": "DÉFENSE PÉNALE À PATTAYA", "h1": "Défense Pénale et Appels à Pattaya",
+   "eyebrow": "DÉFENSE PÉNALE À PATTAYA",
+   "h1": "Défense Pénale et Appels à Pattaya",
    "lead": "Représentation stratégique lors des enquêtes, procès et appels, y compris dans les affaires documentaires complexes et pour les victimes ou parties civiles.",
    "introTitle": "Un appel exige un examen ciblé du jugement et du dossier de première instance",
    "intro": "Une procédure pénale à Pattaya peut concerner une enquête urgente, un procès contesté, un acquittement ou une condamnation faisant l'objet d'un appel, ou une victime souhaitant préserver sa position indépendamment du ministère public. Walailak Law Firm examine l'état de la procédure, le jugement, les preuves et les délais avant de définir la stratégie et le périmètre de représentation appropriés.",
-   "situations": ["Enquête de police, arrestation ou accusation pénale à Pattaya","Prévenu envisageant un appel ou devant y répondre","Victime ou partie civile après un acquittement","Appel du ministère public nécessitant un conseil indépendant pour la victime","Affaire de fraude ou financière complexe comportant de nombreux documents","Affaire pénale liée à des fonds gelés ou à une demande distincte de recouvrement"],
-   "checks": ["Confirmer le rôle procédural du client et vérifier les conflits d'intérêts","Identifier les délais d'appel, de réponse et de preuve","Examiner le jugement, les actes, le dossier d'audience et les transcriptions disponibles","Évaluer les moyens factuels, juridiques et procéduraux","Conseiller sur l'admissibilité et la présentation d'éventuelles preuves supplémentaires","Coordonner avec le ministère public lorsque le rôle du client l'exige","Préparer l'appel, la réponse, les écritures ou la représentation convenus","Définir séparément la préservation des actifs ou le recouvrement civil si nécessaire"],
+   "situations": [
+    "Enquête de police, arrestation ou accusation pénale à Pattaya",
+    "Prévenu envisageant un appel ou devant y répondre",
+    "Victime ou partie civile après un acquittement",
+    "Appel du ministère public nécessitant un conseil indépendant pour la victime",
+    "Affaire de fraude ou financière complexe comportant de nombreux documents",
+    "Affaire pénale liée à des fonds gelés ou à une demande distincte de recouvrement"
+   ],
+   "checks": [
+    "Confirmer le rôle procédural du client et vérifier les conflits d'intérêts",
+    "Identifier les délais d'appel, de réponse et de preuve",
+    "Examiner le jugement, les actes, le dossier d'audience et les transcriptions disponibles",
+    "Évaluer les moyens factuels, juridiques et procéduraux",
+    "Conseiller sur l'admissibilité et la présentation d'éventuelles preuves supplémentaires",
+    "Coordonner avec le ministère public lorsque le rôle du client l'exige",
+    "Préparer l'appel, la réponse, les écritures ou la représentation convenus",
+    "Définir séparément la préservation des actifs ou le recouvrement civil si nécessaire"
+   ],
    "warningTitle": "Un appel n'est pas simplement un second procès",
    "warning": "Les appels pénaux thaïlandais obéissent à des règles procédurales, à des moyens autorisés et à des délais stricts. Les nouvelles preuves ne sont pas automatiquement admises et le recouvrement d'actifs peut nécessiter une voie distincte. Un examen rapide permet d'identifier les options avant l'expiration des délais.",
-   "related": ["Services de défense pénale","Services de contentieux civil","Bureau de Pattaya"]
+   "related": [
+    "Services de défense pénale",
+    "Services de contentieux civil",
+    "Bureau de Pattaya"
+   ]
   },
   "zh": {
    "title": "芭堤雅刑事辩护与上诉律师 | 瓦莱拉克律师事务所",
    "description": "为芭堤雅复杂刑事诉讼中的被告、受害人及共同原告提供刑事辩护与上诉代理服务。",
-   "eyebrow": "芭堤雅刑事辩护", "h1": "芭堤雅刑事辩护与上诉",
+   "eyebrow": "芭堤雅刑事辩护",
+   "h1": "芭堤雅刑事辩护与上诉",
    "lead": "为侦查、审判及上诉提供策略性代理，包括文件复杂的案件以及受害人或共同原告事项。",
    "introTitle": "上诉需要有针对性地审查判决及一审案卷",
    "intro": "芭堤雅刑事程序可能涉及紧急侦查、争议审判、无罪或有罪判决的上诉，或受害人在检察官之外维护自身独立立场。瓦莱拉克律师事务所在确定适当的策略及代理范围前，会审查程序状态、判决、证据及期限。",
-   "situations": ["芭堤雅的警方调查、逮捕或刑事指控","被告考虑提起上诉或回应上诉","无罪判决后的受害人或共同原告事项","检察官上诉时受害人需要独立法律意见","涉及大量文件的复杂欺诈或金融案件","与冻结资金或独立追偿请求相关的刑事案件"],
-   "checks": ["确认客户的诉讼身份并完成利益冲突审查","确定上诉、答辩及证据期限","审查判决、诉状、庭审记录及现有笔录","评估事实、法律及程序方面的上诉理由","就能否提交补充证据及其呈现方式提供意见","在客户身份需要时与检察官协调","准备约定的上诉、答辩、书面意见或出庭代理","在相关情况下另行界定资产保全或民事追偿范围"],
+   "situations": [
+    "芭堤雅的警方调查、逮捕或刑事指控",
+    "被告考虑提起上诉或回应上诉",
+    "无罪判决后的受害人或共同原告事项",
+    "检察官上诉时受害人需要独立法律意见",
+    "涉及大量文件的复杂欺诈或金融案件",
+    "与冻结资金或独立追偿请求相关的刑事案件"
+   ],
+   "checks": [
+    "确认客户的诉讼身份并完成利益冲突审查",
+    "确定上诉、答辩及证据期限",
+    "审查判决、诉状、庭审记录及现有笔录",
+    "评估事实、法律及程序方面的上诉理由",
+    "就能否提交补充证据及其呈现方式提供意见",
+    "在客户身份需要时与检察官协调",
+    "准备约定的上诉、答辩、书面意见或出庭代理",
+    "在相关情况下另行界定资产保全或民事追偿范围"
+   ],
    "warningTitle": "上诉并非简单地重新审判",
    "warning": "泰国刑事上诉受到程序规则、允许理由及严格期限的约束。新证据不会自动获准提交，相关资产追偿也可能需要采取独立法律程序。及早审查有助于在期限届满前确定可行方案。",
-   "related": ["刑事辩护服务","民事诉讼服务","芭堤雅办公室"]
+   "related": [
+    "刑事辩护服务",
+    "民事诉讼服务",
+    "芭堤雅办公室"
+   ]
   }
  },
  {
@@ -8059,41 +8122,500 @@
   "th": {
    "title": "การติดตามหนี้ข้ามพรมแดนในประเทศไทย | สำนักงานกฎหมายวลัยลักษณ์",
    "description": "บริการติดตามหนี้ข้ามพรมแดนในประเทศไทยสำหรับเจ้าหนี้ต่างประเทศ กรณีใบแจ้งหนี้ค้างชำระ ผิดนัดตามข้อตกลง และข้อเรียกร้องทางการค้าต่อลูกหนี้ไทย",
-   "eyebrow": "การติดตามหนี้ข้ามพรมแดน", "h1": "การติดตามหนี้ข้ามพรมแดนในประเทศไทย",
+   "eyebrow": "การติดตามหนี้ข้ามพรมแดน",
+   "h1": "การติดตามหนี้ข้ามพรมแดนในประเทศไทย",
    "lead": "กลยุทธ์การติดตามหนี้ทางการค้าสำหรับเจ้าหนี้ต่างประเทศที่มีใบแจ้งหนี้ค้างชำระ หนังสือรับสภาพหนี้ หรือข้อตกลงที่ผิดนัดซึ่งเกี่ยวข้องกับลูกหนี้ไทย",
    "introTitle": "แม้ข้อเรียกร้องจะแข็งแรง ก็ยังต้องมีกลยุทธ์ติดตามหนี้ที่ใช้ได้จริง",
    "intro": "การติดตามหนี้ข้ามพรมแดนไม่ได้จบเพียงการแสดงว่าใบแจ้งหนี้ยังไม่ได้รับชำระ สำนักงานกฎหมายวลัยลักษณ์ตรวจสัญญา หลักฐานการปฏิบัติงาน หนังสือรับสภาพหนี้หรือข้อตกลง กฎหมายที่ใช้บังคับ เขตอำนาจ อายุความ สถานะของลูกหนี้ไทย และแนวทางบังคับคดีที่เป็นจริง ก่อนเสนอหนังสือทวงถาม การเจรจา หรือการดำเนินคดี",
-   "situations": ["ผู้ขายสินค้าหรือผู้ให้บริการต่างประเทศมีลูกหนี้เป็นบริษัทไทย","ใบแจ้งหนี้ค้างชำระที่มีสัญญา คำสั่งซื้อ หรือหลักฐานการส่งมอบ","หนังสือรับสภาพหนี้หรือข้อตกลงที่ลงนามแล้วแต่มีการผิดนัด","ข้อเรียกร้องทางการค้าที่เกี่ยวข้องกับเอกสารหรือการชำระเงินหลายประเทศ","เจ้าหนี้ต้องการประเมินลูกหนี้ไทยและทรัพย์สินที่มีอยู่","ข้อเรียกร้องที่ต้องดำเนินคดี บังคับคดี หรือเจรจายุติข้อพิพาทในไทย"],
-   "checks": ["ตรวจคู่สัญญา อำนาจลงนาม และตัวลูกหนี้ที่ถูกต้อง","ตรวจสัญญา ใบแจ้งหนี้ การส่งมอบ การปฏิบัติงาน และหลักฐานการชำระเงิน","ประเมินกฎหมายที่ใช้บังคับ เขตอำนาจ และอายุความ","วิเคราะห์หนังสือรับสภาพหนี้ การค้ำประกัน หรือข้อตกลงยุติข้อพิพาท","ตรวจสถานะนิติบุคคลของลูกหนี้และข้อมูลทรัพย์สินที่มีอยู่","จัดทำหนังสือทวงถามและกลยุทธ์การเจรจาอย่างเป็นระบบ","เริ่มดำเนินคดีในไทยเมื่อเหมาะสมและได้รับมอบหมาย","วางแผนบังคับคดีและการประสานงานข้ามพรมแดนเมื่อจำเป็น"],
+   "situations": [
+    "ผู้ขายสินค้าหรือผู้ให้บริการต่างประเทศมีลูกหนี้เป็นบริษัทไทย",
+    "ใบแจ้งหนี้ค้างชำระที่มีสัญญา คำสั่งซื้อ หรือหลักฐานการส่งมอบ",
+    "หนังสือรับสภาพหนี้หรือข้อตกลงที่ลงนามแล้วแต่มีการผิดนัด",
+    "ข้อเรียกร้องทางการค้าที่เกี่ยวข้องกับเอกสารหรือการชำระเงินหลายประเทศ",
+    "เจ้าหนี้ต้องการประเมินลูกหนี้ไทยและทรัพย์สินที่มีอยู่",
+    "ข้อเรียกร้องที่ต้องดำเนินคดี บังคับคดี หรือเจรจายุติข้อพิพาทในไทย"
+   ],
+   "checks": [
+    "ตรวจคู่สัญญา อำนาจลงนาม และตัวลูกหนี้ที่ถูกต้อง",
+    "ตรวจสัญญา ใบแจ้งหนี้ การส่งมอบ การปฏิบัติงาน และหลักฐานการชำระเงิน",
+    "ประเมินกฎหมายที่ใช้บังคับ เขตอำนาจ และอายุความ",
+    "วิเคราะห์หนังสือรับสภาพหนี้ การค้ำประกัน หรือข้อตกลงยุติข้อพิพาท",
+    "ตรวจสถานะนิติบุคคลของลูกหนี้และข้อมูลทรัพย์สินที่มีอยู่",
+    "จัดทำหนังสือทวงถามและกลยุทธ์การเจรจาอย่างเป็นระบบ",
+    "เริ่มดำเนินคดีในไทยเมื่อเหมาะสมและได้รับมอบหมาย",
+    "วางแผนบังคับคดีและการประสานงานข้ามพรมแดนเมื่อจำเป็น"
+   ],
    "warningTitle": "การชนะคดีและการได้รับชำระหนี้ไม่ใช่เรื่องเดียวกัน",
    "warning": "ก่อนมีค่าใช้จ่ายจำนวนมาก ควรพิจารณาข้อกฎหมายควบคู่กับเขตอำนาจ พยานหลักฐาน อายุความ ความสามารถในการชำระหนี้ และทรัพย์สินที่ระบุได้ของลูกหนี้ อาจจำเป็นต้องมีคำแนะนำกฎหมายต่างประเทศหรือการบังคับคดีนอกไทยซึ่งควรประสานแยกต่างหาก",
-   "related": ["บริการคดีแพ่ง","บริการอนุญาโตตุลาการ","การติดตามหนี้ทางการค้าในระยอง"]
+   "related": [
+    "บริการคดีแพ่ง",
+    "บริการอนุญาโตตุลาการ",
+    "การติดตามหนี้ทางการค้าในระยอง"
+   ]
   },
   "fr": {
    "title": "Recouvrement Transfrontalier de Créances en Thaïlande | Walailak Law Firm",
    "description": "Recouvrement transfrontalier en Thaïlande pour créanciers étrangers confrontés à des factures impayées, accords inexécutés et créances commerciales.",
-   "eyebrow": "RECOUVREMENT TRANSFRONTALIER", "h1": "Recouvrement Transfrontalier de Créances en Thaïlande",
+   "eyebrow": "RECOUVREMENT TRANSFRONTALIER",
+   "h1": "Recouvrement Transfrontalier de Créances en Thaïlande",
    "lead": "Stratégie de recouvrement commercial pour les créanciers étrangers confrontés à des factures impayées, des dettes reconnues ou des accords inexécutés impliquant un débiteur thaïlandais.",
    "introTitle": "Une créance solide exige néanmoins une stratégie de recouvrement réaliste",
    "intro": "Le recouvrement transfrontalier ne consiste pas seulement à démontrer qu'une facture reste impayée. Walailak Law Firm examine le contrat, les preuves d'exécution, la reconnaissance de dette ou l'accord, la loi applicable, la compétence, la prescription, la situation du débiteur thaïlandais et les possibilités réalistes d'exécution avant de recommander une mise en demeure, une négociation ou une procédure.",
-   "situations": ["Fournisseur ou prestataire étranger auquel une société thaïlandaise doit de l'argent","Factures impayées appuyées par des contrats, commandes ou preuves de livraison","Reconnaissance de dette ou accord signé désormais inexécuté","Créance commerciale impliquant des documents ou paiements de plusieurs pays","Créancier souhaitant évaluer le débiteur thaïlandais et ses actifs","Créance nécessitant une procédure thaïlandaise, l'exécution d'un jugement ou un accord"],
-   "checks": ["Vérifier les parties contractantes, les pouvoirs et le débiteur exact","Examiner contrats, factures, livraison, exécution et preuves de paiement","Évaluer la loi applicable, la compétence et les délais de prescription","Analyser toute reconnaissance, garantie ou transaction","Examiner la situation sociale du débiteur et les informations disponibles sur ses actifs","Préparer une mise en demeure et une stratégie structurée de négociation","Engager une procédure thaïlandaise lorsqu'elle est proportionnée et mandatée","Planifier l'exécution du jugement et la coordination transfrontalière si nécessaire"],
+   "situations": [
+    "Fournisseur ou prestataire étranger auquel une société thaïlandaise doit de l'argent",
+    "Factures impayées appuyées par des contrats, commandes ou preuves de livraison",
+    "Reconnaissance de dette ou accord signé désormais inexécuté",
+    "Créance commerciale impliquant des documents ou paiements de plusieurs pays",
+    "Créancier souhaitant évaluer le débiteur thaïlandais et ses actifs",
+    "Créance nécessitant une procédure thaïlandaise, l'exécution d'un jugement ou un accord"
+   ],
+   "checks": [
+    "Vérifier les parties contractantes, les pouvoirs et le débiteur exact",
+    "Examiner contrats, factures, livraison, exécution et preuves de paiement",
+    "Évaluer la loi applicable, la compétence et les délais de prescription",
+    "Analyser toute reconnaissance, garantie ou transaction",
+    "Examiner la situation sociale du débiteur et les informations disponibles sur ses actifs",
+    "Préparer une mise en demeure et une stratégie structurée de négociation",
+    "Engager une procédure thaïlandaise lorsqu'elle est proportionnée et mandatée",
+    "Planifier l'exécution du jugement et la coordination transfrontalière si nécessaire"
+   ],
    "warningTitle": "Obtenir un jugement et recouvrer effectivement sont deux choses différentes",
    "warning": "Avant d'engager des frais importants, le bien-fondé juridique doit être apprécié avec la compétence, les preuves, la prescription, la solvabilité du débiteur et ses actifs identifiables. Des conseils en droit étranger ou une exécution hors de Thaïlande peuvent aussi être nécessaires et doivent être coordonnés séparément.",
-   "related": ["Services de contentieux civil","Services d'arbitrage","Recouvrement commercial à Rayong"]
+   "related": [
+    "Services de contentieux civil",
+    "Services d'arbitrage",
+    "Recouvrement commercial à Rayong"
+   ]
   },
   "zh": {
    "title": "泰国跨境债务追偿 | 瓦莱拉克律师事务所",
    "description": "为向泰国债务人追讨未付发票、和解违约及商业债权的海外债权人提供泰国跨境债务追偿服务。",
-   "eyebrow": "跨境债务追偿", "h1": "泰国跨境债务追偿",
+   "eyebrow": "跨境债务追偿",
+   "h1": "泰国跨境债务追偿",
    "lead": "为因泰国债务人拖欠发票、确认债务或违反和解协议的海外债权人制定商业追偿策略。",
    "introTitle": "有力的债权仍需要切实可行的追偿策略",
    "intro": "跨境追偿不只是证明发票尚未支付。瓦莱拉克律师事务所在建议催款、谈判或诉讼前，会审查合同、履行记录、债务确认或和解协议、适用法律与管辖条款、诉讼时效、泰国债务人的状态以及现实的执行路径。",
-   "situations": ["泰国公司拖欠海外供应商或服务商款项","有合同、订单或交付记录支持的未付发票","已签署但现已违约的债务确认书或和解协议","涉及多个国家文件或付款的商业债权","债权人需要评估泰国债务人及可供执行的资产","需要在泰国诉讼、执行判决或和解的债权"],
-   "checks": ["核实合同主体、授权及正确债务人","审查合同、发票、交付、履行及付款证据","评估适用法律、管辖权及诉讼时效","分析债务确认、担保或和解协议","审查债务人的公司状态及现有资产信息","准备正式催款函及结构化谈判策略","在适当且受委托时启动泰国诉讼","在需要时规划判决执行及跨境协调"],
+   "situations": [
+    "泰国公司拖欠海外供应商或服务商款项",
+    "有合同、订单或交付记录支持的未付发票",
+    "已签署但现已违约的债务确认书或和解协议",
+    "涉及多个国家文件或付款的商业债权",
+    "债权人需要评估泰国债务人及可供执行的资产",
+    "需要在泰国诉讼、执行判决或和解的债权"
+   ],
+   "checks": [
+    "核实合同主体、授权及正确债务人",
+    "审查合同、发票、交付、履行及付款证据",
+    "评估适用法律、管辖权及诉讼时效",
+    "分析债务确认、担保或和解协议",
+    "审查债务人的公司状态及现有资产信息",
+    "准备正式催款函及结构化谈判策略",
+    "在适当且受委托时启动泰国诉讼",
+    "在需要时规划判决执行及跨境协调"
+   ],
    "warningTitle": "取得胜诉判决与实际收回款项并不相同",
    "warning": "在产生重大费用前，应结合管辖权、证据、时效、债务人的偿付能力及可识别资产评估法律依据。还可能需要外国法律意见或在泰国境外执行，并应另行协调。",
-   "related": ["民事诉讼服务","仲裁服务","罗勇商业债务追偿"]
+   "related": [
+    "民事诉讼服务",
+    "仲裁服务",
+    "罗勇商业债务追偿"
+   ]
+  }
+ },
+ {
+  "slug": "bangkok-company-boi-foreign-investment",
+  "th": {
+   "title": "ทนายความด้านบริษัท BOI และการลงทุนจากต่างชาติในกรุงเทพฯ | สำนักงานกฎหมายวลัยลักษณ์",
+   "description": "บริการด้านกฎหมายการจดทะเบียนบริษัท BOI การลงทุนจากต่างชาติ ธรรมาภิบาล และการพาณิชย์ในกรุงเทพฯ สำหรับธุรกิจนานาชาติและนักลงทุน",
+   "eyebrow": "บริการธุรกิจในกรุงเทพฯ",
+   "h1": "บริษัท BOI และการลงทุนจากต่างชาติในกรุงเทพฯ",
+   "lead": "การสนับสนุนทางกฎหมายเชิงปฏิบัติสำหรับธุรกิจนานาชาติและนักลงทุนที่จัดตั้ง ซื้อกิจการ จัดหาเงินทุน หรือดำเนินธุรกิจในกรุงเทพฯ",
+   "introTitle": "เลือกโครงสร้างที่ถูกต้องตามกฎหมายให้เหมาะกับธุรกิจที่แท้จริง",
+   "intro": "โครงการในกรุงเทพฯ อาจต้องอาศัยการจดทะเบียนบริษัท การวิเคราะห์การลงทุนจากต่างชาติ การส่งเสริมการลงทุน ใบอนุญาต สถานที่ บุคลากร และสัญญาทางการค้า สำนักงานกฎหมายวลัยลักษณ์เริ่มต้นจากกิจกรรมที่วางแผนไว้ โครงสร้างผู้ถือหุ้น แหล่งเงินทุน และการบริหารจัดการ ก่อนแนะนำโครงสร้างและลำดับการดำเนินงาน",
+   "situations": [
+    "นักลงทุนต่างชาติจัดตั้งบริษัทดำเนินธุรกิจในประเทศไทย",
+    "ธุรกิจที่มีอยู่แล้วยื่นขอรับการส่งเสริมจาก BOI หรือการอนุญาตอื่น",
+    "การซื้อกิจการ กิจการร่วมค้า หรือการปรับโครงสร้างผู้ถือหุ้น",
+    "บริษัทที่ต้องการทบทวนการถือครองหรือการควบคุมของชาวต่างชาติ",
+    "กรรมการที่ต้องการเอกสารด้านธรรมาภิบาลและผู้ถือหุ้น",
+    "ธุรกิจที่กำลังจัดเตรียมสัญญาสำหรับการดำเนินงานในประเทศไทย"
+   ],
+   "checks": [
+    "ชี้แจงกิจกรรมทางธุรกิจ ความเป็นเจ้าของ แหล่งเงินทุน และการบริหารจัดการ",
+    "ประเมินข้อจำกัดด้านธุรกิจของคนต่างด้าวและช่องทางกฎหมายที่มีอยู่",
+    "พิจารณาช่องทาง BOI และทางเลือกส่งเสริมการลงทุนอื่น",
+    "จัดทำเอกสารบริษัท ผู้ถือหุ้น และกรรมการ",
+    "ตรวจสอบใบอนุญาต สถานที่ การจ้างงาน และข้อกำหนดในการดำเนินงาน",
+    "ร่างและเจรจาสัญญาทางการค้าและเอกสารการดำเนินงาน"
+   ],
+   "warningTitle": "การจดทะเบียนเป็นเพียงส่วนหนึ่งของการดำเนินธุรกิจโดยชอบด้วยกฎหมาย",
+   "warning": "การจดทะเบียนบริษัทเพียงอย่างเดียวไม่ได้แก้ไขข้อจำกัดด้านธุรกิจของคนต่างด้าว ใบอนุญาต การจ้างงาน ภาษี หรือข้อกำหนดด้านใบอนุญาตทำงาน โครงสร้างควรสะท้อนกิจกรรมที่ดำเนินการจริง ความเป็นเจ้าของและการตัดสินใจที่แท้จริง และการอนุมัติที่จำเป็นก่อนเริ่มดำเนินงาน",
+   "related": [
+    "ข้อพิพาททางการค้าในกรุงเทพฯ",
+    "การจ้างงาน วีซ่า และใบอนุญาตทำงานในกรุงเทพฯ",
+    "บริการทางกฎหมายในกรุงเทพฯ"
+   ]
+  },
+  "fr": {
+   "title": "Avocat en Société, BOI et Investissement Étranger à Bangkok | Walailak Law Firm",
+   "description": "Création de société, BOI, investissement étranger, gouvernance et soutien juridique commercial à Bangkok pour les entreprises internationales et investisseurs.",
+   "eyebrow": "SERVICES AUX ENTREPRISES À BANGKOK",
+   "h1": "Société, BOI et Investissement Étranger à Bangkok",
+   "lead": "Un accompagnement juridique pratique pour les entreprises internationales et investisseurs qui créent, acquièrent, financent ou exploitent une activité à Bangkok.",
+   "introTitle": "Choisir une structure licite adaptée à l'activité réelle",
+   "intro": "Un projet à Bangkok peut nécessiter une création de société, une analyse de l'investissement étranger, une promotion de l'investissement, des licences, des locaux, du personnel et des contrats commerciaux. Walailak Law Firm commence par examiner les activités envisagées, l'actionnariat, le financement et les modalités de gestion avant de recommander une structure et un calendrier de mise en œuvre.",
+   "situations": [
+    "Un investisseur étranger créant une société opérationnelle thaïlandaise",
+    "Une entreprise existante demandant une promotion BOI ou une autre autorisation",
+    "Une acquisition, coentreprise ou restructuration actionnariale",
+    "Une société examinant la propriété ou le contrôle étrangers",
+    "Des dirigeants ayant besoin de documents de gouvernance et d'actionnariat",
+    "Une entreprise préparant des contrats pour ses activités thaïlandaises"
+   ],
+   "checks": [
+    "Clarifier les activités commerciales, l'actionnariat, le financement et la gestion",
+    "Évaluer les restrictions applicables aux activités étrangères et les voies juridiques disponibles",
+    "Étudier le BOI et d'autres options de promotion de l'investissement",
+    "Préparer les documents de société, d'actionnaires et de dirigeants",
+    "Examiner les licences, locaux, exigences d'emploi et d'exploitation",
+    "Rédiger et négocier les contrats commerciaux et documents de mise en œuvre"
+   ],
+   "warningTitle": "L'immatriculation n'est qu'une partie d'une exploitation licite",
+   "warning": "Une société immatriculée ne résout pas à elle seule les restrictions applicables aux activités étrangères, les licences, l'emploi, la fiscalité ou les exigences d'autorisation de travail. La structure doit refléter l'activité réellement exercée, la propriété et la prise de décision authentiques, ainsi que les autorisations requises avant le début de l'exploitation.",
+   "related": [
+    "Litiges commerciaux à Bangkok",
+    "Emploi, visa et permis de travail à Bangkok",
+    "Services juridiques à Bangkok"
+   ]
+  },
+  "zh": {
+   "title": "曼谷公司、BOI与外国投资律师 | 瓦莱拉克律师事务所",
+   "description": "为国际企业及投资者提供曼谷公司注册、BOI、外国投资、治理及商业法律支持。",
+   "eyebrow": "曼谷商业服务",
+   "h1": "曼谷公司、BOI与外国投资",
+   "lead": "为在曼谷设立、收购、融资或经营业务的国际企业及投资者提供切实可行的法律支持。",
+   "introTitle": "选择符合真实业务的合法架构",
+   "intro": "曼谷的项目可能需要公司注册、外国投资分析、投资促进、许可证、经营场所、员工及商业合同。瓦莱拉克律师事务所首先了解拟定的业务活动、所有权、资金来源及管理安排，再建议合适的架构及落地实施顺序。",
+   "situations": [
+    "设立泰国运营公司的外国投资者",
+    "申请BOI促进或其他许可的现有企业",
+    "收购、合资企业或股东重组",
+    "审查外国持股或控制权的公司",
+    "需要治理及股东文件的董事",
+    "为泰国业务准备合同的企业"
+   ],
+   "checks": [
+    "明确业务活动、所有权、资金来源及管理方式",
+    "评估外国经商限制及可行的法律路径",
+    "考虑BOI及其他投资促进方案",
+    "准备公司、股东及董事文件",
+    "审查许可证、经营场所、雇佣及运营要求",
+    "起草并协商商业合同及实施文件"
+   ],
+   "warningTitle": "注册只是合法经营的一部分",
+   "warning": "已注册的公司本身并不能解决外国经商限制、许可证、雇佣、税务或工作授权方面的要求。架构应反映实际开展的业务活动、真实的所有权与决策安排，以及开始经营前所需取得的各项批准。",
+   "related": [
+    "曼谷商业纠纷",
+    "曼谷雇佣、签证与工作许可",
+    "曼谷法律服务"
+   ]
+  }
+ },
+ {
+  "slug": "bangkok-commercial-disputes-debt-recovery",
+  "th": {
+   "title": "ทนายความข้อพิพาททางการค้าและการติดตามหนี้ในกรุงเทพฯ | สำนักงานกฎหมายวลัยลักษณ์",
+   "description": "บริการทางกฎหมายด้านข้อพิพาททางการค้า ข้อเรียกร้องตามสัญญา และการติดตามหนี้ในกรุงเทพฯ รวมถึงการเจรจา การดำเนินคดี และการวางแผนบังคับคดี",
+   "eyebrow": "ข้อพิพาททางการค้าในกรุงเทพฯ",
+   "h1": "ข้อพิพาททางการค้าและการติดตามหนี้ในกรุงเทพฯ",
+   "lead": "กลยุทธ์ที่อ้างอิงหลักฐานสำหรับข้อเรียกร้องตามสัญญา ข้อพิพาทผู้ถือหุ้น หนี้ทางการค้าที่ค้างชำระ และเรื่องการบังคับคดีที่เกี่ยวข้องกับคู่กรณีในกรุงเทพฯ",
+   "introTitle": "วางกลยุทธ์โดยอ้างอิงหลักฐาน อำนาจต่อรอง และความเป็นไปได้ในการเรียกเก็บหนี้",
+   "intro": "ข้อพิพาททางการค้าในกรุงเทพฯ อาจเกี่ยวข้องกับการจัดหา บริการ การก่อสร้าง การลงทุน ความสัมพันธ์ระหว่างผู้ถือหุ้น หรือใบแจ้งหนี้ที่ค้างชำระ ขั้นตอนต่อไปที่เหมาะสมที่สุดขึ้นอยู่กับสัญญา การติดต่อสื่อสาร ประวัติการชำระเงิน หลักประกันที่มีอยู่ อายุความ และทรัพย์สินของลูกหนี้ ไม่ใช่เพียงจำนวนเงินที่เรียกร้อง",
+   "situations": [
+    "ใบแจ้งหนี้ เงินกู้ หรือภาระผูกพันทางการค้าที่ค้างชำระ",
+    "การผิดสัญญาจัดหา บริการ จำหน่าย หรือก่อสร้าง",
+    "ข้อพิพาทระหว่างผู้ถือหุ้น กรรมการ หรือกิจการร่วมค้า",
+    "ข้อเรียกร้องเรื่องการเลิกสัญญา ค่าเสียหาย หรือการปฏิบัติตามสัญญา",
+    "คำพิพากษาหรือคำชี้ขาดจากต่างประเทศที่ต้องการคำแนะนำตามกฎหมายไทย",
+    "การเจรจาต่อรองที่ต้องการโครงสร้างทางกฎหมายและความสามารถในการบังคับใช้"
+   ],
+   "checks": [
+    "จัดระเบียบสัญญา ใบแจ้งหนี้ จดหมายโต้ตอบ และหลักฐานการชำระเงิน",
+    "ระบุคู่กรณี ข้อกำหนดที่ใช้บังคับ และข้อเรียกร้องที่มีอยู่",
+    "ประเมินอายุความ เขตอำนาจศาล และข้อกำหนดการระงับข้อพิพาท",
+    "ตรวจสอบความเป็นไปได้ในทางปฏิบัติของการเรียกเก็บหนี้และการบังคับคดี",
+    "จัดทำกลยุทธ์การทวงถาม การเจรจา การไกล่เกลี่ย หรือการดำเนินคดี",
+    "วางแผนการบังคับคดีตามคำพิพากษา การประนีประนอม หรือคำชี้ขาดตามความเหมาะสม"
+   ],
+   "warningTitle": "การเรียกร้องที่ชนะคดียังต้องนำไปสู่ผลลัพธ์ที่ใช้ได้จริง",
+   "warning": "การดำเนินคดีอาจทำได้ตามกฎหมายแต่ไม่คุ้มค่าในเชิงพาณิชย์ หากหลักฐานอ่อน อายุความใกล้หมด หรือไม่สามารถระบุทรัพย์สินได้ การวิเคราะห์ตั้งแต่ต้นควรเปรียบเทียบโอกาสในการเรียกเก็บหนี้ ค่าใช้จ่าย ระยะเวลา และแรงกดดันที่แต่ละแนวทางจะสร้างขึ้น",
+   "related": [
+    "บริษัทและการลงทุนจากต่างชาติในกรุงเทพฯ",
+    "บริการด้านคดีแพ่ง",
+    "บริการทางกฎหมายในกรุงเทพฯ"
+   ]
+  },
+  "fr": {
+   "title": "Avocat en Litiges Commerciaux et Recouvrement de Créances à Bangkok | Walailak Law Firm",
+   "description": "Services juridiques de litiges commerciaux, réclamations contractuelles et recouvrement de créances à Bangkok, incluant négociation, contentieux et exécution.",
+   "eyebrow": "LITIGES COMMERCIAUX À BANGKOK",
+   "h1": "Litiges Commerciaux et Recouvrement de Créances à Bangkok",
+   "lead": "Une stratégie fondée sur les preuves pour les réclamations contractuelles, litiges entre actionnaires, créances commerciales impayées et l'exécution impliquant des contreparties à Bangkok.",
+   "introTitle": "Construire la stratégie autour des preuves, du rapport de force et de la recouvrabilité",
+   "intro": "Les litiges commerciaux à Bangkok peuvent concerner l'approvisionnement, les services, la construction, l'investissement, les relations entre actionnaires ou des factures impayées. La meilleure étape suivante dépend des contrats, des échanges, de l'historique des paiements, des sûretés disponibles, des délais de prescription et des actifs du débiteur, et non simplement du montant réclamé.",
+   "situations": [
+    "Factures, prêts ou obligations commerciales impayés",
+    "Une rupture de contrat d'approvisionnement, de service, de distribution ou de construction",
+    "Un litige entre actionnaires, dirigeants ou coentreprise",
+    "Des réclamations pour résiliation, dommages ou inexécution",
+    "Un jugement ou une sentence étrangère nécessitant un avis thaïlandais",
+    "Des discussions de règlement nécessitant une structure juridique et une force exécutoire"
+   ],
+   "checks": [
+    "Organiser les contrats, factures, correspondances et preuves de paiement",
+    "Identifier les parties, les conditions applicables et les réclamations disponibles",
+    "Évaluer la prescription, la juridiction et les clauses de résolution des litiges",
+    "Examiner les considérations pratiques de recouvrement et d'exécution",
+    "Préparer une stratégie de mise en demeure, négociation, médiation ou contentieux",
+    "Planifier l'exécution du jugement, du règlement ou de la sentence le cas échéant"
+   ],
+   "warningTitle": "Une réclamation gagnée doit encore produire un résultat concret",
+   "warning": "Une procédure peut être juridiquement possible mais commercialement peu attractive si les preuves sont faibles, les délais proches d'expirer ou les actifs impossibles à identifier. Une analyse précoce doit comparer le recouvrement probable, le coût, le calendrier et la pression créée par chaque voie disponible.",
+   "related": [
+    "Société et investissement étranger à Bangkok",
+    "Services de contentieux civil",
+    "Services juridiques à Bangkok"
+   ]
+  },
+  "zh": {
+   "title": "曼谷商业纠纷与债务追讨律师 | 瓦莱拉克律师事务所",
+   "description": "曼谷商业纠纷、合同索赔及债务追讨法律服务，涵盖协商、诉讼及执行规划。",
+   "eyebrow": "曼谷商业纠纷",
+   "h1": "曼谷商业纠纷与债务追讨",
+   "lead": "针对涉及曼谷交易相对方的合同索赔、股东纠纷、未付商业债务及执行事务，提供以证据为导向的策略。",
+   "introTitle": "围绕证据、筹码及可追讨性制定策略",
+   "intro": "曼谷的商业纠纷可能涉及供应、服务、施工、投资、股东关系或未付发票。最有力的下一步取决于合同、往来沟通、付款记录、可获得的担保、时效期间及债务人的资产状况——而不仅仅是索赔金额。",
+   "situations": [
+    "未付发票、贷款或商业义务",
+    "违反供应、服务、分销或施工合同",
+    "股东、董事或合资企业纠纷",
+    "终止、损害赔偿或履约索赔",
+    "需要泰国法律意见的境外判决或裁决",
+    "需要法律架构及可执行性的和解协商"
+   ],
+   "checks": [
+    "整理合同、发票、往来函件及付款证据",
+    "确定当事方、适用条款及可主张的索赔",
+    "评估时效、管辖权及争议解决条款",
+    "调查切实可行的追讨及执行方案",
+    "准备催告、协商、调解或诉讼策略",
+    "在适当情况下规划判决、和解或裁决的执行"
+   ],
+   "warningTitle": "胜诉的索赔仍须带来切实的结果",
+   "warning": "若证据薄弱、时效临近或无法确定资产，诉讼程序即便在法律上可行，商业上也可能并不划算。应在早期分析中比较每种可行途径可能带来的追讨结果、成本、时间及施加的压力。",
+   "related": [
+    "曼谷公司与外国投资",
+    "民事诉讼服务",
+    "曼谷法律服务"
+   ]
+  }
+ },
+ {
+  "slug": "bangkok-property-due-diligence",
+  "th": {
+   "title": "ทนายความตรวจสอบทรัพย์สินก่อนซื้อในกรุงเทพฯ | สำนักงานกฎหมายวลัยลักษณ์",
+   "description": "บริการตรวจสอบทรัพย์สินอย่างอิสระในกรุงเทพฯ สำหรับคอนโดมิเนียม บ้าน ที่ดิน สิทธิการเช่า และธุรกรรมเชิงพาณิชย์ ครอบคลุมการตรวจสอบโฉนดและสัญญา",
+   "eyebrow": "บริการด้านทรัพย์สินในกรุงเทพฯ",
+   "h1": "การตรวจสอบทรัพย์สินก่อนซื้อในกรุงเทพฯ",
+   "lead": "การตรวจสอบกรรมสิทธิ์ ความเป็นเจ้าของ และสัญญาอย่างเป็นอิสระ ก่อนซื้อ เช่า หรือลงทุนในทรัพย์สินที่พักอาศัยหรือเชิงพาณิชย์ในกรุงเทพฯ",
+   "introTitle": "ตรวจสอบทรัพย์สิน ผู้ขาย และสิทธิทางกฎหมายก่อนชำระเงิน",
+   "intro": "ธุรกรรมในกรุงเทพฯ อาจเกี่ยวข้องกับคอนโดมิเนียมภายใต้โควตาการถือครองของชาวต่างชาติ การขายต่อที่มีจำนองติดอยู่ สัญญาเช่าระยะยาว ข้อตกลงบ้านและที่ดิน หรือสถานประกอบการเชิงพาณิชย์ที่ถือครองโดยบริษัท สำนักงานกฎหมายวลัยลักษณ์ตรวจสอบสิทธิและเอกสารที่เสนอมาอย่างเป็นอิสระจากผู้ขาย นายหน้า และผู้พัฒนาโครงการ ก่อนที่ลูกความจะลงทุนเงินจำนวนมาก",
+   "situations": [
+    "การซื้อคอนโดมิเนียมที่กำลังก่อสร้างหรือสร้างเสร็จแล้ว",
+    "การขายต่อที่มีจำนองหรือสิทธิที่จดทะเบียนอยู่แล้ว",
+    "การซื้อบ้านและที่ดินที่เกี่ยวข้องกับคู่สมรสชาวไทย",
+    "สัญญาเช่าที่พักอาศัยหรือเชิงพาณิชย์ระยะยาว",
+    "การซื้อกิจการบริษัทที่เกี่ยวข้องกับอสังหาริมทรัพย์",
+    "ผู้ซื้อจากต่างประเทศที่ตรวจสอบเอกสารทางไกล"
+   ],
+   "checks": [
+    "ตรวจสอบโฉนด เจ้าของที่จดทะเบียน และภาระผูกพันที่สำคัญ",
+    "ตรวจสอบอำนาจของผู้ขาย ผู้พัฒนาโครงการ หรือบริษัท",
+    "พิจารณาสัญญาจอง สัญญาซื้อขาย สัญญาเช่า และเอกสารการโอน",
+    "ตรวจสอบข้อมูลอาคาร ทางเข้าออก และพื้นที่ส่วนกลางที่มีอยู่",
+    "ประเมินโควตาชาวต่างชาติ การโอนเงิน และข้อกำหนดการจดทะเบียน",
+    "วางแผนการชำระเงิน การโอนกรรมสิทธิ์ และขั้นตอนที่สำนักงานที่ดิน"
+   ],
+   "warningTitle": "คำอธิบายเชิงพาณิชย์อาจไม่ตรงกับสิทธิทางกฎหมาย",
+   "warning": "คำเช่น “กรรมสิทธิ์เด็ดขาด” “สิทธิการเช่า” “ยูนิต” หรือ “ทรัพย์สินเพื่อการลงทุน” อาจปกปิดความแตกต่างที่สำคัญด้านกรรมสิทธิ์ ความเป็นเจ้าของอาคาร สิทธิในการต่ออายุ พื้นที่ส่วนกลาง และการจดทะเบียน การตรวจสอบควรระบุให้ชัดเจนว่าจะได้เป็นเจ้าของหรือจดทะเบียนสิ่งใด และภายใต้เอกสารที่มีผลบังคับใช้ฉบับใด",
+   "related": [
+    "บริษัทและการลงทุนจากต่างชาติในกรุงเทพฯ",
+    "บริการด้านกฎหมายอสังหาริมทรัพย์",
+    "บริการทางกฎหมายในกรุงเทพฯ"
+   ]
+  },
+  "fr": {
+   "title": "Avocat en Due Diligence Immobilière à Bangkok | Walailak Law Firm",
+   "description": "Due diligence immobilière indépendante à Bangkok pour condominiums, maisons, terrains, baux et transactions commerciales, incluant l'examen du titre et du contrat.",
+   "eyebrow": "SERVICES IMMOBILIERS À BANGKOK",
+   "h1": "Due Diligence Immobilière à Bangkok",
+   "lead": "Un examen indépendant du titre, de la propriété et du contrat avant d'acheter, de louer ou d'investir dans un bien résidentiel ou commercial à Bangkok.",
+   "introTitle": "Vérifier le bien, le vendeur et les droits juridiques avant le paiement",
+   "intro": "Les transactions à Bangkok peuvent impliquer un condominium sous quota étranger, une revente avec une hypothèque existante, un bail de longue durée, un arrangement maison et terrain, ou des locaux commerciaux détenus par une société. Walailak Law Firm examine les droits et documents proposés indépendamment du vendeur, de l'agent et du promoteur avant que le client n'engage des fonds importants.",
+   "situations": [
+    "Un achat de condominium sur plan ou achevé",
+    "Une revente avec une hypothèque ou un droit enregistré existant",
+    "Un achat de maison et terrain impliquant un conjoint thaïlandais",
+    "Un bail résidentiel ou commercial de longue durée",
+    "Une acquisition de société liée à un bien immobilier",
+    "Un acheteur étranger examinant les documents à distance"
+   ],
+   "checks": [
+    "Vérifier le titre, le propriétaire enregistré et les charges importantes",
+    "Examiner l'autorité du vendeur, du promoteur ou de la société",
+    "Examiner les documents de réservation, de vente, de bail et de transfert",
+    "Examiner les informations disponibles sur le bâtiment, l'accès et les parties communes",
+    "Évaluer le quota étranger, les exigences de transfert de fonds et d'enregistrement",
+    "Planifier le paiement, la clôture et les étapes au Bureau des terres"
+   ],
+   "warningTitle": "La description commerciale peut ne pas correspondre aux droits juridiques",
+   "warning": "Des termes comme « pleine propriété », « bail », « unité » ou « bien d'investissement » peuvent dissimuler d'importantes différences en matière de titre, de propriété du bâtiment, de droits de renouvellement, de parties communes et d'enregistrement. L'examen doit identifier précisément ce qui sera possédé ou enregistré, et selon quels documents exécutoires.",
+   "related": [
+    "Société et investissement étranger à Bangkok",
+    "Services juridiques immobiliers",
+    "Services juridiques à Bangkok"
+   ]
+  },
+  "zh": {
+   "title": "曼谷房产尽职调查律师 | 瓦莱拉克律师事务所",
+   "description": "为曼谷的公寓、房屋、土地、租赁权及商业交易提供独立房产尽职调查，涵盖产权及合同审查。",
+   "eyebrow": "曼谷房产服务",
+   "h1": "曼谷房产尽职调查",
+   "lead": "在曼谷购买、租赁或投资住宅或商业房产前，提供独立的产权、所有权及合同审查。",
+   "introTitle": "在付款前核实房产、卖方及法律权利",
+   "intro": "曼谷的交易可能涉及外国人配额下的公寓、已设有抵押的转售房产、长期租赁、房屋与土地安排，或由公司持有的商业场所。瓦莱拉克律师事务所独立于卖方、中介及开发商，在客户投入大额资金前审查拟取得的权利及相关文件。",
+   "situations": [
+    "期房或现房公寓购买",
+    "已设有抵押或登记权利的转售房产",
+    "涉及泰籍配偶的房屋及土地购买",
+    "长期住宅或商业租赁",
+    "与不动产相关的公司收购",
+    "远程审查文件的境外买家"
+   ],
+   "checks": [
+    "核实产权、登记业主及重大负担",
+    "审查卖方、开发商或公司的权限",
+    "审查预订、买卖、租赁及过户文件",
+    "审查现有的建筑、通行及公共区域信息",
+    "评估外国人配额、汇款及登记要求",
+    "规划付款、交割及土地厅相关步骤"
+   ],
+   "warningTitle": "商业宣传描述可能与法律权利不符",
+   "warning": "诸如“永久产权”“租赁权”“单元”或“投资型房产”等表述，可能掩盖产权、建筑所有权、续约权利、公共区域及登记方面的重要差异。审查应明确将要拥有或登记的具体权利，以及依据哪些具有法律约束力的文件。",
+   "related": [
+    "曼谷公司与外国投资",
+    "房地产法律服务",
+    "曼谷法律服务"
+   ]
+  }
+ },
+ {
+  "slug": "bangkok-employment-visa-work-permit",
+  "th": {
+   "title": "ทนายความด้านการจ้างงาน วีซ่า และใบอนุญาตทำงานในกรุงเทพฯ | สำนักงานกฎหมายวลัยลักษณ์",
+   "description": "บริการทางกฎหมายด้านการจ้างงาน วีซ่า และใบอนุญาตทำงานในกรุงเทพฯ สำหรับบริษัท ผู้บริหาร พนักงานต่างชาติ และธุรกิจนานาชาติ",
+   "eyebrow": "การจ้างงานและการเข้าเมืองในกรุงเทพฯ",
+   "h1": "บริการด้านการจ้างงาน วีซ่า และใบอนุญาตทำงานในกรุงเทพฯ",
+   "lead": "การสนับสนุนด้านการจ้างงานและการเข้าเมืองอย่างประสานกันสำหรับบริษัท ผู้บริหาร และบุคลากรต่างชาติที่ทำงานในกรุงเทพฯ",
+   "introTitle": "จัดตำแหน่งงาน นายจ้าง และเส้นทางการเข้าเมืองให้สอดคล้องกันก่อนเริ่มงาน",
+   "intro": "การแต่งตั้งตำแหน่งในกรุงเทพฯ อาจเกี่ยวข้องกับบริษัทไทยทั่วไป นายจ้างที่ได้รับการส่งเสริมจาก BOI การโอนย้ายภายในกลุ่มบริษัท หรือธุรกิจที่เพิ่งจัดตั้งขึ้น เงื่อนไขการจ้างงาน คุณสมบัติของบริษัท สถานะวีซ่า และใบอนุญาตทำงาน ควรประกอบกันเป็นแผนเดียวที่ปฏิบัติได้จริง แทนที่จะยื่นแยกกัน",
+   "situations": [
+    "บริษัทว่าจ้างหรือโอนย้ายผู้บริหารต่างชาติ",
+    "กรรมการหรือผู้เชี่ยวชาญที่ย้ายมาทำงานในกรุงเทพฯ",
+    "บริษัทที่ได้รับการส่งเสริมจาก BOI จัดเตรียมบุคลากรต่างชาติ",
+    "พนักงานที่เปลี่ยนนายจ้าง ตำแหน่ง หรือสถานที่ทำงาน",
+    "ธุรกิจที่กำลังจัดเตรียมเอกสารการจ้างงานและการเลิกจ้าง",
+    "บริษัทที่ทบทวนการปฏิบัติตามกฎหมายในสถานที่ทำงานหรือข้อพิพาทแรงงาน"
+   ],
+   "checks": [
+    "ยืนยันนายจ้าง ตำแหน่งงาน สถานที่ทำงาน และวันเริ่มงานที่เสนอ",
+    "ประเมินช่องทางวีซ่าและใบอนุญาตทำงานที่มีอยู่",
+    "ตรวจสอบเอกสารประกอบของบริษัทและพนักงาน",
+    "จัดทำเอกสารการจ้างงาน การมอบหมายงาน และเอกสารบริษัท",
+    "ประสานการยื่นคำขอ การต่ออายุ และการรายงานที่จำเป็น",
+    "ให้คำแนะนำเกี่ยวกับประเด็นในสถานที่ทำงาน การเลิกจ้าง หรือข้อพิพาทเมื่อจำเป็น"
+   ],
+   "warningTitle": "สถานะของบริษัท การอนุญาตด้านการเข้าเมือง และอำนาจในการทำงาน เป็นคนละเรื่องกัน",
+   "warning": "วีซ่า ตำแหน่งกรรมการบริษัท หรือสัญญาจ้างงานที่ลงนามแล้ว ไม่ได้ทำให้งานที่เสนอได้รับอนุญาตโดยอัตโนมัติ ควรตรวจสอบคุณสมบัติของนายจ้าง บทบาทของบุคคลนั้น และกิจกรรมที่ได้รับอนุญาต ก่อนที่บุคคลนั้นจะเริ่มปฏิบัติหน้าที่หรืออาศัยสถานะที่สันนิษฐานไว้",
+   "related": [
+    "บริษัทและการลงทุนจากต่างชาติในกรุงเทพฯ",
+    "บริการด้านวีซ่าและใบอนุญาตทำงาน",
+    "บริการทางกฎหมายในกรุงเทพฯ"
+   ]
+  },
+  "fr": {
+   "title": "Avocat en Emploi, Visa et Permis de Travail à Bangkok | Walailak Law Firm",
+   "description": "Soutien juridique en matière d'emploi, de visa et de permis de travail à Bangkok pour entreprises, dirigeants, employés étrangers et sociétés internationales.",
+   "eyebrow": "EMPLOI ET IMMIGRATION À BANGKOK",
+   "h1": "Services d'Emploi, Visa et Permis de Travail à Bangkok",
+   "lead": "Un accompagnement coordonné en matière d'emploi et d'immigration pour les entreprises, dirigeants et personnel étranger travaillant à Bangkok.",
+   "introTitle": "Aligner le poste, l'employeur et la voie d'immigration avant le début du travail",
+   "intro": "Une affectation à Bangkok peut impliquer une société thaïlandaise ordinaire, un employeur promu par le BOI, un transfert intra-groupe ou une entreprise nouvellement créée. Les conditions d'emploi, l'éligibilité de la société, le statut du visa et l'autorisation de travail doivent former un plan cohérent unique plutôt que des démarches séparées.",
+   "situations": [
+    "Une société recrutant ou transférant un dirigeant étranger",
+    "Un dirigeant ou spécialiste se relocalisant à Bangkok",
+    "Une société promue par le BOI organisant du personnel étranger",
+    "Un employé changeant d'employeur, de poste ou de lieu de travail",
+    "Une entreprise préparant des documents d'emploi et de fin de contrat",
+    "Une société examinant sa conformité en milieu de travail ou un litige du travail"
+   ],
+   "checks": [
+    "Confirmer l'employeur, le poste, le lieu de travail et la date de début proposée",
+    "Évaluer la voie de visa et de permis de travail disponible",
+    "Examiner les documents justificatifs de la société et de l'employé",
+    "Préparer les documents d'emploi, d'affectation et de société",
+    "Coordonner les demandes, renouvellements et déclarations requises",
+    "Conseiller sur les questions de milieu de travail, de licenciement ou de litige si nécessaire"
+   ],
+   "warningTitle": "Le statut de la société, l'autorisation d'immigration et le droit de travailler sont distincts",
+   "warning": "Un visa, un mandat de dirigeant de société ou un contrat de travail signé n'autorise pas nécessairement le travail envisagé. L'éligibilité de l'employeur, le rôle de la personne et les activités autorisées doivent être vérifiés avant que la personne ne commence ses fonctions ou ne s'appuie sur un statut présumé.",
+   "related": [
+    "Société et investissement étranger à Bangkok",
+    "Services de visa et permis de travail",
+    "Services juridiques à Bangkok"
+   ]
+  },
+  "zh": {
+   "title": "曼谷雇佣、签证与工作许可律师 | 瓦莱拉克律师事务所",
+   "description": "为企业、高管、外籍员工及国际企业提供曼谷雇佣、签证及工作许可法律支持。",
+   "eyebrow": "曼谷雇佣与移民",
+   "h1": "曼谷雇佣、签证与工作许可服务",
+   "lead": "为在曼谷工作的企业、高管及外籍人员提供统筹一体的雇佣及移民支持。",
+   "introTitle": "在开始工作前使职位、雇主及移民路径相互衔接",
+   "intro": "曼谷的职位任命可能涉及普通泰国公司、获BOI促进的雇主、集团内部调动，或新设立的企业。雇佣条款、公司资格、签证身份及工作授权应构成一份统一可行的方案，而非各自独立的申报。",
+   "situations": [
+    "公司聘用或调动外籍高管",
+    "调至曼谷工作的董事或专业人员",
+    "获BOI促进的公司安排外籍人员",
+    "变更雇主、职位或工作地点的员工",
+    "正在准备雇佣及离职文件的企业",
+    "审查职场合规或劳动纠纷的公司"
+   ],
+   "checks": [
+    "确认雇主、职位、工作场所及拟定的入职日期",
+    "评估可行的签证及工作许可路径",
+    "审查公司及员工的配套文件",
+    "准备雇佣、任命及公司文件",
+    "统筹申请、续签及所需的报告事宜",
+    "在需要时就职场、离职或纠纷问题提供建议"
+   ],
+   "warningTitle": "公司地位、移民许可与工作授权是各自独立的事项",
+   "warning": "签证、公司董事职位或已签署的雇佣协议，并不必然授权拟定的工作。应在当事人开始履职或依赖假定身份前，核实雇主的资格、该人员的职责及获准从事的活动。",
+   "related": [
+    "曼谷公司与外国投资",
+    "签证与工作许可服务",
+    "曼谷法律服务"
+   ]
   }
  }
 ]

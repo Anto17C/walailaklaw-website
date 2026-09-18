@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Generate the Thai and French versions of the 99 locations/service pages, and (re)write the
-English versions of those same 99 pages with correct th/fr hreflang + language-switcher links.
+"""Generate localized location/service pages and rewrite their English equivalents with
+correct hreflang and language-switcher links.
 
-This is the source of truth for keeping all three languages of these 99 pages in sync. The
+This is the source of truth for keeping translated pages in sync. The
 English *content* itself (titles, copy, service lists, etc.) still lives in
 scripts/generate-location-pages.mjs and scripts/generate-city-service-pages.mjs — this script
 reads it straight out of those two files (see js_array_to_json below) so there is only one place
@@ -77,6 +77,7 @@ loc_i18n = {x['slug']: x for x in json.load(open(f"{HERE}/location-pages-i18n.js
 hub_i18n = json.load(open(f"{HERE}/hub-i18n.json", encoding='utf-8'))
 
 THAI_NAME = {
+    'Bangkok':'กรุงเทพมหานคร',
     'Rayong':'ระยอง','Pattaya':'พัทยา','Chonburi':'ชลบุรี','Si Racha':'ศรีราชา',
     'Laem Chabang':'แหลมฉบัง','Phuket':'ภูเก็ต','Chiang Mai':'เชียงใหม่','Hua Hin':'หัวหิน',
     'Koh Samui':'เกาะสมุย','Surat Thani':'สุราษฎร์ธานี','Pathum Thani':'ปทุมธานี',
@@ -86,6 +87,7 @@ THAI_NAME = {
 }
 
 CHINESE_NAME = {
+    'Bangkok':'曼谷',
     'Rayong':'罗勇','Pattaya':'芭堤雅','Chonburi':'春武里','Si Racha':'是拉差',
     'Laem Chabang':'林查班','Phuket':'普吉','Chiang Mai':'清迈','Hua Hin':'华欣',
     'Koh Samui':'苏梅岛','Surat Thani':'素叻他尼','Pathum Thani':'巴吞他尼',
@@ -267,12 +269,13 @@ STANDARD_OVERLAY = 'linear-gradient(90deg,rgba(20,17,13,0.97) 0%,rgba(20,17,13,0
 # scripts. See Google's hreflang guidance on Chinese script variants.
 HTML_LANG = {'en': 'en', 'th': 'th', 'fr': 'fr', 'zh': 'zh-Hans'}
 
-def head(locale, title, description, en_path):
+def head(locale, title, description, en_path, available_locales=None):
     canonical = f'https://walailaklaw.com{localize_path(en_path, locale)}'
     lang = HTML_LANG[locale]
+    available_locales = available_locales or ['en', 'th', 'fr', 'zh']
     hreflang_links = ''.join(
         f'<link rel="alternate" hreflang="{HTML_LANG[lc]}" href="https://walailaklaw.com{localize_path(en_path, lc)}">'
-        for lc in ['en', 'th', 'fr', 'zh']
+        for lc in available_locales
     )
     font_family = ('Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&amp;family=Inter:wght@400;500;600;700'
         + ('&amp;family=Noto+Sans+SC:wght@400;500;600;700' if locale == 'zh' else ''))
@@ -408,8 +411,9 @@ def render_city_page(en, locale):
         step3_t, step3_d = ui['step3_t'], ui['step3_d']
         related_services = ui['related_services']
 
-    h = head(locale, title, desc, en_path)
-    header = header_for(locale, en_path)
+    translated = slug in city_i18n
+    h = head(locale, title, desc, en_path, None if translated else ['en'])
+    header = header_for(locale, en_path if translated else en['office'])
     footer = footer_for(locale)
     contact = contact_module(locale, with_text=False)
 
@@ -456,7 +460,7 @@ def render_location_page(en, locale):
     en_path = f'/locations/{slug}'
     title = t['title']; desc = t['description']
     name_disp = city_disp(en['name'], locale)
-    heroimg = f'location-{slug}-hero.webp'
+    heroimg = en.get('hero', f'location-{slug}-hero.webp')
 
     if locale == 'en':
         h1 = f"English-Speaking Lawyers in {en['name']}"
@@ -513,7 +517,8 @@ def render_location_page(en, locale):
     for svc, en_svc in zip(services, en['services']):
         s_title, s_desc, s_href = svc
         _, _, en_href = en_svc
-        href = s_href if locale == 'en' else f'/{locale}{en_href}'
+        service_slug = en_href.lstrip('/')
+        href = s_href if locale == 'en' else (f'/{locale}{en_href}' if service_slug in city_i18n else en_href)
         icon = service_icon(en_svc[0], en_svc[2])
         cards_html += (f'<div class="service-card"><div class="service-icon"><i class="ti {icon}"></i></div>'
             f'<h3>{s_title}</h3><p>{s_desc}</p><a href="{href}" class="link">{explore_service} <i class="ti ti-arrow-right"></i></a></div>')
@@ -652,14 +657,16 @@ if __name__ == '__main__':
         p = path_for(locale, 'hub')
         if not DRY: write(p, out)
         written.append(p)
-        # 18 location pages
+        # location pages
         for loc in loc_pages:
             out = render_location_page(loc, locale)
             p = path_for(locale, 'location', loc['slug'])
             if not DRY: write(p, out)
             written.append(p)
-        # 80 city-service pages
+        # city-service pages (localized only when a translation entry exists)
         for cp in city_pages:
+            if locale != 'en' and cp['slug'] not in city_i18n:
+                continue
             out = render_city_page(cp, locale)
             p = path_for(locale, 'service', cp['slug'])
             if not DRY: write(p, out)

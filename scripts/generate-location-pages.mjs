@@ -57,6 +57,23 @@ const locations = [
     related: [['Si Racha','/locations/si-racha'],['Chonburi','/locations/chonburi'],['Rayong Office','/rayong-law-office']]
   },
   {
+    slug: 'bangkok', name: 'Bangkok', image: 'company-registration-lawyer.webp', hero: 'location-bangkok-hero.jpg',
+    title: 'English-Speaking Lawyers in Bangkok | Walailak Law Firm',
+    description: 'English-speaking legal services in Bangkok for international businesses, investors, employers, property clients and foreign residents.',
+    lead: 'Commercially focused legal support for international businesses, investors, employers, property clients and foreign residents in Bangkok.',
+    contextTitle: 'Legal support at the centre of Thailand’s business and regulatory activity',
+    context: 'Bangkok is Thailand’s principal centre for company administration, investment, commerce, dispute resolution, employment and high-value property transactions. Matters may involve central government agencies, specialist courts, corporate counterparties and clients based overseas. Walailak Law Firm provides and manages each engagement directly, arranging Bangkok attendance or involving our established Bangkok local counsel when a defined local role benefits the client.',
+    clients: ['International and foreign-invested companies', 'Investors, directors and senior executives', 'Commercial creditors and parties to disputes', 'Property buyers, owners and foreign residents'],
+    services: [
+      ['Company, BOI & foreign investment', 'Company structures, investment promotion, foreign-business questions, governance and commercial contracts.', '/bangkok-company-boi-foreign-investment'],
+      ['Commercial disputes & debt recovery', 'Contract claims, shareholder disputes, unpaid debts, negotiation, litigation and enforcement strategy.', '/bangkok-commercial-disputes-debt-recovery'],
+      ['Property due diligence', 'Independent title, ownership, contract and registration review for Bangkok residential and commercial property.', '/bangkok-property-due-diligence'],
+      ['Employment, visa & work permits', 'Employment documentation, workplace matters and coordinated immigration and work-authorisation support.', '/bangkok-employment-visa-work-permit']
+    ],
+    focus: 'Walailak Law Firm remains the client’s accountable point of contact. The firm may handle the complete Bangkok matter directly, arrange attendance when appropriate or assign a defined task to our established Bangkok local counsel while continuing to manage strategy and communication.',
+    related: [['Nonthaburi','/locations/nonthaburi'],['Pathum Thani','/locations/pathum-thani'],['Samut Prakan','/locations/samut-prakan']]
+  },
+  {
     slug: 'phuket', name: 'Phuket', image: 'real-estate-lawyer.webp',
     title: 'English-Speaking Lawyers in Phuket | Walailak Law Firm',
     description: 'Independent legal assistance in Phuket for foreign property buyers, international residents and hospitality businesses, coordinated by Walailak Law Firm.',
@@ -249,7 +266,7 @@ function serviceIcon(title, href) {
 }
 
 function locationPage(x) {
-  const heroImage = `location-${x.slug}-hero.webp`;
+  const heroImage = x.hero || `location-${x.slug}-hero.webp`;
   const cards = x.services.map(([t,d,h]) => `<div class="service-card"><div class="service-icon"><i class="ti ${serviceIcon(t,h)}"></i></div><h3>${t}</h3><p>${d}</p><a href="${h}" class="link">Explore the service <i class="ti ti-arrow-right"></i></a></div>`).join('');
   const clients = x.clients.map(v => `<li><i class="ti ti-check"></i>${v}</li>`).join('');
   const related = x.related.map(([t,h]) => `<a href="${h}" class="tag">${t}</a>`).join('');

@@ -2266,5 +2266,56 @@
     "所有地区"
    ]
   }
+ },
+ {
+  "slug": "bangkok",
+  "th": {
+   "title": "ทนายความที่พูดภาษาอังกฤษในกรุงเทพมหานคร | สำนักงานกฎหมายวลัยลักษณ์",
+   "description": "บริการทางกฎหมายภาษาอังกฤษในกรุงเทพฯ สำหรับธุรกิจระหว่างประเทศ นักลงทุน นายจ้าง ลูกความด้านอสังหาริมทรัพย์ และชาวต่างชาติ",
+   "lead": "การสนับสนุนทางกฎหมายที่มุ่งเน้นด้านธุรกิจสำหรับบริษัทระหว่างประเทศ นักลงทุน นายจ้าง ลูกความด้านอสังหาริมทรัพย์ และชาวต่างชาติในกรุงเทพฯ",
+   "contextTitle": "การสนับสนุนทางกฎหมาย ณ ศูนย์กลางธุรกิจและการกำกับดูแลของประเทศไทย",
+   "context": "กรุงเทพฯ เป็นศูนย์กลางหลักของประเทศไทยด้านการบริหารบริษัท การลงทุน การค้า การระงับข้อพิพาท การจ้างงาน และธุรกรรมอสังหาริมทรัพย์มูลค่าสูง เรื่องต่าง ๆ อาจเกี่ยวข้องกับหน่วยงานรัฐส่วนกลาง ศาลเฉพาะทาง คู่ค้าทางธุรกิจ และลูกความในต่างประเทศ สำนักงานกฎหมายวลัยลักษณ์ให้บริการและบริหารทุกงานโดยตรง โดยจัดให้มีการดำเนินงานในกรุงเทพฯ หรือให้ทนายความท้องถิ่นที่เราร่วมงานด้วยรับบทบาทเฉพาะเมื่อเป็นประโยชน์ต่อลูกความ",
+   "clients": ["บริษัทระหว่างประเทศและบริษัทที่มีการลงทุนจากต่างชาติ", "นักลงทุน กรรมการ และผู้บริหารระดับสูง", "เจ้าหนี้การค้าและคู่กรณีในข้อพิพาท", "ผู้ซื้อและเจ้าของอสังหาริมทรัพย์ รวมถึงชาวต่างชาติ"],
+   "services": [
+    ["บริษัท BOI และการลงทุนจากต่างชาติ", "โครงสร้างบริษัท การส่งเสริมการลงทุน ประเด็นการประกอบธุรกิจของคนต่างด้าว ธรรมาภิบาล และสัญญาทางการค้า", "/bangkok-company-boi-foreign-investment"],
+    ["ข้อพิพาททางการค้าและการติดตามหนี้", "ข้อเรียกร้องตามสัญญา ข้อพิพาทผู้ถือหุ้น หนี้ค้างชำระ การเจรจา การดำเนินคดี และกลยุทธ์บังคับคดี", "/bangkok-commercial-disputes-debt-recovery"],
+    ["การตรวจสอบอสังหาริมทรัพย์ก่อนซื้อ", "การตรวจสอบโฉนด การถือครอง สัญญา และการจดทะเบียนอย่างอิสระสำหรับอสังหาริมทรัพย์เพื่ออยู่อาศัยและเชิงพาณิชย์ในกรุงเทพฯ", "/bangkok-property-due-diligence"],
+    ["การจ้างงาน วีซ่า และใบอนุญาตทำงาน", "เอกสารการจ้างงาน เรื่องในสถานที่ทำงาน และการประสานงานด้านตรวจคนเข้าเมืองและการอนุญาตทำงาน", "/bangkok-employment-visa-work-permit"]
+   ],
+   "focus": "สำนักงานกฎหมายวลัยลักษณ์ยังคงเป็นผู้รับผิดชอบหลักต่อลูกความ สำนักงานอาจดำเนินเรื่องในกรุงเทพฯ ทั้งหมดโดยตรง จัดให้มีการเข้าดำเนินงานเมื่อเหมาะสม หรือมอบหมายงานเฉพาะให้ทนายความท้องถิ่นที่เราร่วมงานด้วย โดยสำนักงานยังคงบริหารกลยุทธ์และการสื่อสาร",
+   "related": ["นนทบุรี", "ปทุมธานี", "สมุทรปราการ"]
+  },
+  "fr": {
+   "title": "Avocats Anglophones à Bangkok | Walailak Law Firm",
+   "description": "Services juridiques en anglais à Bangkok pour entreprises internationales, investisseurs, employeurs, clients immobiliers et résidents étrangers.",
+   "lead": "Un soutien juridique à vocation commerciale pour les entreprises internationales, investisseurs, employeurs, clients immobiliers et résidents étrangers à Bangkok.",
+   "contextTitle": "Un soutien juridique au centre de l’activité économique et réglementaire thaïlandaise",
+   "context": "Bangkok est le principal centre thaïlandais pour l’administration des sociétés, l’investissement, le commerce, le règlement des litiges, l’emploi et les transactions immobilières de grande valeur. Les dossiers peuvent impliquer des administrations centrales, des juridictions spécialisées, des partenaires commerciaux et des clients établis à l’étranger. Walailak Law Firm fournit et gère directement chaque mission, organisant une présence à Bangkok ou associant notre conseil local établi lorsqu’un rôle local défini est utile au client.",
+   "clients": ["Entreprises internationales et sociétés à investissement étranger", "Investisseurs, administrateurs et cadres dirigeants", "Créanciers commerciaux et parties à des litiges", "Acheteurs et propriétaires immobiliers, et résidents étrangers"],
+   "services": [
+    ["Société, BOI et investissement étranger", "Structures sociétaires, promotion de l’investissement, questions relatives aux activités étrangères, gouvernance et contrats commerciaux.", "/bangkok-company-boi-foreign-investment"],
+    ["Litiges commerciaux et recouvrement", "Réclamations contractuelles, litiges entre actionnaires, impayés, négociation, contentieux et stratégie d’exécution.", "/bangkok-commercial-disputes-debt-recovery"],
+    ["Due diligence immobilière", "Examen indépendant du titre, de la propriété, des contrats et de l’enregistrement pour l’immobilier résidentiel et commercial à Bangkok.", "/bangkok-property-due-diligence"],
+    ["Emploi, visas et permis de travail", "Documents d’emploi, questions professionnelles et coordination des démarches d’immigration et d’autorisation de travail.", "/bangkok-employment-visa-work-permit"]
+   ],
+   "focus": "Walailak Law Firm demeure le point de contact responsable du client. Le cabinet peut traiter directement l’ensemble du dossier à Bangkok, organiser une présence lorsque cela est approprié ou confier une tâche définie à notre conseil local établi tout en continuant à gérer la stratégie et la communication.",
+   "related": ["Nonthaburi", "Pathum Thani", "Samut Prakan"]
+  },
+  "zh": {
+   "title": "曼谷英语律师 | 瓦莱拉克律师事务所",
+   "description": "为国际企业、投资者、雇主、房地产客户及外国居民在曼谷提供英语法律服务。",
+   "lead": "为曼谷的国际企业、投资者、雇主、房地产客户及外国居民提供注重商业实效的法律支持。",
+   "contextTitle": "在泰国商业与监管活动中心提供法律支持",
+   "context": "曼谷是泰国公司管理、投资、商业、争议解决、就业及高价值房地产交易的核心。事务可能涉及中央政府机构、专门法院、商业相对方及境外客户。瓦莱拉克律师事务所直接提供并管理每一项委托，并在明确的本地职责有利于客户时安排曼谷现场工作或请长期合作的当地律师参与。",
+   "clients": ["国际企业及外资公司", "投资者、董事及高级管理人员", "商业债权人及争议当事人", "房地产买家、业主及外国居民"],
+   "services": [
+    ["公司、BOI与外国投资", "公司架构、投资促进、外商经营问题、公司治理及商业合同。", "/bangkok-company-boi-foreign-investment"],
+    ["商业纠纷与债务追讨", "合同索赔、股东纠纷、未付债务、协商、诉讼及执行策略。", "/bangkok-commercial-disputes-debt-recovery"],
+    ["房地产尽职调查", "为曼谷住宅及商业房地产提供独立的产权、所有权、合同及登记审查。", "/bangkok-property-due-diligence"],
+    ["就业、签证与工作许可证", "就业文件、职场事务以及移民和工作许可的协调支持。", "/bangkok-employment-visa-work-permit"]
+   ],
+   "focus": "瓦莱拉克律师事务所始终作为对客户负责的统一联系人。事务所可直接处理整个曼谷事项、在适当时安排现场工作，或将特定任务交由长期合作的曼谷当地律师，同时继续管理策略与沟通。",
+   "related": ["暖武里", "巴吞他尼", "北榄"]
+  }
  }
 ]

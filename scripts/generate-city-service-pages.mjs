@@ -8,6 +8,62 @@ const footer = homeHtml.match(/<footer class="site-footer">[\s\S]*?<\/footer>/)[
 
 const pages = [
   {
+    slug: 'bangkok-company-boi-foreign-investment', city: 'Bangkok', office: '/locations/bangkok', practice: '/company-registration-services', image: 'company-registration-lawyer.webp',
+    title: 'Company, BOI and Foreign Investment Lawyer in Bangkok | Walailak Law Firm',
+    description: 'Company registration, BOI, foreign investment, governance and commercial legal support in Bangkok for international businesses and investors.',
+    eyebrow: 'BANGKOK BUSINESS SERVICES', h1: 'Company, BOI & Foreign Investment in Bangkok',
+    lead: 'Practical legal support for international businesses and investors establishing, acquiring, financing or operating a business in Bangkok.',
+    introTitle: 'Choose a lawful structure that fits the real business',
+    intro: 'A Bangkok venture may require company registration, foreign-investment analysis, investment promotion, licences, premises, staff and commercial contracts. Walailak Law Firm begins with the proposed activities, ownership, funding and management arrangements before recommending a structure and implementation sequence.',
+    situations: ['A foreign investor establishing a Thai operating company','An existing business applying for BOI promotion or another permission','An acquisition, joint venture or shareholder restructuring','A company reviewing foreign ownership or control','Directors needing governance and shareholder documentation','A business preparing contracts for Thai operations'],
+    checks: ['Clarify business activities, ownership, funding and management','Assess foreign-business restrictions and available legal routes','Consider BOI and other investment-promotion options','Prepare company, shareholder and director documentation','Review licences, premises, employment and operating requirements','Draft and negotiate commercial contracts and implementation documents'],
+    warningTitle: 'Registration is only one part of lawful operation',
+    warning: 'A registered company does not by itself resolve foreign-business restrictions, licensing, employment, tax or work-authorisation requirements. The structure should reflect the activity actually conducted, genuine ownership and decision-making, and the approvals required before operations begin.',
+    related: [['Commercial disputes in Bangkok','/bangkok-commercial-disputes-debt-recovery'],['Employment, visa and work permits in Bangkok','/bangkok-employment-visa-work-permit'],['Bangkok legal services','/locations/bangkok']]
+  },
+  {
+    slug: 'bangkok-commercial-disputes-debt-recovery', city: 'Bangkok', office: '/locations/bangkok', practice: '/civil-litigation-services', image: 'civil-litigation-lawyer.webp',
+    title: 'Commercial Disputes and Debt Recovery Lawyer in Bangkok | Walailak Law Firm',
+    description: 'Commercial dispute, contract claim and debt recovery legal services in Bangkok, including negotiation, litigation and enforcement planning.',
+    eyebrow: 'BANGKOK COMMERCIAL DISPUTES', h1: 'Commercial Disputes & Debt Recovery in Bangkok',
+    lead: 'Evidence-led strategy for contract claims, shareholder disputes, unpaid commercial debts and enforcement matters involving Bangkok counterparties.',
+    introTitle: 'Build the strategy around evidence, leverage and recoverability',
+    intro: 'Bangkok commercial disputes may involve supply, services, construction, investment, shareholder relationships or unpaid invoices. The strongest next step depends on the contracts, communications, payment history, available security, limitation periods and the debtor’s assets—not simply the amount claimed.',
+    situations: ['Unpaid invoices, loans or commercial obligations','A breach of supply, service, distribution or construction contract','A shareholder, director or joint-venture dispute','Termination, damages or performance claims','A foreign judgment or award requiring Thai advice','Settlement discussions that need legal structure and enforceability'],
+    checks: ['Organise contracts, invoices, correspondence and payment evidence','Identify the parties, governing terms and available claims','Assess limitation, jurisdiction and dispute-resolution clauses','Investigate practical recovery and enforcement considerations','Prepare demand, negotiation, mediation or litigation strategy','Plan judgment, settlement or award enforcement where appropriate'],
+    warningTitle: 'A successful claim must still produce a practical result',
+    warning: 'Proceedings may be legally available but commercially unattractive if evidence is weak, time limits are close or assets cannot be identified. Early analysis should compare the likely recovery, cost, timing and pressure created by each available route.',
+    related: [['Company and foreign investment in Bangkok','/bangkok-company-boi-foreign-investment'],['Civil litigation services','/civil-litigation-services'],['Bangkok legal services','/locations/bangkok']]
+  },
+  {
+    slug: 'bangkok-property-due-diligence', city: 'Bangkok', office: '/locations/bangkok', practice: '/real-estate-lawyer', image: 'real-estate-lawyer.webp',
+    title: 'Property Due Diligence Lawyer in Bangkok | Walailak Law Firm',
+    description: 'Independent property due diligence in Bangkok for condominium, house, land, leasehold and commercial transactions, including title and contract review.',
+    eyebrow: 'BANGKOK PROPERTY SERVICES', h1: 'Property Due Diligence in Bangkok',
+    lead: 'Independent title, ownership and contract review before buying, leasing or investing in residential or commercial property in Bangkok.',
+    introTitle: 'Verify the property, seller and legal rights before payment',
+    intro: 'Bangkok transactions may involve a foreign-quota condominium, a resale with an existing mortgage, a long lease, a house and land arrangement or commercial premises held by a company. Walailak Law Firm reviews the proposed rights and documents independently from the seller, agent and developer before the client commits substantial funds.',
+    situations: ['An off-plan or completed condominium purchase','A resale with an existing mortgage or registered right','A house and land purchase involving a Thai spouse','A long-term residential or commercial lease','A company acquisition connected with real property','An overseas buyer reviewing documents remotely'],
+    checks: ['Verify title, registered owner and material encumbrances','Review seller, developer or company authority','Examine reservation, sale, lease and transfer documents','Review available building, access and common-area information','Assess foreign-quota, remittance and registration requirements','Plan payment, closing and Land Office steps'],
+    warningTitle: 'The commercial description may not match the legal rights',
+    warning: 'Terms such as “freehold,” “leasehold,” “unit” or “investment property” can conceal important differences in title, building ownership, renewal rights, common areas and registration. The review should identify exactly what will be owned or registered and under which enforceable documents.',
+    related: [['Company and foreign investment in Bangkok','/bangkok-company-boi-foreign-investment'],['Real estate legal services','/real-estate-lawyer'],['Bangkok legal services','/locations/bangkok']]
+  },
+  {
+    slug: 'bangkok-employment-visa-work-permit', city: 'Bangkok', office: '/locations/bangkok', practice: '/visa-work-permit', image: 'visa-work-permit-thailand.webp',
+    title: 'Employment, Visa and Work Permit Lawyer in Bangkok | Walailak Law Firm',
+    description: 'Employment, visa and work permit legal support in Bangkok for companies, executives, foreign employees and international businesses.',
+    eyebrow: 'BANGKOK EMPLOYMENT & IMMIGRATION', h1: 'Employment, Visa & Work Permit Services in Bangkok',
+    lead: 'Coordinated employment and immigration support for companies, executives and foreign personnel working in Bangkok.',
+    introTitle: 'Align the role, employer and immigration route before work begins',
+    intro: 'A Bangkok appointment may involve an ordinary Thai company, a BOI-promoted employer, an intra-group transfer or a newly established business. The employment terms, company eligibility, visa status and work authorisation should form one workable plan rather than separate filings.',
+    situations: ['A company hiring or transferring a foreign executive','A director or specialist relocating to Bangkok','A BOI-promoted company arranging foreign personnel','An employee changing employer, role or work location','A business preparing employment and termination documents','A company reviewing workplace compliance or a labour dispute'],
+    checks: ['Confirm the employer, role, workplace and proposed start date','Assess the available visa and work-permit route','Review company and employee supporting documents','Prepare employment, assignment and corporate documentation','Coordinate applications, renewals and required reporting','Advise on workplace, termination or dispute issues where needed'],
+    warningTitle: 'Company status, immigration permission and authority to work are different',
+    warning: 'A visa, company directorship or signed employment agreement does not necessarily authorise the proposed work. The employer’s eligibility, the individual’s role and the permitted activities should be checked before the person begins duties or relies on an assumed status.',
+    related: [['Company and foreign investment in Bangkok','/bangkok-company-boi-foreign-investment'],['Visa and work permit services','/visa-work-permit'],['Bangkok legal services','/locations/bangkok']]
+  },
+  {
     slug: 'rayong-property-due-diligence', city: 'Rayong', office: '/rayong-law-office', practice: '/real-estate-lawyer', image: 'real-estate-lawyer.webp',
     title: 'Property Due Diligence Lawyer in Rayong | Walailak Law Firm',
     description: 'Independent property due diligence in Rayong for house, land, condominium and leasehold purchases, including title, contract and transfer review.',

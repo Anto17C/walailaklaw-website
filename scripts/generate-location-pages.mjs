@@ -241,7 +241,7 @@ function head(title, description, canonical) {
 // scripts/i18n/generate_i18n.py afterwards (updating scripts/i18n/*.json first) to keep all
 // three languages in sync.
 function langItem(canonical) {
-  return `<div class="lang-item"><a href="#" class="lang-trigger">EN <span class="caret">&#9662;</span></a><div class="lang-dropdown"><a href="/th${canonical}">ไทย</a><a href="/fr${canonical}">FR</a><a href="/zh${canonical}">中文</a></div></div>`;
+  return `<div class="lang-item"><a href="#" class="lang-trigger" role="button" aria-haspopup="true" aria-expanded="false" aria-label="Language"><i class="ti ti-world" aria-hidden="true"></i><span class="lang-current">EN</span> <span class="caret">&#9662;</span></a><div class="lang-dropdown"><a href="/th${canonical}" lang="th" hreflang="th"><span>ไทย</span><span class="lang-code" aria-hidden="true">TH</span></a><a href="/fr${canonical}" lang="fr" hreflang="fr"><span>Français</span><span class="lang-code" aria-hidden="true">FR</span></a><a href="/zh${canonical}" lang="zh-Hans" hreflang="zh-Hans"><span>中文</span><span class="lang-code" aria-hidden="true">ZH</span></a></div></div>`;
 }
 function headerFor(canonical) {
   return header.replace(/<div class="lang-item">[\s\S]*?<\/div><\/div>/, langItem(canonical));

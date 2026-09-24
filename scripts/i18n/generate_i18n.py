@@ -235,22 +235,30 @@ fr_footer = fix_footer_locations(fr_footer_raw, 'fr')
 # template, so no prefixing is needed here.
 zh_footer = zh_footer_raw
 
+LANG_META = {  # locale -> (trigger label, native name, code, lang/hreflang attr, aria label)
+    'en': ('EN', 'English', 'EN', 'en', 'Language'),
+    'th': ('ไทย', 'ไทย', 'TH', 'th', 'ภาษา'),
+    'fr': ('FR', 'Français', 'FR', 'fr', 'Langue'),
+    'zh': ('中文', '中文', 'ZH', 'zh-Hans', '语言'),
+}
+
+def lang_item_html(locale, en_path):
+    """Language switcher: pill (globe, current language, caret) + dropdown of the other languages."""
+    items = ''
+    for lc in ['en', 'th', 'fr', 'zh']:
+        if lc == locale:
+            continue
+        _, name, code, attr, _ = LANG_META[lc]
+        items += (f'<a href="{localize_path(en_path, lc)}" lang="{attr}" hreflang="{attr}">'
+                  f'<span>{name}</span><span class="lang-code" aria-hidden="true">{code}</span></a>')
+    label, _, _, _, aria = LANG_META[locale]
+    return (f'<div class="lang-item"><a href="#" class="lang-trigger" role="button" aria-haspopup="true" aria-expanded="false" aria-label="{aria}">'
+            f'<i class="ti ti-world" aria-hidden="true"></i><span class="lang-current">{label}</span> <span class="caret">&#9662;</span></a>'
+            f'<div class="lang-dropdown">{items}</div></div>')
+
 def set_lang_item(header_html, locale, en_path):
     """Replace the .lang-item block so it points to the correct sibling-language equivalents."""
-    if locale == 'en':
-        trigger = 'EN'
-        dropdown = f'<a href="/th{en_path}">ไทย</a><a href="/fr{en_path}">FR</a><a href="/zh{en_path}">中文</a>'
-    elif locale == 'th':
-        trigger = 'ไทย'
-        dropdown = f'<a href="{en_path}">EN</a><a href="/fr{en_path}">FR</a><a href="/zh{en_path}">中文</a>'
-    elif locale == 'fr':
-        trigger = 'FR'
-        dropdown = f'<a href="{en_path}">EN</a><a href="/th{en_path}">ไทย</a><a href="/zh{en_path}">中文</a>'
-    else:
-        trigger = '中文'
-        dropdown = f'<a href="{en_path}">EN</a><a href="/th{en_path}">ไทย</a><a href="/fr{en_path}">FR</a>'
-    new_block = f'<div class="lang-item"><a href="#" class="lang-trigger">{trigger} <span class="caret">&#9662;</span></a><div class="lang-dropdown">{dropdown}</div></div>'
-    return re.sub(r'<div class="lang-item">.*?</div></div>', new_block, header_html, count=1, flags=re.S)
+    return re.sub(r'<div class="lang-item">.*?</div></div>', lambda m: lang_item_html(locale, en_path), header_html, count=1, flags=re.S)
 
 def header_for(locale, en_path):
     base = {'en': en_header_raw, 'th': th_header_raw, 'fr': fr_header_raw, 'zh': zh_header_raw}[locale]

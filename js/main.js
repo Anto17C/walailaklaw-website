@@ -130,12 +130,25 @@ document.addEventListener('DOMContentLoaded', function () {
     trigger.addEventListener('click', function (e) {
       e.preventDefault();
       e.stopPropagation();
-      trigger.closest('.lang-item').classList.toggle('open');
+      var item = trigger.closest('.lang-item');
+      trigger.setAttribute('aria-expanded', item.classList.toggle('open') ? 'true' : 'false');
     });
   });
   document.addEventListener('click', function (e) {
     document.querySelectorAll('.lang-item.open').forEach(function (item) {
-      if (!item.contains(e.target)) item.classList.remove('open');
+      if (!item.contains(e.target)) {
+        item.classList.remove('open');
+        var t = item.querySelector('.lang-trigger');
+        if (t) t.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape') return;
+    document.querySelectorAll('.lang-item.open').forEach(function (item) {
+      item.classList.remove('open');
+      var t = item.querySelector('.lang-trigger');
+      if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); }
     });
   });
 

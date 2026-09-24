@@ -864,7 +864,7 @@ function head(p) { return `<!DOCTYPE html><html lang="en"><head><meta charset="U
 // This script only regenerates the English pages; it emits th/fr hreflang tags so it won't
 // regress them, but does not itself produce the Thai/French files.
 function langItem(slug) {
-  return `<div class="lang-item"><a href="#" class="lang-trigger">EN <span class="caret">&#9662;</span></a><div class="lang-dropdown"><a href="/th/${slug}">ไทย</a><a href="/fr/${slug}">FR</a><a href="/zh/${slug}">中文</a></div></div>`;
+  return `<div class="lang-item"><a href="#" class="lang-trigger" role="button" aria-haspopup="true" aria-expanded="false" aria-label="Language"><i class="ti ti-world" aria-hidden="true"></i><span class="lang-current">EN</span> <span class="caret">&#9662;</span></a><div class="lang-dropdown"><a href="/th/${slug}" lang="th" hreflang="th"><span>ไทย</span><span class="lang-code" aria-hidden="true">TH</span></a><a href="/fr/${slug}" lang="fr" hreflang="fr"><span>Français</span><span class="lang-code" aria-hidden="true">FR</span></a><a href="/zh/${slug}" lang="zh-Hans" hreflang="zh-Hans"><span>中文</span><span class="lang-code" aria-hidden="true">ZH</span></a></div></div>`;
 }
 function headerFor(slug) {
   return header.replace(/<div class="lang-item">[\s\S]*?<\/div><\/div>/, langItem(slug));

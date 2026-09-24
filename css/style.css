@@ -295,6 +295,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 /* Mobile: compact pill so the header (logo, CTA, menu button) still fits */
 .lang-trigger { min-height: 34px; padding: 0 9px; gap: 5px; font-size: 12px; }
 .lang-trigger i { font-size: 15px; }
+.lang-dropdown { min-width: 140px; gap: 0; }
+.lang-dropdown a { gap: 14px; }
 .nav-phone { font-size: 20px; padding: 6px; gap: 0; }
 .phone-text { display: none; }
 .nav-socials { display: none; }

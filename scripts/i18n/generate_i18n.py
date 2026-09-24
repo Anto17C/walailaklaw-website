@@ -611,7 +611,7 @@ def render_hub(locale):
         href = f'/locations/{slug}' if locale == 'en' else f'/{locale}/locations/{slug}'
         cards.append((coverage_label, name, desc, href))
     cards_html = ''.join(
-        f'<article class="location-card"><span>{k}</span><h3>{n}</h3><p>{d}</p>'
+        f'<article class="location-card"><div class="service-icon"><i class="ti {"ti-building" if k == office_label else "ti-map-pin"}"></i></div><span>{k}</span><h3>{n}</h3><p>{d}</p>'
         f'<a href="{h}" class="link">{view_location} <i class="ti ti-arrow-right"></i></a></article>'
         for (k, n, d, h) in cards)
 

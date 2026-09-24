@@ -354,7 +354,6 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   .lang-trigger { padding: 0 8px; }
   .lang-trigger i { display: none; }
 }
-}
 
 /* ---------- Hero ---------- */
 .hero {

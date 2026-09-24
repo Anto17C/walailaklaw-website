@@ -209,18 +209,41 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   .nav-item.mobile-open .dropdown-menu { display: block; }
 }
 .nav-cta { display: flex; align-items: center; gap: 14px; }
-/* Desktop: plain inline "EN / TH" links, no dropdown trigger */
+/* Language switcher: pill button (globe, current language, caret) opening a list of the other
+   languages, each shown as native name + code. */
 .lang-item { position: relative; margin-right: 4px; }
-.lang-trigger { display: none; }
-.lang-dropdown {
-  display: flex; align-items: center; gap: 8px;
-  position: static; opacity: 1; visibility: visible; transform: none;
-  background: none; border: none; box-shadow: none; padding: 0; margin: 0; min-width: 0;
+.lang-trigger {
+  display: inline-flex; align-items: center; gap: 6px;
+  min-height: 36px; padding: 0 12px;
+  border: 1px solid rgba(255,255,255,0.22); border-radius: 22px;
+  font-size: 13px; font-weight: 600; color: #fff; cursor: pointer;
+  white-space: nowrap; transition: background 0.18s ease, border-color 0.18s ease;
 }
-.lang-dropdown a { display: inline; padding: 0; font-size: 13px; color: #cfcac2; border-radius: 0; text-align: left; }
-.lang-dropdown a:hover { background: none; color: #fff; }
-.lang-dropdown a + a { position: relative; margin-left: 8px; }
-.lang-dropdown a + a::before { content: "/"; position: absolute; left: -9px; color: rgba(255,255,255,0.32); }
+.lang-trigger i { font-size: 16px; line-height: 1; }
+.lang-trigger .caret { font-size: 10px; transition: transform 0.15s ease; }
+.lang-item.open .lang-trigger .caret { transform: rotate(180deg); }
+.lang-trigger:hover, .lang-item.open .lang-trigger { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.4); }
+.lang-trigger:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.lang-dropdown {
+  position: absolute; top: 100%; right: 0; margin-top: 10px;
+  background: var(--ink-2); border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px; padding: 8px; min-width: 170px;
+  opacity: 0; visibility: hidden; transform: translateY(-6px);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+  box-shadow: 0 16px 32px rgba(0,0,0,0.35);
+  z-index: 200;
+}
+.lang-dropdown::before { content: ""; position: absolute; top: -12px; left: 0; right: 0; height: 12px; }
+.lang-item.open .lang-dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+@media (hover: hover) {
+  .lang-item:hover .lang-dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+}
+.lang-dropdown a {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 20px;
+  white-space: nowrap; padding: 8px 12px; font-size: 13px; color: #cfcac2; border-radius: 6px;
+}
+.lang-dropdown a:hover, .lang-dropdown a:focus-visible { background: rgba(244,164,23,0.1); color: var(--gold); }
+.lang-code { color: rgba(255,255,255,0.45); font-size: 11.5px; font-weight: 700; letter-spacing: 0.06em; }
 .nav-phone { color: #fff; font-size: 13.5px; font-weight: 600; display: flex; align-items: center; gap: 6px; }
 .nav-socials {
   display: none;
@@ -269,19 +292,9 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .nav-cta > .lang-item:first-child {
   margin-right: 0 !important;
 }
-/* Mobile: keep only the alternate languages visible, matching desktop */
-.lang-trigger {
-  display: none;
-}
-.lang-dropdown {
-  display: flex; align-items: center; gap: 7px;
-  position: static; opacity: 1; visibility: visible; transform: none;
-  background: none; border: none; box-shadow: none; padding: 0; margin: 0; min-width: 0;
-}
-.lang-dropdown a { display: inline; padding: 0; font-size: 11px; color: #cfcac2; border-radius: 0; text-align: left; margin-left: 0; font-weight: 600; }
-.lang-dropdown a:hover { background: none; color: #fff; }
-.lang-dropdown a + a { position: relative; margin-left: 7px; }
-.lang-dropdown a + a::before { content: "/"; position: absolute; left: -8px; color: rgba(255,255,255,0.32); }
+/* Mobile: compact pill so the header (logo, CTA, menu button) still fits */
+.lang-trigger { min-height: 34px; padding: 0 9px; gap: 5px; font-size: 12px; }
+.lang-trigger i { font-size: 15px; }
 .nav-phone { font-size: 20px; padding: 6px; gap: 0; }
 .phone-text { display: none; }
 .nav-socials { display: none; }
@@ -335,12 +348,10 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   .nav-cta { gap: 2px; }
   .nav-cta .btn-primary { padding: 5px 5px; font-size: 9.5px; }
   .menu-toggle { padding: 3px; }
-  /* The Thai label reads as "ไทย" (wider than the old "TH" abbreviation) — tighten the
-     language-switcher spacing on narrow screens so it doesn't push the menu button off-screen. */
-  .lang-dropdown { gap: 5px; }
-  .lang-dropdown a { font-size: 10px; }
-  .lang-dropdown a + a { margin-left: 5px; }
-  .lang-dropdown a + a::before { left: -6px; }
+  /* Narrowest phones: drop the globe icon so the pill stays small */
+  .lang-trigger { padding: 0 8px; }
+  .lang-trigger i { display: none; }
+}
 }
 
 /* ---------- Hero ---------- */

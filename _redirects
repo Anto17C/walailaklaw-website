@@ -287,6 +287,12 @@
 /trat-island-coastal-property-due-diligence/ /trat-island-coastal-property-due-diligence 301
 /trat-family-wills-estates/ /trat-family-wills-estates 301
 
+# Old WordPress pages that now have an equivalent page
+/arbitration-services /arbitration-lawyer 301
+/arbitration-services/ /arbitration-lawyer 301
+/legal-services /services 301
+/legal-services/ /services 301
+
 # Old WordPress/generated URLs that should not serve homepage duplicates
 /blog /404.html 404
 /blog/ /404.html 404
@@ -299,6 +305,13 @@
 /wp-content/uploads /404.html 404
 /wp-content/uploads/ /404.html 404
 /wp-content/uploads/* /404.html 404
+/wp-content/themes /404.html 404
+/wp-content/themes/* /404.html 404
+/wp-content/plugins /404.html 404
+/wp-content/plugins/* /404.html 404
+/wp-includes/* /404.html 404
+/wp-json /404.html 404
+/wp-json/* /404.html 404
 /feed /404.html 404
 /feed/ /404.html 404
 /comments/feed /404.html 404

@@ -220,7 +220,7 @@ const pages = [
     office: '/pattaya-law-office',
     practice: '/company-registration-services',
     image: 'company-registration-lawyer.webp',
-    title: 'Company Registration and Business Licensing in Pattaya | Walailak Law Firm',
+    title: 'Company Registration & Licensing in Pattaya | Walailak Law Firm',
     description: 'Company registration, business acquisition and licensing support in Pattaya for foreign investors in hospitality, healthcare and service businesses.',
     eyebrow: 'PATTAYA BUSINESS SERVICES',
     h1: 'Company Registration & Business Licensing in Pattaya',

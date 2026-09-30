@@ -419,6 +419,13 @@ def render_city_page(en, locale):
         step3_t, step3_d = ui['step3_t'], ui['step3_d']
         related_services = ui['related_services']
 
+    detail_html = ''
+    if t.get('detailTitle'):
+        detail_html = (f'<section class="section"><div class="container">'
+                       f'<h2>{t["detailTitle"]}</h2>'
+                       f'<p class="text-secondary location-copy" style="margin-top:16px;">{t["detailText"]}</p>'
+                       f'</div></section>')
+
     translated = slug in city_i18n
     h = head(locale, title, desc, en_path, None if translated else ['en'])
     header = header_for(locale, en_path if translated else en['office'])
@@ -441,6 +448,7 @@ def render_city_page(en, locale):
         f'<p class="text-secondary location-copy">{t["warning"]}</p>'
         f'<p style="margin-top:18px;"><a href="{practice_href}" class="link">{view_practice} <i class="ti ti-arrow-right"></i></a></p>'
         f'</div></div></div></section>'
+        f'{detail_html}'
         f'<section class="section"><div class="container"><div class="two-col"><div>'
         f'<span class="eyebrow light">{starting_matter}</span><h2 style="margin:14px 0 16px;">{clear_review}</h2>'
         f'<ol class="location-steps"><li><strong>{step1_t}</strong> {step1_d}</li>'

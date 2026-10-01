@@ -152,6 +152,42 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  // Contact-method click tracking (WhatsApp, phone, LINE, email) — pushes a dataLayer
+  // event so GTM/GA4 can report these clicks distinctly from the contact form.
+  // Delegated on document so it also catches the hero-direct and sticky buttons
+  // above, which are created dynamically after this listener is attached.
+  function contactMethodFor(href) {
+    if (!href) return null;
+    if (href.indexOf('wa.me') !== -1 || href.indexOf('api.whatsapp.com') !== -1) return 'whatsapp';
+    if (href.indexOf('line.me') !== -1) return 'line';
+    if (href.indexOf('tel:') === 0) return 'phone';
+    if (href.indexOf('mailto:') === 0) return 'email';
+    return null;
+  }
+  function contactLocationFor(link) {
+    var cls = link.className || '';
+    if (/footer-social/.test(cls)) return 'footer';
+    if (/nav-social/.test(cls)) return 'header';
+    if (/hero-direct-link/.test(cls)) return 'hero';
+    if (/icon-circle/.test(cls)) return 'contact_module';
+    if (/sticky-whatsapp-btn|sticky-line-btn/.test(cls)) return 'sticky';
+    if (link.closest('.contact-module')) return 'contact_module';
+    if (link.closest('.site-footer')) return 'footer';
+    return 'body';
+  }
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a[href]');
+    if (!link) return;
+    var method = contactMethodFor(link.getAttribute('href'));
+    if (!method) return;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: method + '_click',
+      link_location: contactLocationFor(link),
+      link_url: link.getAttribute('href')
+    });
+  });
+
   // Scroll-to-top button
   var scrollBtn = document.createElement('button');
   scrollBtn.className = 'scroll-top-btn';

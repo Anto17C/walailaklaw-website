@@ -16,22 +16,22 @@
   Cache-Control: public, max-age=0, must-revalidate
 
 /assets/*
-  Cache-Control: public, max-age=2592000, immutable
+  Cache-Control: public, max-age=86400, must-revalidate
 
 /images/*
-  Cache-Control: public, max-age=2592000, immutable
+  Cache-Control: public, max-age=86400, must-revalidate
 
 /*.webp
-  Cache-Control: public, max-age=2592000, immutable
+  Cache-Control: public, max-age=86400, must-revalidate
 
 /*.jpg
-  Cache-Control: public, max-age=2592000, immutable
+  Cache-Control: public, max-age=86400, must-revalidate
 
 /*.png
-  Cache-Control: public, max-age=2592000, immutable
+  Cache-Control: public, max-age=86400, must-revalidate
 
 /*.svg
-  Cache-Control: public, max-age=2592000, immutable
+  Cache-Control: public, max-age=86400, must-revalidate
 
 /*.ico
-  Cache-Control: public, max-age=2592000, immutable
+  Cache-Control: public, max-age=86400, must-revalidate

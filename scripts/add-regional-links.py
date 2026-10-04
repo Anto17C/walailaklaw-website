@@ -27,6 +27,9 @@ PAGE_TOPIC = {
     'civil-litigation-services': 'disputes',
     'legal-documents-services': 'wills',
     'family-law-services': 'family',
+    'criminal-defence-lawyer': 'criminal',
+    'bail-bond-services': 'criminal',
+    'arbitration-lawyer': 'commercial',
 }
 
 TEXT = {
@@ -55,6 +58,16 @@ TEXT = {
         'th': ('พินัยกรรมและการวางแผนมรดกแยกตามพื้นที่', 'พินัยกรรมไทย การวางแผนมรดก และการจัดการมรดก:'),
         'fr': ('Testaments et successions par zone', "Testaments thaïlandais, planification successorale et administration de succession :"),
         'zh': ('各地遗嘱与遗产规划', '泰国遗嘱、遗产规划及遗产管理：')},
+    'criminal': {
+        'en': ('Criminal defence appeals and victim assistance', 'Appeals, case-status enquiries and help for complainants in Pattaya:'),
+        'th': ('การอุทธรณ์คดีอาญาและการช่วยเหลือผู้เสียหาย', 'การอุทธรณ์ การสอบถามสถานะคดี และการช่วยเหลือผู้ร้องทุกข์ในพัทยา:'),
+        'fr': ('Appels pénaux et assistance aux victimes', "Appels, vérification de l'état d'une affaire et assistance aux plaignants à Pattaya :"),
+        'zh': ('刑事上诉与受害人协助', '芭堤雅的上诉、案件状态查询及报案人协助：')},
+    'commercial': {
+        'en': ('Commercial disputes and enforcement by location', 'Contract claims, unpaid trade debts and enforcement planning for businesses:'),
+        'th': ('ข้อพิพาททางการค้าและการบังคับคดีแยกตามพื้นที่', 'ข้อเรียกร้องตามสัญญา หนี้การค้าที่ค้างชำระ และการวางแผนบังคับคดีสำหรับธุรกิจ:'),
+        'fr': ('Litiges commerciaux et exécution par zone', "Réclamations contractuelles, créances commerciales impayées et planification de l'exécution pour les entreprises :"),
+        'zh': ('各地商业纠纷与执行', '为企业提供合同索赔、拖欠贸易款项及执行规划：')},
     'family': {
         'en': ('Family and estate matters by location', 'Family law, divorce mediation and family estate planning:'),
         'th': ('เรื่องครอบครัวและมรดกแยกตามพื้นที่', 'กฎหมายครอบครัว การไกล่เกลี่ยการหย่า และการวางแผนมรดกครอบครัว:'),
@@ -66,7 +79,7 @@ TEXT = {
 def topics_of(slug):
     """Which practice topics a regional page belongs to."""
     if 'criminal' in slug:
-        return []
+        return ['criminal']
     if 'visa' in slug or 'workforce' in slug:
         return ['visa']
     if 'wills' in slug or 'family' in slug:
@@ -80,7 +93,11 @@ def topics_of(slug):
         return ['company']
     if 'property' in slug and 'disputes' not in slug:
         return ['property']
-    return ['disputes']
+    out = ['disputes']
+    if re.search(r'commercial-disputes|trade-disputes|shipping|supply-chain|debt-recovery|trade-debt', slug) \
+            and 'landlord' not in slug:
+        out.append('commercial')
+    return out
 
 
 def h1_of(page, locale):

@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '<div class="dropdown-menu">' +
           '<a href="' + prefix + '/rayong-law-office">' + labels.rayong + '</a>' +
           '<a href="' + prefix + '/pattaya-law-office">' + labels.pattaya + '</a>' +
+          '<a href="' + prefix + '/locations/bangkok">Bangkok</a>' +
           '<a href="' + prefix + '/locations/chonburi">Chonburi</a>' +
           '<a href="' + prefix + '/locations/si-racha">Si Racha</a>' +
           '<a href="' + prefix + '/locations/laem-chabang">Laem Chabang</a>' +

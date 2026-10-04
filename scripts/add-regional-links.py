@@ -104,13 +104,22 @@ def h1_of(page, locale):
     return page['h1'] if locale == 'en' else g.city_i18n[page['slug']][locale]['h1']
 
 
+# extra links placed first in a topic block: topic -> slug -> localized link text
+EXTRA = {'property': [('off-plan-property-purchase-review', {
+    'en': 'Off-Plan Condo & Villa Purchase Contract Review in Thailand',
+    'th': 'บริการตรวจสอบสัญญาซื้อคอนโดและวิลล่าก่อนก่อสร้างเสร็จในประเทศไทย',
+    'fr': "Revue de Contrat d'Achat sur Plan de Condo et Villa en Thaïlande",
+    'zh': '泰国期房公寓与别墅购房合同审查'})]}
+
+
 def build_block(topic, locale):
     pages = [p for p in g.city_pages if topic in topics_of(p['slug'])
              and (locale == 'en' or p['slug'] in g.city_i18n)]
     pages.sort(key=lambda p: (p['city'], p['slug']))
     prefix = '' if locale == 'en' else f'/{locale}'
     head, intro = TEXT[topic][locale]
-    tags = ''.join(f'<a href="{prefix}/{p["slug"]}" class="tag">{h1_of(p, locale)}</a>' for p in pages)
+    extra = ''.join(f'<a href="{prefix}/{slug}" class="tag">{names[locale]}</a>' for slug, names in EXTRA.get(topic, []))
+    tags = extra + ''.join(f'<a href="{prefix}/{p["slug"]}" class="tag">{h1_of(p, locale)}</a>' for p in pages)
     return ('<!-- regional-links -->\n<section class="section-sm">\n  <div class="container">\n'
             f'    <h2 style="font-size:20px; margin-bottom:10px;">{head}</h2>\n'
             f'    <p class="text-secondary" style="font-size:14px; margin-bottom:16px; max-width:680px;">{intro}</p>\n'

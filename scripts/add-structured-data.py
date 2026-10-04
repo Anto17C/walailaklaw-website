@@ -21,7 +21,7 @@ PREFIXES = ['', 'th/', 'fr/', 'zh/']
 CORE = ['index', 'about', 'services', 'faqs', 'contact', 'criminal-defence-lawyer', 'bail-bond-services',
         'family-law-services', 'real-estate-lawyer', 'company-registration-services', 'visa-work-permit',
         'civil-litigation-services', 'arbitration-lawyer', 'legal-documents-services',
-        'pattaya-law-office', 'rayong-law-office']
+        'pattaya-law-office', 'rayong-law-office', 'off-plan-property-purchase-review']
 NAME = {'': 'Walailak Law Firm', 'th/': 'สำนักงานกฎหมายวลัยลักษณ์', 'fr/': 'Walailak Law Firm', 'zh/': '瓦莱拉克律师事务所'}
 LANG = {'': 'en', 'th/': 'th', 'fr/': 'fr', 'zh/': 'zh-Hans'}
 OFFICE_LABEL = {

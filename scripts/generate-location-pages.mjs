@@ -17,7 +17,8 @@ const locations = [
       ['Company, BOI & investment support', 'Company structuring, foreign ownership questions, contracts and practical coordination for businesses entering or operating in the Eastern Economic Corridor.', '/chonburi-company-boi-investment'],
       ['Commercial disputes & debt recovery', 'Contract claims, trade debts, negotiation, litigation strategy and enforcement planning involving Chonburi businesses.', '/chonburi-commercial-disputes-debt-recovery'],
       ['Property & Land Office matters', 'Independent due diligence, contract review, title checks and registration support for residential and commercial property.', '/chonburi-property-due-diligence'],
-      ['Wills & estate planning', 'Thai wills and coordinated planning for property owners, international families and overseas beneficiaries.', '/chonburi-wills-estate-planning']
+      ['Wills & estate planning', 'Thai wills and coordinated planning for property owners, international families and overseas beneficiaries.', '/chonburi-wills-estate-planning'],
+      ['Employment, visa & work permits', 'Work permits, employment visas, renewals and permit changes for foreign employees, executives and employers in Chonburi.', '/chonburi-employment-visa-work-permit']
     ],
     focus: 'Chonburi is a broad provincial market. Walailak Law Firm determines whether to handle the full matter directly or involve our Chonburi local counsel for a particular court, authority or local task.',
     related: [['Pattaya Office','/pattaya-law-office'],['Si Racha','/locations/si-racha'],['Laem Chabang','/locations/laem-chabang']]

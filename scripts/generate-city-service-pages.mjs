@@ -581,6 +581,22 @@ const pages = [
     related: [['Property due diligence in Chonburi','/chonburi-property-due-diligence'],['Legal document services','/legal-documents-services'],['Chonburi legal services','/locations/chonburi']]
   },
   {
+    slug: 'chonburi-employment-visa-work-permit', city: 'Chonburi', office: '/locations/chonburi', practice: '/visa-work-permit', image: 'visa-work-permit-thailand.webp',
+    title: 'Work Permit and Employment Visa Lawyer in Chonburi | Walailak Law Firm',
+    description: 'Work permit and employment visa support in Chonburi for foreign employees, executives and employers, including permit changes, renewals and employment contracts.',
+    eyebrow: 'CHONBURI WORK PERMITS & VISAS', h1: 'Work Permit & Employment Visa Services in Chonburi',
+    lead: 'Practical guidance for foreign employees, executives and Chonburi employers on work permits, employment visas, permit changes and renewals.',
+    introTitle: 'Get the employer, role and visa steps right before work starts',
+    intro: 'Foreign professionals in Chonburi work across factories, ports, hotels, schools, restaurants and international offices, and each role raises its own permit questions. A work permit is tied to a specific employer, position and work location, so the employer details, job description, qualifications and visa status should be reviewed together before the employee starts work or a renewal or change falls due. Walailak Law Firm reviews the plan with both employer and employee and explains the process in English.',
+    situations: ['A foreign employee starting a new job in Chonburi','A company hiring its first foreign employee','A work permit or visa approaching renewal','An employee changing employer, job title or work location','A foreign owner or manager who needs to work in their own Chonburi business','A company in an industrial estate or with BOI promotion hiring foreign specialists'],
+    checks: ['Review the employer, role, qualifications and intended work location','Confirm which visa and work-permit route fits the situation','Prepare the employment contract and supporting company documents','Coordinate filings, renewals and amendments with the relevant authorities','Advise on changes of role, employer or location before they take effect','Explain timelines, requirements and next steps in writing, in English'],
+    warningTitle: 'A visa and a work permit are different permissions',
+    warning: 'A visa lets a person enter or stay in Thailand; a work permit authorizes specific work for a specific employer. Having one does not replace the other, and the permit must match the actual job, employer and location. Requirements and processing times depend on the case and the authorities involved, so approval cannot be guaranteed. The position should be reviewed before work begins.',
+    related: [['Visa and work permit services','/visa-work-permit'],['Company and BOI support in Chonburi','/chonburi-company-boi-investment'],['Chonburi legal services','/locations/chonburi']],
+    detailTitle: 'Working in your own company or changing roles',
+    detailText: 'Owning or managing a Chonburi company does not by itself authorize the owner to work in it; a permit is still needed for the duties actually performed. A change of employer, position, work location or duties can require the permit to be amended or a new one obtained, so these changes should be planned in advance. Where a company is in an industrial estate or has BOI promotion, separate procedures may apply, and we confirm the correct route before filing.'
+  },
+  {
     slug: 'hua-hin-property-due-diligence', city: 'Hua Hin', office: '/locations/hua-hin', practice: '/real-estate-lawyer', image: 'real-estate-lawyer.webp',
     title: 'Property Due Diligence in Hua Hin | Walailak Law Firm',
     description: 'Independent property due diligence in Hua Hin for villas, houses, condominiums, land purchases and long-term leasehold arrangements.',

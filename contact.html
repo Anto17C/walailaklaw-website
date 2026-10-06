@@ -550,7 +550,7 @@ document.addEventListener('DOMContentLoaded', function () {
       result.style.color = 'var(--gold-dim)';
       result.textContent = "Thank you — your message has been sent. We'll respond within 15–60 minutes during office hours.";
       window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: 'contact_form_success' });
+      window.dataLayer.push({ event: 'contact_form_success', lead_service: formData.get('LEADCF1') || '', lead_location: formData.get('LEADCF4') || '' });
       form.reset();
       setSourcePage();
     })

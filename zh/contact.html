@@ -552,7 +552,7 @@ document.addEventListener('DOMContentLoaded', function () {
       result.style.color = 'var(--gold-dim)';
       result.textContent = '感谢您的留言——我们已收到您的消息，将在办公时间内15至60分钟内回复。';
       window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: 'contact_form_success' });
+      window.dataLayer.push({ event: 'contact_form_success', lead_service: formData.get('LEADCF1') || '', lead_location: formData.get('LEADCF4') || '' });
       form.reset();
       setSourcePage();
     })

@@ -112,6 +112,24 @@ EXTRA = {'property': [('off-plan-property-purchase-review', {
     'zh': '泰国期房公寓与别墅购房合同审查'})]}
 
 
+# inquiry-driven practice pages (scripts/build-gap-pages.py) are linked from their parent practice pages
+def _add_gap_pages():
+    import importlib.util
+    folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'gap_pages')
+    for name in sorted(os.listdir(folder)):
+        if not (name.startswith('p') and name.endswith('.py')):
+            continue
+        spec = importlib.util.spec_from_file_location(name[:-3], os.path.join(folder, name))
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        page = mod.PAGE
+        EXTRA.setdefault(page['topic'], []).append(
+            (page['slug'], {loc: page['C'][loc]['h1'] for loc in ('en', 'th', 'fr', 'zh')}))
+
+
+_add_gap_pages()
+
+
 def build_block(topic, locale):
     pages = [p for p in g.city_pages if topic in topics_of(p['slug'])
              and (locale == 'en' or p['slug'] in g.city_i18n)]

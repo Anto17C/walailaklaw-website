@@ -8,6 +8,9 @@ What it adds (one <script type="application/ld+json" data-wlf="1"> block per pag
   - Office pages:     that office (address, phone, hours, map position)
   - Contact page:     both offices
   - Any page with FAQ items (class="faq-item"): FAQPage built from the page's own Q&A text
+  - Every page with a visible breadcrumb (<div class="breadcrumb">), in all languages and the
+    locations folder: BreadcrumbList built from that breadcrumb, in its own
+    <script type="application/ld+json" data-wlf="breadcrumb"> block (re-runnable)
 
 Only facts already shown on the site are used (addresses, phone, email, hours; the map
 positions come from the embedded Google Maps on the office pages). Languages are limited to
@@ -124,6 +127,66 @@ def build(prefix, slug, source):
     return nodes
 
 
+BC_MARK = 'data-wlf="breadcrumb"'
+BC_DIRS = ['', 'th/', 'fr/', 'zh/', 'locations/', 'th/locations/', 'fr/locations/', 'zh/locations/']
+
+
+def abs_url(href):
+    return href if href.startswith('http') else SITE + href
+
+
+def own_url(rel_path):
+    """Canonical URL of a page from its path relative to the site root."""
+    path = rel_path[:-5] if rel_path.endswith('.html') else rel_path
+    if path == 'index':
+        return SITE + '/'
+    if path.endswith('/index'):
+        return SITE + '/' + path[:-5]
+    return f'{SITE}/{path}'
+
+
+def breadcrumb_node(source, rel_path):
+    m = re.search(r'<div class="breadcrumb">(.*?)</div>', source, re.S)
+    if not m:
+        return None
+    parts = [p.strip() for p in m.group(1).split(' / ') if p.strip()]
+    items = []
+    for i, part in enumerate(parts, 1):
+        link = re.match(r'<a href="([^"]+)"[^>]*>(.*?)</a>$', part, re.S)
+        if link:
+            items.append({'@type': 'ListItem', 'position': i, 'name': clean(link.group(2)),
+                          'item': abs_url(link.group(1))})
+        else:
+            items.append({'@type': 'ListItem', 'position': i, 'name': clean(part), 'item': own_url(rel_path)})
+    if len(items) < 2:
+        return None
+    return {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': items}
+
+
+def add_breadcrumbs():
+    done = 0
+    for folder in BC_DIRS:
+        base = os.path.join(ROOT, folder)
+        if not os.path.isdir(base):
+            continue
+        for name in sorted(os.listdir(base)):
+            if not name.endswith('.html') or name in ('404.html', 'index.html'):
+                continue
+            path = os.path.join(base, name)
+            source = open(path, encoding='utf-8').read()
+            cleaned = re.sub(r'<script type="application/ld\+json" ' + re.escape(BC_MARK) + r'>.*?</script>\n?', '',
+                             source, flags=re.S)
+            node = breadcrumb_node(cleaned, folder + name)
+            if node:
+                payload = json.dumps(node, ensure_ascii=False, indent=1).replace('</', '<\\/')
+                block = f'<script type="application/ld+json" {BC_MARK}>\n{payload}\n</script>\n'
+                cleaned = cleaned.replace('</head>', block + '</head>', 1)
+                done += 1
+            if cleaned != source:
+                open(path, 'w', encoding='utf-8').write(cleaned)
+    print(f'breadcrumb markup written to {done} pages')
+
+
 def main():
     changed = 0
     for prefix in PREFIXES:
@@ -143,6 +206,7 @@ def main():
                 changed += 1
             open(path, 'w', encoding='utf-8').write(source)
     print(f'structured data written to {changed} pages')
+    add_breadcrumbs()
 
 
 if __name__ == '__main__':

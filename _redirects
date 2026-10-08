@@ -1,6 +1,10 @@
 # Real redirects only (old WordPress URLs, renamed pages, removed pages).
 # Plain .html and trailing-slash variants of existing pages are NOT listed: Cloudflare Pages redirects them itself (308).
 # A long file here was found to be only partly applied in October 2026, so keep this file short and test new rules live.
+# Internal files that must not be public (build scripts, translation data, notes). Keep these at the top.
+/scripts/* /404.html 404
+/images/README-brand-assets.txt /404.html 404
+/.gitignore /404.html 404
 /index.html / 301
 /th/index.html /th/ 301
 /fr/index.html /fr/ 301

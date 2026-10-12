@@ -313,11 +313,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <input type="hidden" name="Lead Source" value="Inquiry Form">
           <input type="text" name="aG9uZXlwb3Q" style="display:none;" tabindex="-1" autocomplete="off">
 
-          <input type="text" name="Last Name" placeholder="Votre nom" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;">
-          <input type="email" name="Email" placeholder="Votre e-mail" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;">
-          <input type="tel" name="Phone" placeholder="Numéro de contact" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;">
+          <div style="display:flex; flex-direction:column; gap:4px;"><label for="cf-name" style="font-size:12.5px; font-weight:600; color:var(--text-primary);">Votre nom</label><input type="text" id="cf-name" name="Last Name" placeholder="Votre nom" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;"></div>
+          <div style="display:flex; flex-direction:column; gap:4px;"><label for="cf-email" style="font-size:12.5px; font-weight:600; color:var(--text-primary);">Votre e-mail</label><input type="email" id="cf-email" name="Email" placeholder="Votre e-mail" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;"></div>
+          <div style="display:flex; flex-direction:column; gap:4px;"><label for="cf-phone" style="font-size:12.5px; font-weight:600; color:var(--text-primary);">Numéro de contact</label><input type="tel" id="cf-phone" name="Phone" placeholder="Numéro de contact" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;"></div>
           <div style="display:flex; gap:12px;">
-            <select name="LEADCF1" required style="flex:1; border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
+            <div style="display:flex; flex-direction:column; gap:4px; flex:1;"><label for="cf-case" style="font-size:12.5px; font-weight:600; color:var(--text-primary);">Type d'affaire</label><select aria-label="Type d'affaire" id="cf-case" name="LEADCF1" required style="flex:1; border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
               <option value="">Type d'affaire</option>
               <option value="Criminal Case">Affaire pénale</option>
               <option value="Bail Bond">Cautionnement</option>
@@ -329,15 +329,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <option value="Arbitration">Arbitrage</option>
               <option value="Legal Documents">Documents juridiques</option>
               <option value="Other">Autre</option>
-            </select>
-            <select name="LEADCF5" required style="flex:1; border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
+            </select></div>
+            <div style="display:flex; flex-direction:column; gap:4px; flex:1;"><label for="cf-urgency" style="font-size:12.5px; font-weight:600; color:var(--text-primary);">Degré d'urgence</label><select aria-label="Degré d'urgence" id="cf-urgency" name="LEADCF5" required style="flex:1; border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
               <option value="">Degré d'urgence</option>
               <option value="Urgent">Urgent</option>
               <option value="Within a few days">Dans les prochains jours</option>
               <option value="Not urgent">Pas urgent</option>
-            </select>
+            </select></div>
           </div>
-          <select name="LEADCF4" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
+          <div style="display:flex; flex-direction:column; gap:4px;"><label for="cf-location" style="font-size:12.5px; font-weight:600; color:var(--text-primary);">Sélectionnez votre localisation</label><select aria-label="Sélectionnez votre localisation" id="cf-location" name="LEADCF4" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
             <option value="">Sélectionnez votre localisation</option>
             <option value="Pattaya">Pattaya</option>
             <option value="Rayong">Rayong</option>
@@ -355,15 +355,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <option value="Hua Hin / Prachuap Khiri Khan">Hua Hin / Prachuap Khiri Khan</option>
             <option value="Other Thailand">Autre province en Thaïlande</option>
             <option value="Outside Thailand">Hors de Thaïlande</option>
-          </select>
-          <select name="LEADCF2" style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
+          </select></div>
+          <div style="display:flex; flex-direction:column; gap:4px;"><label for="cf-language" style="font-size:12.5px; font-weight:600; color:var(--text-primary);">Langue préférée</label><select aria-label="Langue préférée" id="cf-language" name="LEADCF2" style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
             <option value="">Langue préférée</option>
             <option value="English">English</option>
             <option value="Thai">Thai</option>
             <option value="French" selected>French</option>
             <option value="Chinese">Chinese</option>
-          </select>
-          <textarea name="Description" rows="4" placeholder="Merci d'indiquer tout détail important, échéance ou document pertinent (si disponible)." style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; resize:vertical;"></textarea>
+          </select></div>
+          <div style="display:flex; flex-direction:column; gap:4px;"><label for="cf-details" style="font-size:12.5px; font-weight:600; color:var(--text-primary);">Merci d'indiquer tout détail important, échéance ou document pertinent (si disponible).</label><textarea id="cf-details" name="Description" rows="4" placeholder="Merci d'indiquer tout détail important, échéance ou document pertinent (si disponible)." style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; resize:vertical;"></textarea></div>
           <button type="submit" class="btn btn-primary" style="width:100%; margin-top:6px;">Envoyer</button>
           <p id="form-result" style="font-size:13.5px; margin:0; display:none;"></p>
         </form>
@@ -550,10 +550,17 @@ document.addEventListener('DOMContentLoaded', function () {
     submitBtn.textContent = 'Envoi en cours...';
     result.style.display = 'none';
 
-    var emailSubmission = fetch('https://api.web3forms.com/submit', {
+        function fetchWithTimeout(url, options, ms) {
+      var controller = new AbortController();
+      var timer = setTimeout(function () { controller.abort(); }, ms || 20000);
+      options.signal = controller.signal;
+      return fetch(url, options).finally(function () { clearTimeout(timer); });
+    }
+
+    var emailSubmission = fetchWithTimeout('https://api.web3forms.com/submit', {
       method: 'POST',
       body: emailData
-    }).then(function (response) {
+    }, 20000).then(function (response) {
       if (!response.ok) throw new Error('Email submission failed');
       return response.json();
     }).then(function (data) {
@@ -561,11 +568,11 @@ document.addEventListener('DOMContentLoaded', function () {
       return data;
     });
 
-    var crmSubmission = fetch('https://crm.zoho.com/crm/WebToLeadForm', {
+    var crmSubmission = fetchWithTimeout('https://crm.zoho.com/crm/WebToLeadForm', {
       method: 'POST',
       body: formData,
       cache: 'no-cache'
-    }).then(function (response) {
+    }, 10000).then(function (response) {
       if (!response.ok) throw new Error('Submission failed');
       return response.text();
     });

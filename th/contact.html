@@ -280,11 +280,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <input type="hidden" name="Lead Source" value="Inquiry Form">
           <input type="text" name="aG9uZXlwb3Q" style="display:none;" tabindex="-1" autocomplete="off">
 
-          <input type="text" name="Last Name" placeholder="ชื่อ-นามสกุล" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;">
-          <input type="email" name="Email" placeholder="อีเมล" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;">
-          <input type="tel" name="Phone" placeholder="เบอร์โทรศัพท์" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;">
+          <div style="display:flex; flex-direction:column; gap:4px;"><label for="cf-name" style="font-size:12.5px; font-weight:600; color:var(--text-primary);">ชื่อ-นามสกุล</label><input type="text" id="cf-name" name="Last Name" placeholder="ชื่อ-นามสกุล" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;"></div>
+          <div style="display:flex; flex-direction:column; gap:4px;"><label for="cf-email" style="font-size:12.5px; font-weight:600; color:var(--text-primary);">อีเมล</label><input type="email" id="cf-email" name="Email" placeholder="อีเมล" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;"></div>
+          <div style="display:flex; flex-direction:column; gap:4px;"><label for="cf-phone" style="font-size:12.5px; font-weight:600; color:var(--text-primary);">เบอร์โทรศัพท์</label><input type="tel" id="cf-phone" name="Phone" placeholder="เบอร์โทรศัพท์" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit;"></div>
           <div style="display:flex; gap:12px;">
-            <select name="LEADCF1" required style="flex:1; border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
+            <div style="display:flex; flex-direction:column; gap:4px; flex:1;"><label for="cf-case" style="font-size:12.5px; font-weight:600; color:var(--text-primary);">เลือกประเภทคดี</label><select aria-label="เลือกประเภทคดี" id="cf-case" name="LEADCF1" required style="flex:1; border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
               <option value="">เลือกประเภทคดี</option>
               <option value="Criminal Case">คดีอาญา</option>
               <option value="Bail Bond">การประกันตัว</option>
@@ -296,15 +296,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <option value="Arbitration">อนุญาโตตุลาการ</option>
               <option value="Legal Documents">เอกสารทางกฎหมาย</option>
               <option value="Other">อื่น ๆ</option>
-            </select>
-            <select name="LEADCF5" required style="flex:1; border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
+            </select></div>
+            <div style="display:flex; flex-direction:column; gap:4px; flex:1;"><label for="cf-urgency" style="font-size:12.5px; font-weight:600; color:var(--text-primary);">ความเร่งด่วน</label><select aria-label="ความเร่งด่วน" id="cf-urgency" name="LEADCF5" required style="flex:1; border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
               <option value="">ความเร่งด่วน</option>
               <option value="Urgent">เร่งด่วน</option>
               <option value="Within a few days">ภายในไม่กี่วัน</option>
               <option value="Not urgent">ไม่เร่งด่วน</option>
-            </select>
+            </select></div>
           </div>
-          <select name="LEADCF4" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
+          <div style="display:flex; flex-direction:column; gap:4px;"><label for="cf-location" style="font-size:12.5px; font-weight:600; color:var(--text-primary);">เลือกพื้นที่ของคุณ</label><select aria-label="เลือกพื้นที่ของคุณ" id="cf-location" name="LEADCF4" required style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
             <option value="">เลือกพื้นที่ของคุณ</option>
             <option value="Pattaya">พัทยา</option>
             <option value="Rayong">ระยอง</option>
@@ -322,15 +322,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <option value="Hua Hin / Prachuap Khiri Khan">หัวหิน / ประจวบคีรีขันธ์</option>
             <option value="Other Thailand">จังหวัดอื่นในไทย</option>
             <option value="Outside Thailand">นอกประเทศไทย</option>
-          </select>
-          <select name="LEADCF2" style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
+          </select></div>
+          <div style="display:flex; flex-direction:column; gap:4px;"><label for="cf-language" style="font-size:12.5px; font-weight:600; color:var(--text-primary);">ภาษาที่สะดวก</label><select aria-label="ภาษาที่สะดวก" id="cf-language" name="LEADCF2" style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; color:var(--text-secondary);">
             <option value="">ภาษาที่สะดวก</option>
             <option value="English">English</option>
             <option value="Thai" selected>Thai</option>
             <option value="French">French</option>
             <option value="Chinese">Chinese</option>
-          </select>
-          <textarea name="Description" rows="4" placeholder="กรุณาระบุรายละเอียดที่สำคัญ กำหนดเวลา หรือเอกสารที่เกี่ยวข้อง (ถ้ามี)" style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; resize:vertical;"></textarea>
+          </select></div>
+          <div style="display:flex; flex-direction:column; gap:4px;"><label for="cf-details" style="font-size:12.5px; font-weight:600; color:var(--text-primary);">กรุณาระบุรายละเอียดที่สำคัญ กำหนดเวลา หรือเอกสารที่เกี่ยวข้อง (ถ้ามี)</label><textarea id="cf-details" name="Description" rows="4" placeholder="กรุณาระบุรายละเอียดที่สำคัญ กำหนดเวลา หรือเอกสารที่เกี่ยวข้อง (ถ้ามี)" style="border:1px solid var(--border); border-radius:8px; padding:13px 14px; font-size:14px; font-family:inherit; resize:vertical;"></textarea></div>
           <button type="submit" class="btn btn-primary" style="width:100%; margin-top:6px;">ส่งข้อความ</button>
           <p id="form-result" style="font-size:13.5px; margin:0; display:none;"></p>
         </form>
@@ -552,10 +552,17 @@ document.addEventListener('DOMContentLoaded', function () {
     submitBtn.textContent = 'กำลังส่ง...';
     result.style.display = 'none';
 
-    var emailSubmission = fetch('https://api.web3forms.com/submit', {
+        function fetchWithTimeout(url, options, ms) {
+      var controller = new AbortController();
+      var timer = setTimeout(function () { controller.abort(); }, ms || 20000);
+      options.signal = controller.signal;
+      return fetch(url, options).finally(function () { clearTimeout(timer); });
+    }
+
+    var emailSubmission = fetchWithTimeout('https://api.web3forms.com/submit', {
       method: 'POST',
       body: emailData
-    }).then(function (response) {
+    }, 20000).then(function (response) {
       if (!response.ok) throw new Error('Email submission failed');
       return response.json();
     }).then(function (data) {
@@ -563,11 +570,11 @@ document.addEventListener('DOMContentLoaded', function () {
       return data;
     });
 
-    var crmSubmission = fetch('https://crm.zoho.com/crm/WebToLeadForm', {
+    var crmSubmission = fetchWithTimeout('https://crm.zoho.com/crm/WebToLeadForm', {
       method: 'POST',
       body: formData,
       cache: 'no-cache'
-    }).then(function (response) {
+    }, 10000).then(function (response) {
       if (!response.ok) throw new Error('Submission failed');
       return response.text();
     });

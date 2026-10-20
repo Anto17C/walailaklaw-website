@@ -258,7 +258,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="contact-module">
       <div>
-        <h4>WhatsApp, Line ou téléphone directement</h4>
+        <h2>WhatsApp, Line ou téléphone directement</h2>
         <p>Pour une assistance juridique d'urgence, contactez-nous ci-dessous.</p>
       </div>
       <div class="contact-icons">
@@ -442,7 +442,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="social-row"><a href="https://www.facebook.com/people/Walailak-Law-Firm/61562487312560/" class="footer-social-facebook" target="_blank" rel="noopener" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a><a href="https://line.me/ti/p/~kaezeeds" class="footer-social-line" target="_blank" rel="noopener" aria-label="LINE"><img src="/images/line-icon.png" alt="LINE"></a><a href="https://wa.me/66946463940" class="footer-social-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ti ti-brand-whatsapp"></i></a><a href="mailto:kae@walailaklaw.com" class="footer-social-email" aria-label="E-mail"><i class="ti ti-mail"></i></a><a href="tel:+66946463940" class="footer-social-phone" aria-label="Téléphone"><i class="ti ti-phone"></i></a></div>
       </div>
       <div>
-        <h5>Services juridiques</h5>
+        <h3>Services juridiques</h3>
         <p><a href="/fr/criminal-defence-lawyer">Affaire pénale</a></p>
         <p><a href="/fr/bail-bond-services">Cautionnement</a></p>
         <p><a href="/fr/family-law-services">Affaire familiale</a></p>
@@ -454,7 +454,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p><a href="/fr/legal-documents-services">Documents juridiques</a></p>
       </div>
       <div>
-        <h5>Nos bureaux</h5>
+        <h3>Nos bureaux</h3>
         <p style="font-size:11.5px; opacity:0.7; margin-bottom:10px;">Nos 2 bureaux physiques ci-dessous. Nous nous déplaçons également pour rencontrer nos clients et assister aux audiences dans toute la Thaïlande.</p>
         <p style="color:var(--gold); font-weight:600;"><a href="/fr/pattaya-law-office" style="color:inherit;">Bureau de Pattaya</a></p>
         <p>340/102 Moo 9 Nongprue Subdistrict, Banglamung District, Chonburi 20150</p>
@@ -462,7 +462,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>131/40 Moo 2, Thap Ma Subdistrict, Mueang Rayong District, Rayong 21000</p>
       </div>
       <div>
-        <h5>Contactez-nous</h5>
+        <h3>Contactez-nous</h3>
         <p>Tél. : <a href="tel:+66946463940">+66 94 646 3940</a></p>
         <p>E-mail : <a href="mailto:kae@walailaklaw.com">kae@walailaklaw.com</a></p>
         <p style="margin-top:6px;"><a href="/fr/">Accueil</a></p>
@@ -562,8 +562,30 @@ document.addEventListener('DOMContentLoaded', function () {
     }).finally(function () { clearTimeout(timer); });
   }
 
-  // Signature of the inquiry the CRM has already accepted, so a retry after an email failure does not create a second lead.
+  // Remember (in this browser, for 24 hours) a short hash of an inquiry the CRM has already accepted, so a retry after a
+  // page reload cannot create a second lead. Only a hash is stored, never the visitor's details.
+  var CRM_KEY = 'wlf_crm_accepted';
   var crmAcceptedFor = null;
+  function hashText(text) {
+    var h = 5381;
+    for (var i = 0; i < text.length; i++) { h = ((h << 5) + h + text.charCodeAt(i)) | 0; }
+    return (h >>> 0).toString(16);
+  }
+  function crmAlreadyAccepted(sig) {
+    if (crmAcceptedFor === sig) return true;
+    try {
+      var saved = JSON.parse(localStorage.getItem(CRM_KEY) || 'null');
+      return !!saved && saved.s === sig && (Date.now() - saved.t) < 86400000;
+    } catch (e) { return false; }
+  }
+  function rememberCrm(sig) {
+    crmAcceptedFor = sig;
+    try { localStorage.setItem(CRM_KEY, JSON.stringify({ s: sig, t: Date.now() })); } catch (e) {}
+  }
+  function forgetCrm() {
+    crmAcceptedFor = null;
+    try { localStorage.removeItem(CRM_KEY); } catch (e) {}
+  }
 
   // If the CRM entry fails, ask the office to add the lead by hand (the inquiry itself was already emailed).
   function notifyCrmFailure(formData) {
@@ -572,7 +594,13 @@ document.addEventListener('DOMContentLoaded', function () {
     note.append('subject', 'CRM entry needed - website inquiry from ' + (fieldValue(formData, 'Email') || 'unknown'));
     note.append('from_name', 'Walailak Law Firm Website');
     note.append('message', 'The website inquiry was emailed, but the Zoho CRM submission failed or timed out. Please add this lead to the CRM manually.\n\nName: ' + fieldValue(formData, 'Last Name') + '\nEmail: ' + fieldValue(formData, 'Email') + '\nPhone: ' + fieldValue(formData, 'Phone'));
-    fetchWithTimeout('https://api.web3forms.com/submit', { method: 'POST', body: note }, 15000, function (r) { return r.json(); }).catch(function () {});
+    function send(attempt) {
+      fetchWithTimeout('https://api.web3forms.com/submit', { method: 'POST', body: note }, 15000, function (r) { return r.json(); }).catch(function (err) {
+        if (attempt < 2) { setTimeout(function () { send(attempt + 1); }, 4000); }
+        else { console.error('CRM-failure alert could not be sent:', err); }
+      });
+    }
+    send(1);
   }
 
   form.addEventListener('submit', function (e) {
@@ -594,15 +622,15 @@ document.addEventListener('DOMContentLoaded', function () {
       return data;
     });
 
-    var inquirySignature = [fieldValue(formData, 'Email'), fieldValue(formData, 'Phone'), fieldValue(formData, 'Description')].join('|');
-    var crmSubmission = (crmAcceptedFor === inquirySignature)
+    var inquirySignature = hashText([fieldValue(formData, 'Email'), fieldValue(formData, 'Phone'), fieldValue(formData, 'Description')].join('|'));
+    var crmSubmission = crmAlreadyAccepted(inquirySignature)
       ? Promise.resolve('already-sent')
       : fetchWithTimeout('https://crm.zoho.com/crm/WebToLeadForm', {
           method: 'POST',
           body: formData,
           cache: 'no-cache'
         }, 10000, function (response) { return response.text(); }).then(function (text) {
-          crmAcceptedFor = inquirySignature;
+          rememberCrm(inquirySignature);
           return text;
         });
 
@@ -618,7 +646,7 @@ document.addEventListener('DOMContentLoaded', function () {
       result.style.display = 'block';
       result.style.color = 'var(--gold-dim)';
       result.textContent = "Merci — votre message a bien été envoyé. Nous vous répondrons en 15 à 60 minutes pendant les heures de bureau.";
-      crmAcceptedFor = null;
+      forgetCrm();
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ event: 'contact_form_success', lead_service: formData.get('LEADCF1') || '', lead_location: formData.get('LEADCF4') || '' });
       form.reset();

@@ -21,6 +21,9 @@
 /images/*
   Cache-Control: public, max-age=86400, must-revalidate
 
+/fonts/*
+  Cache-Control: public, max-age=86400, must-revalidate
+
 /*.webp
   Cache-Control: public, max-age=86400, must-revalidate
 

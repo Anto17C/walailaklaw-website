@@ -3,11 +3,16 @@ document.addEventListener('DOMContentLoaded', function () {
   var language = path.indexOf('/th/') === 0 ? 'th' : (path.indexOf('/fr/') === 0 ? 'fr' : (path.indexOf('/zh/') === 0 ? 'zh' : (path.indexOf('/ru/') === 0 ? 'ru' : 'en')));
   var prefix = language === 'en' ? '' : '/' + language;
   // Russian is a small pilot: only the pages that exist under /ru/ are linked there, the other locations stay on the English pages
-  var locPrefix = language === 'ru' ? '' : prefix;
-  // On the Russian pilot the regional pages are English-only: mark those links (ru.css shows an EN cue) and use Russian city names
-  var enAttr = language === 'ru' ? ' hreflang="en"' : '';
+  // Russian pilot: the regional pages that exist in Russian (rewritten by Tools/ru/activate-ru.py). Other regional links stay on the
+  // English pages, are marked hreflang="en" (ru.css shows an EN cue) and use Russian city names.
+  var ruLocations = ["locations", "bangkok", "chonburi", "si-racha", "laem-chabang", "phuket", "chiang-mai"];
   var cityNames = language === 'ru' ? { 'Bangkok': 'Бангкок', 'Chonburi': 'Чонбури', 'Si Racha': 'Сирача', 'Laem Chabang': 'Лаемчабанг', 'Phuket': 'Пхукет', 'Chiang Mai': 'Чиангмай' } : {};
   function cityName(n) { return cityNames[n] || n; }
+  function locHref(slug) { // slug '' = the Locations hub
+    var inRu = language === 'ru' && ruLocations.indexOf(slug || 'locations') !== -1;
+    var base = language === 'ru' ? (inRu ? '/ru' : '') : prefix;
+    return 'href="' + base + '/locations' + (slug ? '/' + slug : '') + '"' + (language === 'ru' && !inRu ? ' hreflang="en"' : '');
+  }
 
   // Keep the primary header focused: offices move from Contact into Locations.
   var nav = document.querySelector('.nav-links');
@@ -25,17 +30,17 @@ document.addEventListener('DOMContentLoaded', function () {
       var locationsItem = document.createElement('div');
       locationsItem.className = 'nav-item';
       locationsItem.innerHTML =
-        '<a href="' + locPrefix + '/locations"' + enAttr + '>' + labels.locations + ' <span class="caret">&#9662;</span></a>' +
+        '<a ' + locHref('') + '>' + labels.locations + ' <span class="caret">&#9662;</span></a>' +
         '<div class="dropdown-menu">' +
           '<a href="' + prefix + '/rayong-law-office">' + labels.rayong + '</a>' +
           '<a href="' + prefix + '/pattaya-law-office">' + labels.pattaya + '</a>' +
-          '<a href="' + locPrefix + '/locations/bangkok"' + enAttr + '>' + cityName('Bangkok') + '</a>' +
-          '<a href="' + locPrefix + '/locations/chonburi"' + enAttr + '>' + cityName('Chonburi') + '</a>' +
-          '<a href="' + locPrefix + '/locations/si-racha"' + enAttr + '>' + cityName('Si Racha') + '</a>' +
-          '<a href="' + locPrefix + '/locations/laem-chabang"' + enAttr + '>' + cityName('Laem Chabang') + '</a>' +
-          '<a href="' + locPrefix + '/locations/phuket"' + enAttr + '>' + cityName('Phuket') + '</a>' +
-          '<a href="' + locPrefix + '/locations/chiang-mai"' + enAttr + '>' + cityName('Chiang Mai') + '</a>' +
-          '<a href="' + locPrefix + '/locations"' + enAttr + '>' + labels.other + '</a>' +
+          '<a ' + locHref('bangkok') + '>' + cityName('Bangkok') + '</a>' +
+          '<a ' + locHref('chonburi') + '>' + cityName('Chonburi') + '</a>' +
+          '<a ' + locHref('si-racha') + '>' + cityName('Si Racha') + '</a>' +
+          '<a ' + locHref('laem-chabang') + '>' + cityName('Laem Chabang') + '</a>' +
+          '<a ' + locHref('phuket') + '>' + cityName('Phuket') + '</a>' +
+          '<a ' + locHref('chiang-mai') + '>' + cityName('Chiang Mai') + '</a>' +
+          '<a ' + locHref('') + '>' + labels.other + '</a>' +
         '</div>';
       contactItem.parentNode.insertBefore(locationsItem, contactItem);
       var plainContact = document.createElement('a');

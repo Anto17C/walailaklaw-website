@@ -11,8 +11,7 @@ html[lang="ru"] .btn { white-space: normal; text-align: center; }
 html[lang="ru"] .nav-links a, html[lang="ru"] .nav-cta .btn { white-space: nowrap; }
 /* Links that lead to a page that exists only in English carry a small EN cue (the builder and main.js mark them hreflang="en"). */
 html[lang="ru"] a[hreflang="en"]:not([lang])::after { content: " EN"; font-size: 0.66em; font-weight: 600; letter-spacing: 0.04em; opacity: 0.6; white-space: nowrap; }
-/* the footer region list is explained once in its label, the language menu is not a content link */
-html[lang="ru"] .footer-locations-list a[hreflang]::after { content: none; }
+/* buttons and the logo never carry the cue */
 html[lang="ru"] .btn[hreflang="en"]::after, html[lang="ru"] .logo[hreflang]::after { content: none; }
 
 /* no cue on the header menu parents (their dropdown items carry it); the plain FAQ link keeps it */

@@ -1079,3 +1079,22 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   .remote-grid { grid-template-columns: 1fr; }
   .remote-card:last-child { grid-column: span 1; }
 }
+
+/* Mobile header: large logo on the left, then the language pill and an outlined menu button
+   (same layout as siamoakmont.com). The header CTA moves out of the bar on phones; the hero
+   button, the Contact link in the menu and the floating WhatsApp button remain. */
+@media (max-width: 700px) {
+  .container.nav-row { gap: 10px; min-height: 72px; padding-left: 16px; padding-right: 16px; }
+  .logo { flex: 1 1 auto; min-width: 0; }
+  .logo .logo-icon-mobile { height: clamp(34px, 12.6vw, 50px); width: auto; max-width: 100%; }
+  .nav-cta { margin-left: 0; gap: 0; }
+  .nav-cta .btn-primary { display: none; }
+  .lang-item { margin-right: 0; }
+  .lang-trigger { min-height: 40px; padding: 0 11px; gap: 6px; font-size: 13px; border-radius: 6px; border-color: rgba(255,255,255,0.3); }
+  .lang-trigger i { display: inline-block; font-size: 16px; }
+  .menu-toggle {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 40px; height: 40px; padding: 0; margin: 0;
+    border: 1px solid rgba(255,255,255,0.3); border-radius: 6px; font-size: 22px;
+  }
+}

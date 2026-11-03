@@ -19,3 +19,16 @@ html[lang="ru"] .btn[hreflang="en"]::after, html[lang="ru"] .logo[hreflang]::aft
 html[lang="ru"] .nav-links > .nav-item > a::after { content: none; }
 /* narrow tablets (701-780px): the long Russian header labels leave no room for the CTA button; the hero button and the Contact link remain */
 @media (min-width: 701px) and (max-width: 780px) { html[lang="ru"] .nav-cta .btn-primary { display: none; } }
+/* Home hero: Russian text is wider than English, so the title and paragraph get a wider measure on desktop and the hero keeps the same
+   height as the English and French heroes (title 2 lines, paragraph 3 lines) */
+@media (min-width: 881px) {
+  html[lang="ru"] .hero:not(.hero-sm) .hero-inner { max-width: 840px; }
+  html[lang="ru"] .hero:not(.hero-sm) h1 { max-width: 700px; }
+  html[lang="ru"] .hero:not(.hero-sm) p.lead { max-width: 840px; }
+}
+/* small tablets: use the full container width for the same effect */
+@media (min-width: 769px) and (max-width: 880px) {
+  html[lang="ru"] .hero:not(.hero-sm) .hero-inner { max-width: calc(100vw - 48px); }
+  html[lang="ru"] .hero:not(.hero-sm) h1 { max-width: 700px; }
+  html[lang="ru"] .hero:not(.hero-sm) p.lead { max-width: calc(100vw - 48px); }
+}

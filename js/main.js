@@ -1,7 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
   var path = window.location.pathname;
-  var language = path.indexOf('/th/') === 0 ? 'th' : (path.indexOf('/fr/') === 0 ? 'fr' : (path.indexOf('/zh/') === 0 ? 'zh' : 'en'));
+  var language = path.indexOf('/th/') === 0 ? 'th' : (path.indexOf('/fr/') === 0 ? 'fr' : (path.indexOf('/zh/') === 0 ? 'zh' : (path.indexOf('/ru/') === 0 ? 'ru' : 'en')));
   var prefix = language === 'en' ? '' : '/' + language;
+  // Russian is a small pilot: only the pages that exist under /ru/ are linked there, the other locations stay on the English pages
+  var locPrefix = language === 'ru' ? '' : prefix;
+  // On the Russian pilot the regional pages are English-only: mark those links (ru.css shows an EN cue) and use Russian city names
+  var enAttr = language === 'ru' ? ' hreflang="en"' : '';
+  var cityNames = language === 'ru' ? { 'Bangkok': 'Бангкок', 'Chonburi': 'Чонбури', 'Si Racha': 'Сирача', 'Laem Chabang': 'Лаемчабанг', 'Phuket': 'Пхукет', 'Chiang Mai': 'Чиангмай' } : {};
+  function cityName(n) { return cityNames[n] || n; }
 
   // Keep the primary header focused: offices move from Contact into Locations.
   var nav = document.querySelector('.nav-links');
@@ -10,7 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
       en: { locations: 'Locations', other: 'Other locations', contact: 'Contact', pattaya: 'Pattaya Office', rayong: 'Rayong Office' },
       th: { locations: 'พื้นที่ให้บริการ', other: 'พื้นที่อื่น ๆ', contact: 'ติดต่อเรา', pattaya: 'สำนักงานพัทยา', rayong: 'สำนักงานระยอง' },
       fr: { locations: 'Implantations', other: 'Autres implantations', contact: 'Contact', pattaya: 'Bureau de Pattaya', rayong: 'Bureau de Rayong' },
-      zh: { locations: '服务地区', other: '其他地区', contact: '联系我们', pattaya: '芭堤雅办公室', rayong: '罗勇办公室' }
+      zh: { locations: '服务地区', other: '其他地区', contact: '联系我们', pattaya: '芭堤雅办公室', rayong: '罗勇办公室' },
+      ru: { locations: 'Регионы', other: 'Другие регионы', contact: 'Контакты', pattaya: 'Офис в Паттайе', rayong: 'Офис в Районге' }
     }[language];
     var contactLink = nav.querySelector('a[href="' + prefix + '/contact"]');
     if (contactLink) {
@@ -18,17 +25,17 @@ document.addEventListener('DOMContentLoaded', function () {
       var locationsItem = document.createElement('div');
       locationsItem.className = 'nav-item';
       locationsItem.innerHTML =
-        '<a href="' + prefix + '/locations">' + labels.locations + ' <span class="caret">&#9662;</span></a>' +
+        '<a href="' + locPrefix + '/locations"' + enAttr + '>' + labels.locations + ' <span class="caret">&#9662;</span></a>' +
         '<div class="dropdown-menu">' +
           '<a href="' + prefix + '/rayong-law-office">' + labels.rayong + '</a>' +
           '<a href="' + prefix + '/pattaya-law-office">' + labels.pattaya + '</a>' +
-          '<a href="' + prefix + '/locations/bangkok">Bangkok</a>' +
-          '<a href="' + prefix + '/locations/chonburi">Chonburi</a>' +
-          '<a href="' + prefix + '/locations/si-racha">Si Racha</a>' +
-          '<a href="' + prefix + '/locations/laem-chabang">Laem Chabang</a>' +
-          '<a href="' + prefix + '/locations/phuket">Phuket</a>' +
-          '<a href="' + prefix + '/locations/chiang-mai">Chiang Mai</a>' +
-          '<a href="' + prefix + '/locations">' + labels.other + '</a>' +
+          '<a href="' + locPrefix + '/locations/bangkok"' + enAttr + '>' + cityName('Bangkok') + '</a>' +
+          '<a href="' + locPrefix + '/locations/chonburi"' + enAttr + '>' + cityName('Chonburi') + '</a>' +
+          '<a href="' + locPrefix + '/locations/si-racha"' + enAttr + '>' + cityName('Si Racha') + '</a>' +
+          '<a href="' + locPrefix + '/locations/laem-chabang"' + enAttr + '>' + cityName('Laem Chabang') + '</a>' +
+          '<a href="' + locPrefix + '/locations/phuket"' + enAttr + '>' + cityName('Phuket') + '</a>' +
+          '<a href="' + locPrefix + '/locations/chiang-mai"' + enAttr + '>' + cityName('Chiang Mai') + '</a>' +
+          '<a href="' + locPrefix + '/locations"' + enAttr + '>' + labels.other + '</a>' +
         '</div>';
       contactItem.parentNode.insertBefore(locationsItem, contactItem);
       var plainContact = document.createElement('a');
@@ -50,12 +57,13 @@ document.addEventListener('DOMContentLoaded', function () {
         var link = source.querySelector(selector) || (headerContacts && headerContacts.querySelector(selector));
         return link ? link.getAttribute('href') : fallback;
       }
-      var isHome = path === '/' || path === '/index.html' || path === '/th/' || path === '/th/index.html' || path === '/fr/' || path === '/fr/index.html' || path === '/zh/' || path === '/zh/index.html';
+      var isHome = path === '/' || path === '/index.html' || path === '/th/' || path === '/th/index.html' || path === '/fr/' || path === '/fr/index.html' || path === '/zh/' || path === '/zh/index.html' || path === '/ru/' || path === '/ru/index.html';
       var directLabels = {
         en: { prompt: 'Speak with us directly?', phone: 'Call Walailak Law Firm', email: 'Email Walailak Law Firm' },
         th: { prompt: 'ติดต่อเราโดยตรง', phone: 'โทรหาสำนักงานกฎหมายวลัยลักษณ์', email: 'อีเมลสำนักงานกฎหมายวลัยลักษณ์' },
         fr: { prompt: 'Contactez-nous directement', phone: 'Appeler Walailak Law Firm', email: 'Envoyer un e-mail à Walailak Law Firm' },
-        zh: { prompt: '直接与我们联系？', phone: '致电瓦莱拉克律师事务所', email: '发送邮件至瓦莱拉克律师事务所' }
+        zh: { prompt: '直接与我们联系？', phone: '致电瓦莱拉克律师事务所', email: '发送邮件至瓦莱拉克律师事务所' },
+        ru: { prompt: 'Связаться с нами напрямую', phone: 'Позвонить в Walailak Law Firm', email: 'Написать в Walailak Law Firm' }
       }[language];
       var links = [];
       if (!isHome) {
@@ -192,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Scroll-to-top button
   var scrollBtn = document.createElement('button');
   scrollBtn.className = 'scroll-top-btn';
-  scrollBtn.setAttribute('aria-label', 'Scroll to top');
+  scrollBtn.setAttribute('aria-label', language === 'ru' ? 'Наверх' : 'Scroll to top');
   scrollBtn.innerHTML = '<i class="ti ti-arrow-up"></i>';
   document.body.appendChild(scrollBtn);
 
@@ -217,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function () {
     waBtn.href = existingWhatsapp.href;
     waBtn.target = '_blank';
     waBtn.rel = 'noopener';
-    waBtn.setAttribute('aria-label', 'Chat on WhatsApp');
+    waBtn.setAttribute('aria-label', language === 'ru' ? 'Написать в WhatsApp' : 'Chat on WhatsApp');
     waBtn.innerHTML = '<i class="ti ti-brand-whatsapp"></i>';
     document.body.appendChild(waBtn);
   } else if (existingLine) {

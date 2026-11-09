@@ -593,7 +593,7 @@ document.addEventListener('DOMContentLoaded', function () {
     note.append('from_name', 'Walailak Law Firm Website');
     note.append('message', 'The website inquiry was emailed, but the Zoho CRM submission failed or timed out. Please add this lead to the CRM manually.\n\nName: ' + fieldValue(formData, 'Last Name') + '\nEmail: ' + fieldValue(formData, 'Email') + '\nPhone: ' + fieldValue(formData, 'Phone'));
     function send(attempt) {
-      fetchWithTimeout('https://api.web3forms.com/submit', { method: 'POST', body: note }, 15000, function (r) { return r.json(); }).catch(function (err) {
+      fetchWithTimeout('https://api.web3forms.com/submit', { method: 'POST', body: note }, 15000, function (r) { return r.json(); }).then(function (d) { if (!d.success) throw new Error(d.message || 'Alert rejected'); }).catch(function (err) {
         if (attempt < 2) { setTimeout(function () { send(attempt + 1); }, 4000); }
         else { console.error('CRM-failure alert could not be sent:', err); }
       });

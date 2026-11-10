@@ -109,35 +109,44 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Mobile nav toggle: opening the menu also expands every submenu at once
+  // Mobile submenus are independent disclosures beside the section links.
   var toggle = document.querySelector('.menu-toggle');
   var links = document.querySelector('.nav-links');
   if (toggle && links) {
+    toggle.setAttribute('aria-expanded', 'false');
+    var submenuButtons = [];
+    links.querySelectorAll('.nav-item').forEach(function (item) {
+      var title = item.querySelector('a');
+      var submenu = item.querySelector('.dropdown-menu');
+      if (!title || !submenu) return;
+      var button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'submenu-toggle';
+      button.setAttribute('aria-label', title.textContent.replace(/\u25be/g, '').trim());
+      button.setAttribute('aria-expanded', 'false');
+      submenu.id = 'header-submenu-' + (submenuButtons.length + 1);
+      button.setAttribute('aria-controls', submenu.id);
+      button.innerHTML = '<span aria-hidden="true">&#9662;</span>';
+      title.after(button);
+      item.classList.add('has-submenu-toggle');
+      submenuButtons.push(button);
+      button.addEventListener('click', function () {
+        var expanded = item.classList.toggle('mobile-open');
+        button.setAttribute('aria-expanded', String(expanded));
+      });
+    });
+
     toggle.addEventListener('click', function () {
-      var isOpening = !links.classList.contains('mobile-open');
-      links.classList.toggle('mobile-open');
-      if (isOpening) {
-        links.querySelectorAll('.nav-item').forEach(function (item) {
-          if (item.querySelector('.dropdown-menu')) {
-            item.classList.add('mobile-open');
-          }
+      var expanded = links.classList.toggle('mobile-open');
+      toggle.setAttribute('aria-expanded', String(expanded));
+      if (!expanded) {
+        submenuButtons.forEach(function (button) {
+          button.parentElement.classList.remove('mobile-open');
+          button.setAttribute('aria-expanded', 'false');
         });
       }
     });
   }
-
-  // Mobile dropdown: tapping the caret expands the submenu, tapping the label navigates normally
-  document.querySelectorAll('.nav-item').forEach(function (item) {
-    var caret = item.querySelector('.caret');
-    if (!caret) return;
-    caret.addEventListener('click', function (e) {
-      if (window.innerWidth <= 880) {
-        e.preventDefault();
-        e.stopPropagation();
-        item.classList.toggle('mobile-open');
-      }
-    });
-  });
 
   // Language dropdown: click to toggle at any width, click outside to close
   document.querySelectorAll('.lang-trigger').forEach(function (trigger) {

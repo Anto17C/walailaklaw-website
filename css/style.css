@@ -269,8 +269,27 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .dropdown-menu a { display: block; padding: 6px 12px; font-size: 13px; color: #cfcac2; border-radius: 6px; }
 .dropdown-menu a:hover { background: rgba(244,164,23,0.1); color: var(--gold); }
 @media (max-width: 880px) {
-  .dropdown-menu { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; background: transparent; border: none; margin: 2px 0 2px 16px; display: none; }
-  .nav-item.mobile-open .dropdown-menu { display: block; }
+  html, body { overflow-x: clip; }
+  .dropdown-menu {
+    position: static;
+    min-width: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    background: transparent;
+    border: 0;
+    border-left: 2px solid var(--gold);
+    border-radius: 0;
+    margin: 0 0 6px;
+    padding: 0 0 6px 10px;
+    display: none;
+  }
+  .nav-item.mobile-open > .dropdown-menu {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 12px;
+  }
 }
 .nav-cta { display: flex; align-items: center; gap: 14px; }
 /* Language switcher: pill button (globe, current language, caret) opening a list of the other
@@ -379,10 +398,10 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 @media (max-width: 880px) {
   .nav-links { display: none; }
   .nav-links.mobile-open {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-content: start;
+    gap: 0 16px;
     position: absolute;
     top: 100%;
     left: 0;
@@ -392,10 +411,14 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
     box-shadow: 0 16px 32px rgba(0,0,0,0.4);
     border-top: 1px solid rgba(255,255,255,0.08);
     max-height: calc(100vh - 70px);
+    max-height: calc(100dvh - 70px);
     overflow-y: auto;
+    overscroll-behavior-y: contain;
   }
-  .nav-links.mobile-open a { padding: 7px 0; width: 100%; }
-  .nav-links.mobile-open .nav-item { width: 100%; }
+  .nav-links.mobile-open a { padding: 10px 0; width: 100%; min-width: 0; overflow-wrap: anywhere; }
+  .nav-links.mobile-open > * { min-width: 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .nav-links.mobile-open > .nav-item.mobile-open { grid-column: 1 / -1; }
+  .nav-links.mobile-open .dropdown-menu a { padding: 9px 6px; }
   .nav-cta .btn-outline { display: none; }
   .nav-cta .btn-primary {
     display: inline-flex;
@@ -947,27 +970,6 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 }
 
 @media (max-width: 700px) {
-  .nav-links { display: none; }
-  .nav-links.mobile-open {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--ink);
-    padding: 8px 24px 12px;
-    box-shadow: 0 16px 32px rgba(0,0,0,0.4);
-    border-top: 1px solid rgba(255,255,255,0.08);
-    max-height: calc(100vh - 70px);
-    overflow-y: auto;
-  }
-
-  .nav-links.mobile-open a { padding: 7px 0; width: 100%; }
-  .nav-links.mobile-open .nav-item { width: 100%; }
-  .nav-cta .btn-outline { display: none; }
   .menu-toggle { display: block; }
 }
 

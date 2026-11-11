@@ -417,7 +417,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
     overscroll-behavior-y: contain;
   }
   .nav-links.mobile-open a { padding: 10px 0; width: 100%; min-width: 0; overflow-wrap: anywhere; }
-  .nav-links.mobile-open > * { min-width: 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .nav-links.mobile-open > * { min-width: 0; }
   .nav-links.mobile-open .nav-item > a { display: inline-flex; width: auto; max-width: calc(100% - 44px); vertical-align: middle; }
   .nav-item.has-submenu-toggle > a > .caret { display: none; }
   .submenu-toggle {

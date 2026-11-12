@@ -447,10 +447,12 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   .nav-links.mobile-open,
   .nav-item.mobile-open > .dropdown-menu {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, max-content));
+    justify-content: start;
   }
+  .nav-links.mobile-open { column-gap: 32px; }
   .nav-links.mobile-open > .nav-item.mobile-open { grid-column: 1 / -1; }
-  .nav-item.mobile-open > .dropdown-menu { column-gap: 12px; }
+  .nav-item.mobile-open > .dropdown-menu { column-gap: 32px; }
 }
 
 /* Narrow phones (iPhone SE/8, small Android): the header row above is tuned for ~375px+;

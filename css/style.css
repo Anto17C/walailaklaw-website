@@ -444,15 +444,22 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 }
 
 @media (max-width: 1180px) and (orientation: landscape) and (max-height: 500px) {
-  .nav-links.mobile-open,
+  /* Top-level links run in one wrapping row; an open submenu drops below as 3 columns. */
+  .nav-links.mobile-open {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0 28px;
+  }
+  .nav-links.mobile-open > a,
+  .nav-links.mobile-open > .nav-item { width: auto; flex: 0 0 auto; }
+  .nav-links.mobile-open > .nav-item.mobile-open { flex-basis: 100%; }
   .nav-item.mobile-open > .dropdown-menu {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, max-content));
+    grid-template-columns: repeat(3, minmax(0, max-content));
     justify-content: start;
+    column-gap: 32px;
   }
-  .nav-links.mobile-open { column-gap: 32px; }
-  .nav-links.mobile-open > .nav-item.mobile-open { grid-column: 1 / -1; }
-  .nav-item.mobile-open > .dropdown-menu { column-gap: 32px; }
 }
 
 /* Narrow phones (iPhone SE/8, small Android): the header row above is tuned for ~375px+;

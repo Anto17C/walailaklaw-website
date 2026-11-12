@@ -1048,3 +1048,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   }
   .nav-links.mobile-open > .nav-menu-cta { grid-column: 1 / -1; }
 }
+
+/* Landscape phones: the header already shows the booking button, so the menu omits it. */
+@media (max-width: 1180px) and (orientation: landscape) and (max-height: 500px) {
+  .nav-links.mobile-open > a.nav-menu-cta { display: none; }
+}

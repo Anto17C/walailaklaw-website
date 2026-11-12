@@ -46,7 +46,18 @@ document.addEventListener('DOMContentLoaded', function () {
       var plainContact = document.createElement('a');
       plainContact.href = prefix + '/contact';
       plainContact.textContent = labels.contact;
+      plainContact.className = 'nav-contact-plain';
       contactItem.parentNode.replaceChild(plainContact, contactItem);
+      // In the hamburger menu the plain Contact link is replaced by the header's booking button
+      // (same label and link in each language); on desktop the plain link stays and this is hidden.
+      var headerCta = document.querySelector('.nav-cta .btn-primary');
+      if (headerCta) {
+        var menuCta = document.createElement('a');
+        menuCta.href = headerCta.getAttribute('href');
+        menuCta.className = 'btn btn-primary nav-menu-cta';
+        menuCta.textContent = headerCta.textContent.trim();
+        plainContact.parentNode.insertBefore(menuCta, plainContact.nextSibling);
+      }
     }
   }
 

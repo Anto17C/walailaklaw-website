@@ -1066,16 +1066,15 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   .nav-links.mobile-open > a.nav-menu-cta { display: none; }
 }
 
-/* Header: gold underline under the item for the page being viewed (desktop nav). */
-.nav-links > a.is-current,
-.nav-links > .nav-item.is-current { position: relative; }
-.nav-links > a.is-current::after,
-.nav-links > .nav-item.is-current > a::after {
-  content: ""; position: absolute; left: 0; right: 0; bottom: -9px;
-  height: 2px; border-radius: 2px; background: var(--gold);
+/* Header: the item for the page being viewed gets a thin gold underline and white text
+   (same approach as the Baanward header), on desktop and in the mobile/landscape menu. */
+.nav-links [aria-current="page"] {
+  color: #fff !important; /* overrides the old inline gold on ~120 hand-marked pages so every page matches */
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 10px;
 }
-.nav-links > .nav-item.is-current > a { position: static; }
 @media (max-width: 1180px) {
-  .nav-links > a.is-current::after,
-  .nav-links > .nav-item.is-current > a::after { content: none; }
+  .nav-links [aria-current="page"] { text-underline-offset: 7px; }
 }

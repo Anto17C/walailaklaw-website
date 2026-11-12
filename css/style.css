@@ -454,6 +454,9 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   .nav-links.mobile-open > a,
   .nav-links.mobile-open > .nav-item { width: auto; flex: 0 0 auto; }
   .nav-links.mobile-open > .nav-item.mobile-open { flex-basis: 100%; }
+  /* The 44px touch target after "Practice Areas" / "Locations" widens the gap before the next title; trim it. */
+  .nav-links.mobile-open .nav-item > a { max-width: none; }
+  .nav-links.mobile-open .submenu-toggle { min-width: 0; padding: 0 14px 0 4px; margin-right: -14px; }
   .nav-item.mobile-open > .dropdown-menu {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, max-content));

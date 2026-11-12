@@ -1065,3 +1065,17 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 @media (max-width: 1180px) and (orientation: landscape) and (max-height: 500px) {
   .nav-links.mobile-open > a.nav-menu-cta { display: none; }
 }
+
+/* Header: gold underline under the item for the page being viewed (desktop nav). */
+.nav-links > a.is-current,
+.nav-links > .nav-item.is-current { position: relative; }
+.nav-links > a.is-current::after,
+.nav-links > .nav-item.is-current > a::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -9px;
+  height: 2px; border-radius: 2px; background: var(--gold);
+}
+.nav-links > .nav-item.is-current > a { position: static; }
+@media (max-width: 1180px) {
+  .nav-links > a.is-current::after,
+  .nav-links > .nav-item.is-current > a::after { content: none; }
+}

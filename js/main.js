@@ -59,6 +59,35 @@ document.addEventListener('DOMContentLoaded', function () {
         plainContact.parentNode.insertBefore(menuCta, plainContact.nextSibling);
       }
     }
+
+    // Mark the header item for the page being viewed (gold underline on desktop). A parent
+    // item such as Practice Areas or Locations is current when one of its dropdown pages is open.
+    var normPath = function (u) {
+      var a = document.createElement('a');
+      a.href = u;
+      return a.pathname.replace(/\.html$/, '').replace(/\/index$/, '').replace(/\/+$/, '') || '/';
+    };
+    var here = normPath(location.href);
+    var homePath = normPath(prefix + '/');
+    var current = null;
+    Array.prototype.forEach.call(nav.children, function (child) {
+      if (child.classList.contains('nav-menu-cta')) return;
+      var top = child.tagName === 'A' ? child : child.querySelector(':scope > a');
+      if (!top) return;
+      var topPath = normPath(top.getAttribute('href'));
+      var hit = topPath === here;
+      if (!hit && topPath !== homePath) {
+        hit = Array.prototype.some.call(child.querySelectorAll('.dropdown-menu a'), function (d) {
+          return normPath(d.getAttribute('href')) === here;
+        }) || (child.classList.contains('nav-item') && here.indexOf(topPath + '/') === 0);
+      }
+      if (hit && !current) current = child;
+    });
+    if (current) {
+      current.classList.add('is-current');
+      var curLink = current.tagName === 'A' ? current : current.querySelector(':scope > a');
+      curLink.setAttribute('aria-current', 'page');
+    }
   }
 
   // Move direct contact choices into the hero. The homepage omits phone because
